@@ -380,5 +380,71 @@
             </objects>
             <point key="canvasLocation" x="441" y="746"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gep-2k-Srk">
+            <objects>
+                <viewController id="7u5-LR-IYA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dkN-4t-Vim">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJUSTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ln-NrM">
+                                <rect key="frame" x="156" y="133.5" width="102" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsP-6b-1Sv">
+                                <rect key="frame" x="32" y="265.5" width="350" height="65"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="CjV-f9-f6M"/>
+                                    <constraint firstAttribute="height" constant="65" id="cyl-xq-xfo"/>
+                                </constraints>
+                                <state key="normal" title="MADRID MEDIEVAL">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-KI-tOk">
+                                <rect key="frame" x="32" y="415.5" width="350" height="65"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="EkX-ty-rE2"/>
+                                    <constraint firstAttribute="width" constant="350" id="WJO-CV-JrT"/>
+                                </constraints>
+                                <state key="normal" title="MADRID MEDIEVAL">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpV-lh-cN9">
+                                <rect key="frame" x="32" y="565.5" width="350" height="65"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="F4P-Cb-jFH"/>
+                                    <constraint firstAttribute="height" constant="65" id="F7U-OM-FtO"/>
+                                </constraints>
+                                <state key="normal" title="MADRID MEDIEVAL">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jpV-lh-cN9" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="150" id="12W-fS-AXa"/>
+                            <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="2V9-Zh-FZO"/>
+                            <constraint firstItem="vsP-6b-1Sv" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-150" id="64c-EE-YKM"/>
+                            <constraint firstItem="jpV-lh-cN9" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="ICI-UB-aeI"/>
+                            <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-300" id="IcC-eA-CtQ"/>
+                            <constraint firstItem="sPH-KI-tOk" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" id="XoJ-h3-I17"/>
+                            <constraint firstItem="sPH-KI-tOk" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="dFu-BS-OKp"/>
+                            <constraint firstItem="vsP-6b-1Sv" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="eiK-WP-8ax"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yP8-bm-A1k"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHZ-jz-Lcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="746"/>
+        </scene>
     </scenes>
 </document>
