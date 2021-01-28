@@ -41,6 +41,7 @@
 		0D13B6FF25C2DBF9009FA822 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = ../../Desktop/a.jpg; sourceTree = "<group>"; };
 		0D13B70125C2E13E009FA822 /* qwerty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = qwerty.jpg; path = ../../Desktop/qwerty.jpg; sourceTree = "<group>"; };
 		0D13B70325C2E1DD009FA822 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		0D904D3B25C2EAA500D56028 /* rutas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rutas.entitlements; sourceTree = "<group>"; };
 		7FF80BCF25B99D5900723384 /* rutas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rutas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF80BD225B99D5900723384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FF80BD425B99D5900723384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,16 +106,17 @@
 		7FF80BD125B99D5900723384 /* rutas */ = {
 			isa = PBXGroup;
 			children = (
+				0D904D3B25C2EAA500D56028 /* rutas.entitlements */,
 				0D13B6FF25C2DBF9009FA822 /* a.jpg */,
 				0D13B70125C2E13E009FA822 /* qwerty.jpg */,
 				7FF80BD225B99D5900723384 /* AppDelegate.swift */,
 				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
 				7FF80BD625B99D5900723384 /* ViewController.swift */,
+				0D13B70325C2E1DD009FA822 /* mapViewController.swift */,
 				7FF80BD825B99D5900723384 /* Main.storyboard */,
 				7FF80BDB25B99D5A00723384 /* Assets.xcassets */,
 				7FF80BDD25B99D5A00723384 /* LaunchScreen.storyboard */,
 				7FF80BE025B99D5A00723384 /* Info.plist */,
-				0D13B70325C2E1DD009FA822 /* mapViewController.swift */,
 			);
 			path = rutas;
 			sourceTree = "<group>";
@@ -446,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = rutas/rutas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = rutas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cev.rutas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = rutas/rutas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = rutas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cev.rutas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
