@@ -15,8 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qwerty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fa9-Ch-mxR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qwerty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="T81-lz-Kbv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-sp-Znz">
                                 <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
@@ -81,17 +82,13 @@
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP"/>
                             <constraint firstItem="QHF-Y9-ehA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8nv-5D-URq"/>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="Aik-3u-MdR"/>
-                            <constraint firstItem="fa9-Ch-mxR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dnk-1U-vfB"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5X-CH-wEw"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-320" id="MMY-Gr-Fav"/>
-                            <constraint firstAttribute="bottom" secondItem="fa9-Ch-mxR" secondAttribute="bottom" id="QMW-ST-hcH"/>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WoO-H3-avT"/>
                             <constraint firstItem="QHF-Y9-ehA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="XFL-wg-iIK"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezv-qt-Bvd"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="hT9-Kz-mMr"/>
-                            <constraint firstItem="fa9-Ch-mxR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m5s-B2-sdN"/>
-                            <constraint firstItem="fa9-Ch-mxR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tL8-65-W46"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSu-2Y-pym"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -198,11 +195,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qwerty.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bGn-wi-AYG">
-                                <rect key="frame" x="-346" y="-422" width="760" height="1318"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTRO DE USUARIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-PI-Dr6">
                                 <rect key="frame" x="78.666666666666686" y="133.66666666666666" width="257" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
