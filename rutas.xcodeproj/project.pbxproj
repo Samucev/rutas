@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D13B70425C2E1DD009FA822 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D13B70325C2E1DD009FA822 /* mapViewController.swift */; };
-		0D13B70A25C2EE5F009FA822 /* qwerty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D13B70925C2EE5F009FA822 /* qwerty.jpg */; };
 		7FF80BD325B99D5900723384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF80BD225B99D5900723384 /* AppDelegate.swift */; };
 		7FF80BD525B99D5900723384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF80BD425B99D5900723384 /* SceneDelegate.swift */; };
 		7FF80BD725B99D5900723384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF80BD625B99D5900723384 /* ViewController.swift */; };
@@ -39,10 +38,13 @@
 /* Begin PBXFileReference section */
 		0D13B70325C2E1DD009FA822 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		0D904D3B25C2EAA500D56028 /* rutas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rutas.entitlements; sourceTree = "<group>"; };
 =======
 		0D13B70925C2EE5F009FA822 /* qwerty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qwerty.jpg; sourceTree = "<group>"; };
 >>>>>>> 5bc884a1d265a80d2c7323c96ae95983742c0095
+=======
+>>>>>>> 0d06e2d76d630853367a73f85ec9e4e7818130bc
 		7FF80BCF25B99D5900723384 /* rutas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rutas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF80BD225B99D5900723384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FF80BD425B99D5900723384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,12 +110,15 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				0D904D3B25C2EAA500D56028 /* rutas.entitlements */,
 				0D13B6FF25C2DBF9009FA822 /* a.jpg */,
 				0D13B70125C2E13E009FA822 /* qwerty.jpg */,
 =======
 				0D13B70925C2EE5F009FA822 /* qwerty.jpg */,
 >>>>>>> 5bc884a1d265a80d2c7323c96ae95983742c0095
+=======
+>>>>>>> 0d06e2d76d630853367a73f85ec9e4e7818130bc
 				7FF80BD225B99D5900723384 /* AppDelegate.swift */,
 				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
 				7FF80BD625B99D5900723384 /* ViewController.swift */,
@@ -249,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF80BDF25B99D5A00723384 /* LaunchScreen.storyboard in Resources */,
-				0D13B70A25C2EE5F009FA822 /* qwerty.jpg in Resources */,
 				7FF80BDC25B99D5A00723384 /* Assets.xcassets in Resources */,
 				7FF80BDA25B99D5900723384 /* Main.storyboard in Resources */,
 			);
