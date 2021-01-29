@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H90-WN-rKM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,10 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T81-lz-Kbv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-sp-Znz">
                                 <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,12 +54,6 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECUPERAR CONTRASEÑA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHF-Y9-ehA">
-                                <rect key="frame" x="100" y="537.66666666666663" width="214" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H2-vU-gDy">
                                 <rect key="frame" x="132" y="628" width="150" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,18 +65,22 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Y-0C-pFS">
+                                <rect key="frame" x="111.66666666666669" y="533" width="191" height="30"/>
+                                <state key="normal" title="RECUPERAR CONTRASEÑA"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0CH-Pa-a3U"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="4gZ-dg-fkP"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP"/>
-                            <constraint firstItem="QHF-Y9-ehA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8nv-5D-URq"/>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="Aik-3u-MdR"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5X-CH-wEw"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-320" id="MMY-Gr-Fav"/>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WoO-H3-avT"/>
-                            <constraint firstItem="QHF-Y9-ehA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="XFL-wg-iIK"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezv-qt-Bvd"/>
+                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="fdF-hf-kiT"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="hT9-Kz-mMr"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSu-2Y-pym"/>
@@ -98,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-572.46376811594212" y="12.723214285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--RecoverPW View Controller-->
         <scene sceneID="NoE-hf-yFd">
             <objects>
-                <viewController id="hQE-27-Eo0" sceneMemberID="viewController">
+                <viewController id="hQE-27-Eo0" customClass="recoverPWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GvX-0D-PVu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,13 +166,37 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-5c-j0i">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </mapView>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-tn-haj">
+                                <rect key="frame" x="345" y="86.666666666666671" width="24.333333333333314" height="23"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="wrench.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-dV-zwt">
+                                <rect key="frame" x="47" y="787" width="20" height="22"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="person.circle.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apO-s0-3df">
+                                <rect key="frame" x="346.66666666666669" y="787" width="21" height="22"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="book.fill" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="leading" secondItem="cRG-vc-xQ7" secondAttribute="leading" id="3GT-b4-3Ry"/>
+                            <constraint firstItem="UFL-tn-haj" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="-350" id="3sy-oa-DFS"/>
+                            <constraint firstItem="apO-s0-3df" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="8xJ-Uu-WVl"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="trailing" secondItem="wQ6-5c-j0i" secondAttribute="trailing" id="BTL-Pu-eUF"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="bottom" secondItem="wQ6-5c-j0i" secondAttribute="bottom" id="LdV-I7-Mvp"/>
+                            <constraint firstItem="yNK-dV-zwt" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="UYB-2M-1yt"/>
+                            <constraint firstItem="apO-s0-3df" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="150" id="Wvd-kC-xdJ"/>
+                            <constraint firstItem="yNK-dV-zwt" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="enR-hA-QfU"/>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="top" secondItem="cRG-vc-xQ7" secondAttribute="top" id="giZ-b7-2VR"/>
+                            <constraint firstItem="UFL-tn-haj" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="150" id="jiW-yn-BDE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cRG-vc-xQ7"/>
                     </view>
@@ -187,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="2348" y="13"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="AoD-Sl-wFE">
             <objects>
-                <viewController id="jPO-EG-exD" sceneMemberID="viewController">
+                <viewController id="jPO-EG-exD" customClass="registerViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M2B-F7-dZb" userLabel="pantallaRegistro">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,10 +289,10 @@
             </objects>
             <point key="canvasLocation" x="440.57971014492756" y="12.723214285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Route View Controller-->
         <scene sceneID="7Kq-Md-DeB">
             <objects>
-                <viewController id="6Hy-Ko-2h0" sceneMemberID="viewController">
+                <viewController id="6Hy-Ko-2h0" customClass="routeViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="le6-Lx-gd7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,10 +355,10 @@
             </objects>
             <point key="canvasLocation" x="1370" y="13"/>
         </scene>
-        <!--View Controller-->
+        <!--ChangePW View Controller-->
         <scene sceneID="MGS-bC-O6W">
             <objects>
-                <viewController id="nGI-H4-Sqm" sceneMemberID="viewController">
+                <viewController id="nGI-H4-Sqm" customClass="changePWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xj6-1n-Hd8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,10 +428,10 @@
             </objects>
             <point key="canvasLocation" x="441" y="746"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="gep-2k-Srk">
             <objects>
-                <viewController id="7u5-LR-IYA" sceneMemberID="viewController">
+                <viewController id="7u5-LR-IYA" customClass="settingsViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dkN-4t-Vim">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -477,4 +495,9 @@
             <point key="canvasLocation" x="-572" y="746"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="wrench.fill" catalog="system" width="128" height="120"/>
+    </resources>
 </document>
