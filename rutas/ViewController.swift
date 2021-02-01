@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func loginButton(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "routesVC") as! routeViewController
+        let vc = storyboard?.instantiateViewController(identifier: "routeVC") as! routeViewController
         present(vc, animated: true)
     }
     
