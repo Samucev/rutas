@@ -25,6 +25,9 @@
                                 <state key="normal" title="INICIAR SESIÓN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKU-bf-LOz"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6i-MC-P2l">
                                 <rect key="frame" x="32" y="283" width="350" height="50"/>
@@ -87,10 +90,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N6R-Ff-gZd"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="2Vx-FG-Srp" id="pcK-KL-cxp"/>
+                        <outlet property="password" destination="a6i-MC-P2l" id="5fs-Yv-x6m"/>
+                        <outlet property="passwordTextField" destination="a6i-MC-P2l" id="4On-cA-u33"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572.46376811594212" y="12.723214285714285"/>
+            <point key="canvasLocation" x="-572" y="13"/>
         </scene>
         <!--RecoverPW View Controller-->
         <scene sceneID="NoE-hf-yFd">
@@ -206,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SO-Pr-x3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="13"/>
+            <point key="canvasLocation" x="2362" y="13"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="AoD-Sl-wFE">
@@ -290,12 +299,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fk7-EV-ZRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440.57971014492756" y="12.723214285714285"/>
+            <point key="canvasLocation" x="441" y="12"/>
         </scene>
         <!--Route View Controller-->
         <scene sceneID="7Kq-Md-DeB">
             <objects>
-                <viewController id="6Hy-Ko-2h0" customClass="routeViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="routeVC" id="6Hy-Ko-2h0" customClass="routeViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="le6-Lx-gd7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFU-it-l8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1370" y="13"/>
+            <point key="canvasLocation" x="1370" y="11"/>
         </scene>
         <!--ChangePW View Controller-->
         <scene sceneID="MGS-bC-O6W">
