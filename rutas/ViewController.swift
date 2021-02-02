@@ -25,20 +25,45 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
-
-    @IBAction func loginButton(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "routeVC") as! routeViewController
+    
+    /* BOTÓN DE LOGIN */
+    
+    
+    
+    /* BOTÓN DE REGISTRO */
+        
+    @IBAction func registerButton(_ sender: Any) {
+        
+        /*let vc = storyboard?.instantiateViewController(identifier: "registerVC") as! registerViewController
+        present(vc, animated: true)*/
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "registerVC") as! registerViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
         present(vc, animated: true)
+
+        
     }
     
     
-    /*func goToRoutes(){
+    /* BOTÓN DE RECUPERAR CONTRASEÑA */
+    
+   
+    @IBAction func recoverPWButton(_ sender: Any) {
         
-        let vc = storyboard?.instantiateViewController(identifier: "routesVC") as! routeViewController
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "recoverPWCV") as! recoverPWViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
         present(vc, animated: true)
         
-    }*/
-
+    }
+    
 
 }
 

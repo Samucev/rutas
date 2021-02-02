@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC" id="BYZ-38-t0r" customClass="ViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,9 +25,6 @@
                                 <state key="normal" title="INICIAR SESIÓN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKU-bf-LOz"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6i-MC-P2l">
                                 <rect key="frame" x="32" y="283" width="350" height="50"/>
@@ -38,7 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-MAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vx-FG-Srp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOMBRE DE USUARIO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vx-FG-Srp">
                                 <rect key="frame" x="32" y="223" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5dK-q1-cW9"/>
@@ -67,10 +64,16 @@
                                 <state key="normal" title="REGISTRARME">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJ9-U9-QoU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Y-0C-pFS">
                                 <rect key="frame" x="111.66666666666669" y="533" width="191" height="30"/>
                                 <state key="normal" title="RECUPERAR CONTRASEÑA"/>
+                                <connections>
+                                    <action selector="recoverPWButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FC4-s1-Azh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,7 +106,7 @@
         <!--RecoverPW View Controller-->
         <scene sceneID="NoE-hf-yFd">
             <objects>
-                <viewController id="hQE-27-Eo0" customClass="recoverPWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recoverPWCV" id="hQE-27-Eo0" customClass="recoverPWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GvX-0D-PVu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +147,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-cB-Jth">
+                                <rect key="frame" x="195" y="172" width="132" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="WCW-oe-USb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -219,7 +232,7 @@
         <!--Register View Controller-->
         <scene sceneID="AoD-Sl-wFE">
             <objects>
-                <viewController id="jPO-EG-exD" customClass="registerViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registerVC" id="jPO-EG-exD" customClass="registerViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M2B-F7-dZb" userLabel="pantallaRegistro">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,6 +290,15 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voq-L9-juD">
+                                <rect key="frame" x="11" y="87" width="132" height="22"/>
+                                <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="oI3-DN-odD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -284,8 +306,10 @@
                             <constraint firstItem="gLd-Mn-jVF" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="BQx-kh-d6r"/>
                             <constraint firstItem="Gk4-7s-1qO" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="25" id="Gdp-cU-8Us"/>
                             <constraint firstItem="Gk4-7s-1qO" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="LEg-91-SFR"/>
+                            <constraint firstItem="Voq-L9-juD" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" constant="-130" id="Lfe-Ur-Ie7"/>
                             <constraint firstItem="5UT-58-4Bn" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-125" id="Lhm-lO-Rc9"/>
                             <constraint firstItem="gLd-Mn-jVF" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="125" id="Rsv-Ck-oxB"/>
+                            <constraint firstItem="Voq-L9-juD" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-350" id="SgN-XU-xQf"/>
                             <constraint firstItem="5UT-58-4Bn" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="ZjP-0o-ba5"/>
                             <constraint firstItem="CN7-IS-w4x" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-50" id="aHw-XT-9Nb"/>
                             <constraint firstItem="CN7-IS-w4x" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="cBI-ll-kij"/>
@@ -298,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fk7-EV-ZRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="441" y="12"/>
+            <point key="canvasLocation" x="440.57971014492756" y="11.383928571428571"/>
         </scene>
         <!--Route View Controller-->
         <scene sceneID="7Kq-Md-DeB">
@@ -369,7 +393,7 @@
         <!--ChangePW View Controller-->
         <scene sceneID="MGS-bC-O6W">
             <objects>
-                <viewController id="nGI-H4-Sqm" customClass="changePWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="changePWCV" id="nGI-H4-Sqm" customClass="changePWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xj6-1n-Hd8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,7 +466,7 @@
         <!--Settings View Controller-->
         <scene sceneID="gep-2k-Srk">
             <objects>
-                <viewController id="7u5-LR-IYA" customClass="settingsViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingsVC" id="7u5-LR-IYA" customClass="settingsViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dkN-4t-Vim">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -507,6 +531,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
