@@ -15,5 +15,38 @@ class routeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    @IBAction func loginButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "VC") as! ViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
+        present(vc, animated: true)
+        
+    }
+    
+    
+    @IBAction func profileButton(_ sender: Any) {
+        
+        
+        
+    }
+    
+    
+    @IBAction func settingsButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
+        present(vc, animated: true)
+        
+    }
+    
 
 }

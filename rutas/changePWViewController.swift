@@ -14,6 +14,19 @@ class changePWViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    @IBAction func settingsButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
+        present(vc, animated: true)
+        
+    }
+    
 
 }

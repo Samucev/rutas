@@ -15,12 +15,26 @@ class registerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    /* BOTÓN PARA VOLVER A LA PANTALLA DE LOGIN */
     
     @IBAction func loginButton(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "VC") as! ViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
+        present(vc, animated: true)
+        
+    }
+    
+    
+    @IBAction func routeListButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         

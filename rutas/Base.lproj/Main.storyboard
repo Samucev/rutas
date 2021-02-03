@@ -25,8 +25,11 @@
                                 <state key="normal" title="INICIAR SESIÓN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="routeListButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgV-At-JTH"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6i-MC-P2l">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6i-MC-P2l">
                                 <rect key="frame" x="32" y="283" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Een-PP-hra"/>
@@ -54,41 +57,34 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H2-vU-gDy">
-                                <rect key="frame" x="132" y="628" width="150" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="R2Z-83-was"/>
-                                    <constraint firstAttribute="height" constant="40" id="zzP-1c-qCU"/>
-                                </constraints>
-                                <state key="normal" title="REGISTRARME">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJ9-U9-QoU"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Y-0C-pFS">
-                                <rect key="frame" x="111.66666666666669" y="533" width="191" height="30"/>
-                                <state key="normal" title="RECUPERAR CONTRASEÑA"/>
+                                <rect key="frame" x="115.66666666666669" y="573" width="183" height="30"/>
+                                <state key="normal" title="He olvidado mi contraseña"/>
                                 <connections>
                                     <action selector="recoverPWButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FC4-s1-Azh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H2-vU-gDy">
+                                <rect key="frame" x="125.66666666666669" y="533" width="163" height="30"/>
+                                <state key="normal" title="Crear una cuenta nueva"/>
+                                <connections>
+                                    <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJ9-U9-QoU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0CH-Pa-a3U"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="4gZ-dg-fkP"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP"/>
-                            <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="Aik-3u-MdR"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5X-CH-wEw"/>
+                            <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="LXj-iD-WuR"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-320" id="MMY-Gr-Fav"/>
-                            <constraint firstItem="7H2-vU-gDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WoO-H3-avT"/>
+                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Phe-GB-QYK"/>
+                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140" id="UL4-2a-t0P"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezv-qt-Bvd"/>
-                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="fdF-hf-kiT"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="hT9-Kz-mMr"/>
+                            <constraint firstItem="7H2-vU-gDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofR-5t-Ark"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSu-2Y-pym"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -141,19 +137,22 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibirás tu contraseña temporal en tu correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-r7-JBX">
-                                <rect key="frame" x="32.666666666666657" y="587.66666666666663" width="349" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibirás tu contraseña temporal en tu correo electrónico." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-r7-JBX">
+                                <rect key="frame" x="19.333333333333343" y="589.66666666666663" width="375.33333333333326" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-cB-Jth">
-                                <rect key="frame" x="195" y="172" width="132" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-cB-Jth">
+                                <rect key="frame" x="11" y="57" width="132" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="1fJ-lZ-Hxl"/>
+                                </constraints>
                                 <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginButton:" destination="hQE-27-Eo0" eventType="touchUpInside" id="Eye-Zw-NVh"/>
                                     <action selector="loginButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="WCW-oe-USb"/>
                                 </connections>
                             </button>
@@ -165,9 +164,11 @@
                             <constraint firstItem="YmY-de-46N" firstAttribute="centerX" secondItem="GvX-0D-PVu" secondAttribute="centerX" id="G6n-z8-DgD"/>
                             <constraint firstItem="8H9-eU-ufo" firstAttribute="centerY" secondItem="GvX-0D-PVu" secondAttribute="centerY" constant="-175" id="LfX-RC-Ktx"/>
                             <constraint firstItem="ZtF-zQ-YIu" firstAttribute="centerX" secondItem="GvX-0D-PVu" secondAttribute="centerX" id="MQj-nv-iSW"/>
+                            <constraint firstItem="K5n-cB-Jth" firstAttribute="centerX" secondItem="GvX-0D-PVu" secondAttribute="centerX" constant="-130" id="PMi-IT-y0A"/>
                             <constraint firstItem="8H9-eU-ufo" firstAttribute="centerX" secondItem="GvX-0D-PVu" secondAttribute="centerX" id="ciW-bo-yyQ"/>
                             <constraint firstItem="LLm-r7-JBX" firstAttribute="centerY" secondItem="GvX-0D-PVu" secondAttribute="centerY" constant="150" id="p0u-cn-Df8"/>
                             <constraint firstItem="YmY-de-46N" firstAttribute="centerY" secondItem="GvX-0D-PVu" secondAttribute="centerY" id="x4m-GW-By5"/>
+                            <constraint firstItem="K5n-cB-Jth" firstAttribute="centerY" secondItem="GvX-0D-PVu" secondAttribute="centerY" constant="-380" id="ycx-V4-sFj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1mG-MY-HYv"/>
                     </view>
@@ -237,8 +238,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTRO DE USUARIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-PI-Dr6">
-                                <rect key="frame" x="78.666666666666686" y="133.66666666666666" width="257" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR UNA CUENTA NUEVA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-PI-Dr6">
+                                <rect key="frame" x="52" y="133.66666666666666" width="310.33333333333331" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -286,12 +287,18 @@
                                     <constraint firstAttribute="height" constant="65" id="52K-VY-tem"/>
                                     <constraint firstAttribute="width" constant="350" id="fzR-Yn-e0e"/>
                                 </constraints>
-                                <state key="normal" title="REGISTRARSE">
+                                <state key="normal" title="CREAR">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="routeListButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="KBf-nV-JzX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voq-L9-juD">
-                                <rect key="frame" x="11" y="87" width="132" height="22"/>
+                                <rect key="frame" x="11" y="57" width="132" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="p3E-E3-GYn"/>
+                                </constraints>
                                 <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -309,7 +316,7 @@
                             <constraint firstItem="Voq-L9-juD" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" constant="-130" id="Lfe-Ur-Ie7"/>
                             <constraint firstItem="5UT-58-4Bn" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-125" id="Lhm-lO-Rc9"/>
                             <constraint firstItem="gLd-Mn-jVF" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="125" id="Rsv-Ck-oxB"/>
-                            <constraint firstItem="Voq-L9-juD" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-350" id="SgN-XU-xQf"/>
+                            <constraint firstItem="Voq-L9-juD" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-380" id="Ywr-rq-vLg"/>
                             <constraint firstItem="5UT-58-4Bn" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="ZjP-0o-ba5"/>
                             <constraint firstItem="CN7-IS-w4x" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-50" id="aHw-XT-9Nb"/>
                             <constraint firstItem="CN7-IS-w4x" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="cBI-ll-kij"/>
@@ -371,17 +378,55 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0F-mY-Gko">
+                                <rect key="frame" x="47" y="787" width="20" height="22"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="person.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="profileButton:" destination="6Hy-Ko-2h0" eventType="touchUpInside" id="2Rl-NE-Y0K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiE-Lk-l30">
+                                <rect key="frame" x="345" y="786.66666666666663" width="24.333333333333314" height="23"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="wrench.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="settingsButton:" destination="6Hy-Ko-2h0" eventType="touchUpInside" id="nMz-EQ-c1N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-qv-xhe">
+                                <rect key="frame" x="11" y="57" width="132" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="BPF-SN-ujY"/>
+                                </constraints>
+                                <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="6Qw-k9-PGU"/>
+                                    <action selector="loginButton:" destination="6Hy-Ko-2h0" eventType="touchUpInside" id="jk6-RB-NgH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZNT-Pw-xk2" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="2CQ-0n-szD"/>
                             <constraint firstItem="ZNT-Pw-xk2" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-150" id="CgY-wh-icr"/>
+                            <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="Fjy-le-vMj"/>
+                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="I88-Pe-Ecv"/>
                             <constraint firstItem="zPC-CW-OFK" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="150" id="QJa-Xh-GND"/>
                             <constraint firstItem="zPC-CW-OFK" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="R3y-h7-KPB"/>
                             <constraint firstItem="UNs-oe-iOR" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="RA1-3v-RTT"/>
                             <constraint firstItem="UNs-oe-iOR" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-300" id="RpM-gt-g7K"/>
                             <constraint firstItem="vVH-M5-6xk" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" id="fTF-qe-bN9"/>
+                            <constraint firstItem="bdz-qv-xhe" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-380" id="jXs-NJ-2FP"/>
+                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="-150" id="nji-Pn-bUC"/>
+                            <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="150" id="u1R-y4-Cok"/>
                             <constraint firstItem="vVH-M5-6xk" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="vvs-G6-M74"/>
+                            <constraint firstItem="bdz-qv-xhe" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="-130" id="yhv-iy-y8U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XPE-vE-IKg"/>
                     </view>
@@ -393,7 +438,7 @@
         <!--ChangePW View Controller-->
         <scene sceneID="MGS-bC-O6W">
             <objects>
-                <viewController storyboardIdentifier="changePWCV" id="nGI-H4-Sqm" customClass="changePWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="changePWVC" id="nGI-H4-Sqm" customClass="changePWViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xj6-1n-Hd8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,9 +483,22 @@
                                     <constraint firstAttribute="height" constant="65" id="4tY-0u-Pvr"/>
                                     <constraint firstAttribute="width" constant="350" id="kP5-lb-6rh"/>
                                 </constraints>
-                                <state key="normal" title="REGISTRARSE">
+                                <state key="normal" title="CAMBIAR">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUh-3g-Chh">
+                                <rect key="frame" x="11" y="57" width="132" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Ugl-sA-RIS"/>
+                                </constraints>
+                                <state key="normal" title=" Atrás" image="arrow.left" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="routeListButton:" destination="7u5-LR-IYA" eventType="touchUpInside" id="9UC-gp-uAN"/>
+                                    <action selector="settingsButton:" destination="nGI-H4-Sqm" eventType="touchUpInside" id="6FW-qO-N7I"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -449,10 +507,12 @@
                             <constraint firstItem="OzV-Ig-JEN" firstAttribute="centerX" secondItem="xj6-1n-Hd8" secondAttribute="centerX" id="9Bb-Mz-NZK"/>
                             <constraint firstItem="1g7-Sh-DSj" firstAttribute="centerY" secondItem="xj6-1n-Hd8" secondAttribute="centerY" constant="125" id="QCo-pQ-nFD"/>
                             <constraint firstItem="1g7-Sh-DSj" firstAttribute="centerX" secondItem="xj6-1n-Hd8" secondAttribute="centerX" id="UTL-EO-jdr"/>
+                            <constraint firstItem="UUh-3g-Chh" firstAttribute="centerX" secondItem="xj6-1n-Hd8" secondAttribute="centerX" constant="-130" id="Uvt-2U-ixo"/>
                             <constraint firstItem="Et8-Zv-bqw" firstAttribute="centerY" secondItem="xj6-1n-Hd8" secondAttribute="centerY" constant="-200" id="XQs-Mb-zLA"/>
                             <constraint firstItem="R45-1S-yp5" firstAttribute="centerX" secondItem="xj6-1n-Hd8" secondAttribute="centerX" id="YNP-aX-JFv"/>
                             <constraint firstItem="Et8-Zv-bqw" firstAttribute="centerX" secondItem="xj6-1n-Hd8" secondAttribute="centerX" id="gCf-d1-uTF"/>
                             <constraint firstItem="OzV-Ig-JEN" firstAttribute="centerY" secondItem="xj6-1n-Hd8" secondAttribute="centerY" constant="-300" id="gDO-yM-tvw"/>
+                            <constraint firstItem="UUh-3g-Chh" firstAttribute="centerY" secondItem="xj6-1n-Hd8" secondAttribute="centerY" constant="-380" id="ibb-YO-8WE"/>
                             <constraint firstItem="Vfz-Rw-EAC" firstAttribute="centerY" secondItem="xj6-1n-Hd8" secondAttribute="centerY" constant="-50" id="mbi-6o-jvh"/>
                             <constraint firstItem="R45-1S-yp5" firstAttribute="centerY" secondItem="xj6-1n-Hd8" secondAttribute="centerY" constant="-125" id="rCo-Pj-qav"/>
                         </constraints>
@@ -509,6 +569,21 @@
                                 <state key="normal" title="CAMBIAR CONTRASEÑA">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="changePWButton:" destination="7u5-LR-IYA" eventType="touchUpInside" id="ct5-kW-SpO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2V-rm-2s1">
+                                <rect key="frame" x="11" y="57" width="132" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="gKn-rO-r2P"/>
+                                </constraints>
+                                <state key="normal" title=" Atrás" image="arrow.left" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="routeListButton:" destination="7u5-LR-IYA" eventType="touchUpInside" id="451-yq-ej3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -518,9 +593,11 @@
                             <constraint firstItem="vsP-6b-1Sv" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-150" id="64c-EE-YKM"/>
                             <constraint firstItem="jpV-lh-cN9" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="ICI-UB-aeI"/>
                             <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-300" id="IcC-eA-CtQ"/>
+                            <constraint firstItem="v2V-rm-2s1" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-380" id="Oze-3Z-AGy"/>
                             <constraint firstItem="sPH-KI-tOk" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" id="XoJ-h3-I17"/>
                             <constraint firstItem="sPH-KI-tOk" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="dFu-BS-OKp"/>
                             <constraint firstItem="vsP-6b-1Sv" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="eiK-WP-8ax"/>
+                            <constraint firstItem="v2V-rm-2s1" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" constant="-130" id="vTO-az-28W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yP8-bm-A1k"/>
                     </view>
