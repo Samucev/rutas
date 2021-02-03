@@ -16,22 +16,17 @@ class routeViewController: UIViewController {
     }
 
     
-    @IBAction func loginButton(_ sender: Any) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let vc = storyboard.instantiateViewController(identifier: "VC") as! ViewController
-                
-        vc.modalPresentationStyle = .overFullScreen
-        
-        present(vc, animated: true)
-        
-    }
     
     
     @IBAction func profileButton(_ sender: Any) {
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        let vc = storyboard.instantiateViewController(identifier: "profileVC") as! profileViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
+        present(vc, animated: true)
         
     }
     
@@ -41,6 +36,19 @@ class routeViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
+                
+        vc.modalPresentationStyle = .overFullScreen
+        
+        present(vc, animated: true)
+        
+    }
+    
+    
+    @IBAction func mapButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "mapVC") as! mapViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         

@@ -45,9 +45,6 @@ class ViewController: UIViewController {
         
     @IBAction func registerButton(_ sender: Any) {
         
-        /*let vc = storyboard?.instantiateViewController(identifier: "registerVC") as! registerViewController
-        present(vc, animated: true)*/
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "registerVC") as! registerViewController
@@ -55,7 +52,6 @@ class ViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         
         present(vc, animated: true)
-
         
     }
     
