@@ -45,6 +45,25 @@ class mapViewController: UIViewController, MKMapViewDelegate {
             
         }
     
+    /* BOTONES DEL MAPA */
+    
+    ///
+    
+    
+    @IBAction func mapSettingsButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
+                
+        /*vc.modalPresentationStyle = .overFullScreen*/
+        
+        present(vc, animated: true)
+        
+
+    }
+    
+    ///
     
     func showCircle(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance){
         let circle = MKCircle(center: coordinate, radius: radius)
@@ -207,7 +226,8 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         }
       
         
-       
+        
+        
     
 
 

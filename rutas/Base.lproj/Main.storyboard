@@ -223,16 +223,6 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-5c-j0i">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </mapView>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-tn-haj">
-                                <rect key="frame" x="339.66666666666669" y="80.666666666666671" width="35" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="9VK-Rt-P4S"/>
-                                    <constraint firstAttribute="height" constant="35" id="gRJ-ek-xBy"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="wrench.fill" catalog="system"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-dV-zwt">
                                 <rect key="frame" x="47" y="787" width="20" height="22"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -240,24 +230,37 @@
                                 <state key="normal" image="person.circle.fill" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apO-s0-3df">
-                                <rect key="frame" x="346.66666666666669" y="787" width="21" height="22"/>
+                                <rect key="frame" x="356.66666666666669" y="787" width="21" height="22"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="book.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-tn-haj">
+                                <rect key="frame" x="379" y="90.666666666666671" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="9VK-Rt-P4S"/>
+                                    <constraint firstAttribute="height" constant="35" id="gRJ-ek-xBy"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="wrench.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="mapSettingsButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="dTj-r1-htz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="leading" secondItem="cRG-vc-xQ7" secondAttribute="leading" id="3GT-b4-3Ry"/>
                             <constraint firstItem="apO-s0-3df" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="8xJ-Uu-WVl"/>
+                            <constraint firstItem="UFL-tn-haj" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="-340" id="At0-aK-5qy"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="trailing" secondItem="wQ6-5c-j0i" secondAttribute="trailing" id="BTL-Pu-eUF"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="bottom" secondItem="wQ6-5c-j0i" secondAttribute="bottom" id="LdV-I7-Mvp"/>
-                            <constraint firstItem="UFL-tn-haj" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="150" id="Npc-4R-72H"/>
+                            <constraint firstItem="apO-s0-3df" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="160" id="NSr-dp-fYX"/>
                             <constraint firstItem="yNK-dV-zwt" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="UYB-2M-1yt"/>
-                            <constraint firstItem="apO-s0-3df" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="150" id="Wvd-kC-xdJ"/>
+                            <constraint firstItem="cRG-vc-xQ7" firstAttribute="trailing" secondItem="UFL-tn-haj" secondAttribute="trailing" id="Yao-en-Nqh"/>
                             <constraint firstItem="yNK-dV-zwt" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="enR-hA-QfU"/>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="top" secondItem="cRG-vc-xQ7" secondAttribute="top" id="giZ-b7-2VR"/>
-                            <constraint firstItem="UFL-tn-haj" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="-350" id="qUg-ld-Ne6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cRG-vc-xQ7"/>
                     </view>
@@ -268,6 +271,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SO-Pr-x3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2362" y="13"/>
+        </scene>
+        <!--Map Settings View Controller-->
+        <scene sceneID="I2a-Ka-8b5">
+            <objects>
+                <viewController storyboardIdentifier="mapSettingsVC" id="den-20-hey" customClass="mapSettingsViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RK7-z9-kHg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-pb-6oq">
+                                <rect key="frame" x="32" y="265.66666666666669" width="350" height="65"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="DeY-RT-lGM"/>
+                                    <constraint firstAttribute="width" constant="350" id="pZi-nN-Dup"/>
+                                </constraints>
+                                <state key="normal" title="ACTIVAR UBICACIÓN">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcu-TC-nBj">
+                                <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="044-Gz-6CS"/>
+                                    <constraint firstAttribute="width" constant="350" id="YbX-cg-uLF"/>
+                                </constraints>
+                                <state key="normal" title="CAMBIAR TIPO DE MAPA">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeMapTypeButton:" destination="den-20-hey" eventType="touchUpInside" id="Z9f-FT-Y2n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j3K-pb-6oq" firstAttribute="centerX" secondItem="RK7-z9-kHg" secondAttribute="centerX" id="AFA-uj-cFG"/>
+                            <constraint firstItem="Tcu-TC-nBj" firstAttribute="centerX" secondItem="RK7-z9-kHg" secondAttribute="centerX" id="E11-gM-EOy"/>
+                            <constraint firstItem="Tcu-TC-nBj" firstAttribute="centerY" secondItem="RK7-z9-kHg" secondAttribute="centerY" id="PpM-Cn-jw5"/>
+                            <constraint firstItem="j3K-pb-6oq" firstAttribute="centerY" secondItem="RK7-z9-kHg" secondAttribute="centerY" constant="-150" id="bZP-uJ-BVi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cWN-cD-qYp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwj-YB-HVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3496" y="11"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="AoD-Sl-wFE">
