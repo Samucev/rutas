@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D13B70425C2E1DD009FA822 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D13B70325C2E1DD009FA822 /* mapViewController.swift */; };
+		0D80403C25D15E6100D42874 /* mapSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */; };
+		0D80403E25D1653B00D42874 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403D25D1653B00D42874 /* infoViewController.swift */; };
 		0D8E644425CAD8A900D8B59F /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E644325CAD8A900D8B59F /* profileViewController.swift */; };
 		0D8E6A8625C428C500E9A583 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8525C428C500E9A583 /* registerViewController.swift */; };
 		0D8E6A8825C42A1000E9A583 /* routeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8725C42A1000E9A583 /* routeViewController.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		0D13B70325C2E1DD009FA822 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapSettingsViewController.swift; sourceTree = "<group>"; };
+		0D80403D25D1653B00D42874 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		0D8E644325CAD8A900D8B59F /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8525C428C500E9A583 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8725C42A1000E9A583 /* routeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routeViewController.swift; sourceTree = "<group>"; };
@@ -117,13 +121,15 @@
 				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
 				7FF80BD625B99D5900723384 /* ViewController.swift */,
 				7FF80BD825B99D5900723384 /* Main.storyboard */,
+				0D8E6A8525C428C500E9A583 /* registerViewController.swift */,
 				0D8E644325CAD8A900D8B59F /* profileViewController.swift */,
+				0D80403D25D1653B00D42874 /* infoViewController.swift */,
 				0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */,
 				0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */,
 				0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */,
 				0D8E6A8725C42A1000E9A583 /* routeViewController.swift */,
-				0D8E6A8525C428C500E9A583 /* registerViewController.swift */,
 				0D13B70325C2E1DD009FA822 /* mapViewController.swift */,
+				0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */,
 				7FF80BDB25B99D5A00723384 /* Assets.xcassets */,
 				7FF80BDD25B99D5A00723384 /* LaunchScreen.storyboard */,
 				7FF80BE025B99D5A00723384 /* Info.plist */,
@@ -283,8 +289,10 @@
 				7FF80BD725B99D5900723384 /* ViewController.swift in Sources */,
 				7FF80BD325B99D5900723384 /* AppDelegate.swift in Sources */,
 				0D8E6A9025C42B3100E9A583 /* recoverPWViewController.swift in Sources */,
+				0D80403C25D15E6100D42874 /* mapSettingsViewController.swift in Sources */,
 				7FF80BD525B99D5900723384 /* SceneDelegate.swift in Sources */,
 				0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */,
+				0D80403E25D1653B00D42874 /* infoViewController.swift in Sources */,
 				0D8E6A8625C428C500E9A583 /* registerViewController.swift in Sources */,
 				0D8E6A8825C42A1000E9A583 /* routeViewController.swift in Sources */,
 				0D13B70425C2E1DD009FA822 /* mapViewController.swift in Sources */,

@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         
         let vc = storyboard.instantiateViewController(identifier: "registerVC") as! registerViewController
                 
-        vc.modalPresentationStyle = .overFullScreen
+        /*vc.modalPresentationStyle = .overFullScreen*/
         
         present(vc, animated: true)
         

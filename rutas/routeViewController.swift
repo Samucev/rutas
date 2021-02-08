@@ -24,7 +24,7 @@ class routeViewController: UIViewController {
         
         let vc = storyboard.instantiateViewController(identifier: "profileVC") as! profileViewController
                 
-        vc.modalPresentationStyle = .overFullScreen
+        /*vc.modalPresentationStyle = .overFullScreen*/
         
         present(vc, animated: true)
         

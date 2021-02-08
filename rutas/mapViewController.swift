@@ -54,7 +54,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
+        let vc = storyboard.instantiateViewController(identifier: "mapSettingsVC") as! mapSettingsViewController
                 
         /*vc.modalPresentationStyle = .overFullScreen*/
         
@@ -62,6 +62,36 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         
 
     }
+    
+    
+    
+    @IBAction func profileButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "profileVC") as! profileViewController
+                
+        /*vc.modalPresentationStyle = .overFullScreen*/
+        
+        present(vc, animated: true)
+        
+    }
+    
+    
+    @IBAction func infoButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "infoVC") as! infoViewController
+                
+        /*vc.modalPresentationStyle = .overFullScreen*/
+        
+        present(vc, animated: true)
+        
+    }
+    
+    
+    
     
     ///
     

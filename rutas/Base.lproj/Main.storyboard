@@ -22,6 +22,7 @@
                                     <constraint firstAttribute="height" constant="65" id="M1h-C6-ndg"/>
                                     <constraint firstAttribute="width" constant="350" id="NMQ-e1-dsk"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="INICIAR SESIÓN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -58,14 +59,16 @@
                                 <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Y-0C-pFS">
-                                <rect key="frame" x="115.66666666666669" y="573" width="183" height="30"/>
+                                <rect key="frame" x="110.66666666666669" y="572" width="193" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="He olvidado mi contraseña"/>
                                 <connections>
                                     <action selector="recoverPWButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FC4-s1-Azh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H2-vU-gDy">
-                                <rect key="frame" x="125.66666666666669" y="533" width="163" height="30"/>
+                                <rect key="frame" x="121" y="532" width="172" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Crear una cuenta nueva"/>
                                 <connections>
                                     <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJ9-U9-QoU"/>
@@ -107,25 +110,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-HA-4RM">
-                                <rect key="frame" x="11" y="57" width="132" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il0-O2-sN1">
+                                <rect key="frame" x="57" y="117.66666666666669" width="300" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="132" id="oim-2n-JPD"/>
+                                    <constraint firstAttribute="width" constant="300" id="geh-uv-pkF"/>
+                                    <constraint firstAttribute="height" constant="21" id="lmD-5F-Ba4"/>
                                 </constraints>
-                                <state key="normal" title=" Atrás" image="arrow.left" catalog="system">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="routeListButton:" destination="7u5-LR-IYA" eventType="touchUpInside" id="KCO-Ik-dnS"/>
-                                    <action selector="routeListButton:" destination="JBi-sT-YkE" eventType="touchUpInside" id="tqO-Cg-jb1"/>
-                                    <action selector="settingsButton:" destination="nGI-H4-Sqm" eventType="touchUpInside" id="H2y-HJ-aXk"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pf8-HA-4RM" firstAttribute="centerX" secondItem="Ry2-KF-LyX" secondAttribute="centerX" constant="-130" id="4MI-l4-vnj"/>
-                            <constraint firstItem="pf8-HA-4RM" firstAttribute="centerY" secondItem="Ry2-KF-LyX" secondAttribute="centerY" constant="-380" id="6Ro-hV-3cv"/>
+                            <constraint firstItem="il0-O2-sN1" firstAttribute="centerY" secondItem="Ry2-KF-LyX" secondAttribute="centerY" constant="-320" id="5QQ-Nf-jMN"/>
+                            <constraint firstItem="il0-O2-sN1" firstAttribute="centerX" secondItem="Ry2-KF-LyX" secondAttribute="centerX" id="vS9-DF-nm1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ooq-fI-i14"/>
                     </view>
@@ -133,6 +132,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy7-tE-drO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2361" y="746"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="9Nc-hQ-4wi">
+            <objects>
+                <viewController storyboardIdentifier="infoVC" id="kpK-3f-CoJ" customClass="infoViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8uT-Ie-zVm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuK-Z4-PlH">
+                                <rect key="frame" x="57" y="117.66666666666669" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Kiz-eg-sRe"/>
+                                    <constraint firstAttribute="height" constant="21" id="P9o-ri-ef3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fuK-Z4-PlH" firstAttribute="centerX" secondItem="8uT-Ie-zVm" secondAttribute="centerX" id="U5z-fN-gy2"/>
+                            <constraint firstItem="fuK-Z4-PlH" firstAttribute="centerY" secondItem="8uT-Ie-zVm" secondAttribute="centerY" constant="-320" id="hvh-8i-OoP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dSQ-v5-69h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FF5-jO-2rF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3496" y="746"/>
         </scene>
         <!--RecoverPW View Controller-->
         <scene sceneID="NoE-hf-yFd">
@@ -168,6 +198,7 @@
                                     <constraint firstAttribute="height" constant="65" id="1nK-Lo-7Tz"/>
                                     <constraint firstAttribute="width" constant="350" id="cqU-2Y-CfX"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="ENVIAR CORREO ">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -188,7 +219,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="hQE-27-Eo0" eventType="touchUpInside" id="Eye-Zw-NVh"/>
-                                    <action selector="loginButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="WCW-oe-USb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -228,12 +258,18 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="person.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="profileButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="jcr-4V-TKj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apO-s0-3df">
                                 <rect key="frame" x="356.66666666666669" y="787" width="21" height="22"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="book.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="infoButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="kMw-n8-GLZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-tn-haj">
                                 <rect key="frame" x="379" y="90.666666666666671" width="35" height="35"/>
@@ -291,26 +327,26 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcu-TC-nBj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kz-uz-0Vb">
                                 <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="044-Gz-6CS"/>
-                                    <constraint firstAttribute="width" constant="350" id="YbX-cg-uLF"/>
+                                    <constraint firstAttribute="height" constant="65" id="EbW-8Y-AWb"/>
+                                    <constraint firstAttribute="width" constant="350" id="pfm-YS-hRm"/>
                                 </constraints>
-                                <state key="normal" title="CAMBIAR TIPO DE MAPA">
+                                <state key="normal" title="ABANDONAR RUTA">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeMapTypeButton:" destination="den-20-hey" eventType="touchUpInside" id="Z9f-FT-Y2n"/>
+                                    <action selector="routeListButton:" destination="den-20-hey" eventType="touchUpInside" id="7z7-yw-ANk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="2kz-uz-0Vb" firstAttribute="centerX" secondItem="RK7-z9-kHg" secondAttribute="centerX" id="2wE-H5-vi6"/>
+                            <constraint firstItem="2kz-uz-0Vb" firstAttribute="centerY" secondItem="RK7-z9-kHg" secondAttribute="centerY" id="8nP-8I-rts"/>
                             <constraint firstItem="j3K-pb-6oq" firstAttribute="centerX" secondItem="RK7-z9-kHg" secondAttribute="centerX" id="AFA-uj-cFG"/>
-                            <constraint firstItem="Tcu-TC-nBj" firstAttribute="centerX" secondItem="RK7-z9-kHg" secondAttribute="centerX" id="E11-gM-EOy"/>
-                            <constraint firstItem="Tcu-TC-nBj" firstAttribute="centerY" secondItem="RK7-z9-kHg" secondAttribute="centerY" id="PpM-Cn-jw5"/>
                             <constraint firstItem="j3K-pb-6oq" firstAttribute="centerY" secondItem="RK7-z9-kHg" secondAttribute="centerY" constant="-150" id="bZP-uJ-BVi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cWN-cD-qYp"/>
@@ -377,23 +413,12 @@
                                     <constraint firstAttribute="height" constant="65" id="52K-VY-tem"/>
                                     <constraint firstAttribute="width" constant="350" id="fzR-Yn-e0e"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="CREAR">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="routeListButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="KBf-nV-JzX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voq-L9-juD">
-                                <rect key="frame" x="11" y="57" width="132" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="132" id="p3E-E3-GYn"/>
-                                </constraints>
-                                <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="oI3-DN-odD"/>
+                                    <action selector="signInButton:" destination="jPO-EG-exD" eventType="touchUpInside" id="KBf-nV-JzX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -403,10 +428,8 @@
                             <constraint firstItem="gLd-Mn-jVF" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="BQx-kh-d6r"/>
                             <constraint firstItem="Gk4-7s-1qO" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="25" id="Gdp-cU-8Us"/>
                             <constraint firstItem="Gk4-7s-1qO" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="LEg-91-SFR"/>
-                            <constraint firstItem="Voq-L9-juD" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" constant="-130" id="Lfe-Ur-Ie7"/>
                             <constraint firstItem="5UT-58-4Bn" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-125" id="Lhm-lO-Rc9"/>
                             <constraint firstItem="gLd-Mn-jVF" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="125" id="Rsv-Ck-oxB"/>
-                            <constraint firstItem="Voq-L9-juD" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-380" id="Ywr-rq-vLg"/>
                             <constraint firstItem="5UT-58-4Bn" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="ZjP-0o-ba5"/>
                             <constraint firstItem="CN7-IS-w4x" firstAttribute="centerY" secondItem="M2B-F7-dZb" secondAttribute="centerY" constant="-50" id="aHw-XT-9Nb"/>
                             <constraint firstItem="CN7-IS-w4x" firstAttribute="centerX" secondItem="M2B-F7-dZb" secondAttribute="centerX" id="cBI-ll-kij"/>
@@ -443,6 +466,7 @@
                                     <constraint firstAttribute="height" constant="65" id="QsU-zG-T1c"/>
                                     <constraint firstAttribute="width" constant="350" id="wKp-b8-S9f"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="MADRID MEDIEVAL">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -457,6 +481,7 @@
                                     <constraint firstAttribute="width" constant="350" id="Ii5-KQ-IER"/>
                                     <constraint firstAttribute="height" constant="65" id="Oje-of-JIF"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="MADRID DE LA GUERRA CIVIL">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -468,6 +493,7 @@
                                     <constraint firstAttribute="height" constant="65" id="RSF-Dl-s6j"/>
                                     <constraint firstAttribute="width" constant="350" id="Uch-ma-gxa"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="MADRID DE LOS AUSTRIAS">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -562,6 +588,7 @@
                                     <constraint firstAttribute="height" constant="65" id="4tY-0u-Pvr"/>
                                     <constraint firstAttribute="width" constant="350" id="kP5-lb-6rh"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="CAMBIAR">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -575,7 +602,6 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="routeListButton:" destination="7u5-LR-IYA" eventType="touchUpInside" id="9UC-gp-uAN"/>
                                     <action selector="settingsButton:" destination="nGI-H4-Sqm" eventType="touchUpInside" id="6FW-qO-N7I"/>
                                 </connections>
                             </button>
@@ -623,6 +649,7 @@
                                     <constraint firstAttribute="width" constant="350" id="CjV-f9-f6M"/>
                                     <constraint firstAttribute="height" constant="65" id="cyl-xq-xfo"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="ACTIVAR UBICACIÓN">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -634,6 +661,7 @@
                                     <constraint firstAttribute="height" constant="65" id="EkX-ty-rE2"/>
                                     <constraint firstAttribute="width" constant="350" id="WJO-CV-JrT"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="AJUSTES DE PRIVACIDAD">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -645,6 +673,7 @@
                                     <constraint firstAttribute="width" constant="350" id="F4P-Cb-jFH"/>
                                     <constraint firstAttribute="height" constant="65" id="F7U-OM-FtO"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="CAMBIAR CONTRASEÑA">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
