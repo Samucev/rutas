@@ -10,6 +10,8 @@
 		0D13B70425C2E1DD009FA822 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D13B70325C2E1DD009FA822 /* mapViewController.swift */; };
 		0D80403C25D15E6100D42874 /* mapSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */; };
 		0D80403E25D1653B00D42874 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403D25D1653B00D42874 /* infoViewController.swift */; };
+		0D80404025D16D3E00D42874 /* madridWP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D80403F25D16D3E00D42874 /* madridWP.jpg */; };
+		0D80404225D178C100D42874 /* oso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D80404125D178C100D42874 /* oso.jpg */; };
 		0D8E644425CAD8A900D8B59F /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E644325CAD8A900D8B59F /* profileViewController.swift */; };
 		0D8E6A8625C428C500E9A583 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8525C428C500E9A583 /* registerViewController.swift */; };
 		0D8E6A8825C42A1000E9A583 /* routeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8725C42A1000E9A583 /* routeViewController.swift */; };
@@ -47,6 +49,8 @@
 		0D13B70325C2E1DD009FA822 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapSettingsViewController.swift; sourceTree = "<group>"; };
 		0D80403D25D1653B00D42874 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
+		0D80403F25D16D3E00D42874 /* madridWP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = madridWP.jpg; path = ../../Downloads/madridWP.jpg; sourceTree = "<group>"; };
+		0D80404125D178C100D42874 /* oso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oso.jpg; path = ../../Downloads/oso.jpg; sourceTree = "<group>"; };
 		0D8E644325CAD8A900D8B59F /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8525C428C500E9A583 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8725C42A1000E9A583 /* routeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routeViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		7FF80BD125B99D5900723384 /* rutas */ = {
 			isa = PBXGroup;
 			children = (
+				0D80403F25D16D3E00D42874 /* madridWP.jpg */,
+				0D80404125D178C100D42874 /* oso.jpg */,
 				7FF80BD225B99D5900723384 /* AppDelegate.swift */,
 				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
 				7FF80BD625B99D5900723384 /* ViewController.swift */,
@@ -260,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF80BDF25B99D5A00723384 /* LaunchScreen.storyboard in Resources */,
+				0D80404225D178C100D42874 /* oso.jpg in Resources */,
 				7FF80BDC25B99D5A00723384 /* Assets.xcassets in Resources */,
 				7FF80BDA25B99D5900723384 /* Main.storyboard in Resources */,
+				0D80404025D16D3E00D42874 /* madridWP.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

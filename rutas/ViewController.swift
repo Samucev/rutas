@@ -9,8 +9,6 @@
 import UIKit
 
 
-
-
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -24,6 +22,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    
+    
+    @IBOutlet weak var visualEffect: UIVisualEffectView!
     
     
     /* BOTÓN DE LOGIN */

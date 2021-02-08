@@ -15,6 +15,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oso.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r2v-Qr-Jdz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="889"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="4NU-3Q-DgN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="889" id="YpM-Ru-JUx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="bHV-ob-T0W"/>
+                                    <constraint firstAttribute="height" constant="889" id="vaU-tg-LIo"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cl2-rf-UQx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="904"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KOf-dI-S8W">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="904"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-w1-gv3">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="776"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mby-qQ-loW">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="776"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="systemUltraThinMaterialLight"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-sp-Znz">
                                 <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,13 +108,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="r2v-Qr-Jdz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0WG-SZ-coj"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="4gZ-dg-fkP"/>
+                            <constraint firstItem="r2v-Qr-Jdz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6W4-cg-5n2"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5X-CH-wEw"/>
+                            <constraint firstItem="r2v-Qr-Jdz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KMB-Su-NBV"/>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="LXj-iD-WuR"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-320" id="MMY-Gr-Fav"/>
                             <constraint firstItem="00Y-0C-pFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Phe-GB-QYK"/>
                             <constraint firstItem="00Y-0C-pFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140" id="UL4-2a-t0P"/>
+                            <constraint firstAttribute="bottom" secondItem="r2v-Qr-Jdz" secondAttribute="bottom" constant="7" id="cfJ-1K-LKz"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezv-qt-Bvd"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="hT9-Kz-mMr"/>
@@ -96,11 +131,12 @@
                     <connections>
                         <outlet property="emailTextField" destination="2Vx-FG-Srp" id="pcK-KL-cxp"/>
                         <outlet property="passwordTextField" destination="a6i-MC-P2l" id="4On-cA-u33"/>
+                        <outlet property="visualEffect" destination="Cl2-rf-UQx" id="pGU-Oh-Rml"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572" y="13"/>
+            <point key="canvasLocation" x="-572.46376811594212" y="12.723214285714285"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Kjb-DA-1kv">
@@ -151,11 +187,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="08a-KH-nzz">
+                                <rect key="frame" x="0.0" y="138.66666666666669" width="414" height="723.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="dSQ-v5-69h" firstAttribute="trailing" secondItem="08a-KH-nzz" secondAttribute="trailing" id="RbO-zT-pAW"/>
                             <constraint firstItem="fuK-Z4-PlH" firstAttribute="centerX" secondItem="8uT-Ie-zVm" secondAttribute="centerX" id="U5z-fN-gy2"/>
+                            <constraint firstItem="08a-KH-nzz" firstAttribute="top" secondItem="fuK-Z4-PlH" secondAttribute="bottom" id="XPK-Fp-GuW"/>
+                            <constraint firstItem="08a-KH-nzz" firstAttribute="leading" secondItem="dSQ-v5-69h" secondAttribute="leading" id="bjM-Nm-0J2"/>
                             <constraint firstItem="fuK-Z4-PlH" firstAttribute="centerY" secondItem="8uT-Ie-zVm" secondAttribute="centerY" constant="-320" id="hvh-8i-OoP"/>
+                            <constraint firstItem="dSQ-v5-69h" firstAttribute="bottom" secondItem="08a-KH-nzz" secondAttribute="bottom" id="jhE-ui-e0j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dSQ-v5-69h"/>
                     </view>
@@ -718,6 +762,7 @@
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="oso.jpg" width="768" height="1152"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
     </resources>
