@@ -781,10 +781,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puertaAlcala.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VxV-BO-kyt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJUSTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ln-NrM">
                                 <rect key="frame" x="156" y="133.66666666666666" width="102" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsP-6b-1Sv">
@@ -831,25 +834,55 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="132" id="gKn-rO-r2P"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" Atrás" image="arrow.left" catalog="system">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="routeListButton:" destination="7u5-LR-IYA" eventType="touchUpInside" id="451-yq-ej3"/>
                                 </connections>
                             </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjU-PB-Z92">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v5U-JV-9hB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Lr-RP-KRI">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XRU-Uz-38Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="jpV-lh-cN9" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="150" id="12W-fS-AXa"/>
+                            <constraint firstItem="OjU-PB-Z92" firstAttribute="leading" secondItem="yP8-bm-A1k" secondAttribute="leading" id="1Ys-ZB-ooO"/>
+                            <constraint firstItem="VxV-BO-kyt" firstAttribute="trailing" secondItem="yP8-bm-A1k" secondAttribute="trailing" id="28C-1A-I9U"/>
                             <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="2V9-Zh-FZO"/>
                             <constraint firstItem="vsP-6b-1Sv" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-150" id="64c-EE-YKM"/>
+                            <constraint firstItem="VxV-BO-kyt" firstAttribute="top" secondItem="dkN-4t-Vim" secondAttribute="top" id="67v-nE-y8v"/>
+                            <constraint firstItem="VxV-BO-kyt" firstAttribute="leading" secondItem="yP8-bm-A1k" secondAttribute="leading" id="9l8-lA-r4Y"/>
                             <constraint firstItem="jpV-lh-cN9" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="ICI-UB-aeI"/>
                             <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-300" id="IcC-eA-CtQ"/>
+                            <constraint firstItem="OjU-PB-Z92" firstAttribute="top" secondItem="dkN-4t-Vim" secondAttribute="top" id="KP0-yW-6Pz"/>
+                            <constraint firstItem="OjU-PB-Z92" firstAttribute="trailing" secondItem="yP8-bm-A1k" secondAttribute="trailing" id="MO5-Fi-We2"/>
                             <constraint firstItem="v2V-rm-2s1" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-380" id="Oze-3Z-AGy"/>
                             <constraint firstItem="sPH-KI-tOk" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" id="XoJ-h3-I17"/>
+                            <constraint firstAttribute="bottom" secondItem="VxV-BO-kyt" secondAttribute="bottom" id="aaq-sQ-oqe"/>
                             <constraint firstItem="sPH-KI-tOk" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="dFu-BS-OKp"/>
                             <constraint firstItem="vsP-6b-1Sv" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="eiK-WP-8ax"/>
+                            <constraint firstAttribute="bottom" secondItem="OjU-PB-Z92" secondAttribute="bottom" id="t1H-LH-Fx6"/>
                             <constraint firstItem="v2V-rm-2s1" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" constant="-130" id="vTO-az-28W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yP8-bm-A1k"/>
@@ -857,7 +890,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHZ-jz-Lcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572" y="746"/>
+            <point key="canvasLocation" x="-572.46376811594212" y="745.98214285714278"/>
         </scene>
     </scenes>
     <resources>
@@ -868,6 +901,7 @@
         <image name="nepetuno.jpg" width="892.5" height="1184.25"/>
         <image name="oso.jpg" width="768" height="1152"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="puertaAlcala.jpg" width="1600" height="1200"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
     </resources>
 </document>
