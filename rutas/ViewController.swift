@@ -11,11 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-                              
-    }
+    
     
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -25,6 +21,20 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var visualEffect: UIVisualEffectView!
+    
+    
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        loginButton.layer.cornerRadius = 30
+                                      
+    }
+    
     
     
     /* BOTÓN DE LOGIN */

@@ -10,9 +10,15 @@ import UIKit
 
 class registerViewController: UIViewController {
 
+    @IBOutlet weak var signInButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        signInButton.layer.cornerRadius = 30
+        
     }
     
     /* BOTÓN PARA VOLVER A LA PANTALLA DE LOGIN */

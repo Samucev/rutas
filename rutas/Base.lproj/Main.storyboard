@@ -132,6 +132,7 @@
                     <navigationItem key="navigationItem" id="N6R-Ff-gZd"/>
                     <connections>
                         <outlet property="emailTextField" destination="2Vx-FG-Srp" id="pcK-KL-cxp"/>
+                        <outlet property="loginButton" destination="awl-sp-Znz" id="FQL-ua-41i"/>
                         <outlet property="passwordTextField" destination="a6i-MC-P2l" id="4On-cA-u33"/>
                         <outlet property="visualEffect" destination="Cl2-rf-UQx" id="pGU-Oh-Rml"/>
                     </connections>
@@ -431,7 +432,7 @@
                                     <action selector="routeListButton:" destination="den-20-hey" eventType="touchUpInside" id="7z7-yw-ANk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuerda activar la ubicación del dispositivo parautilizar la aplicación." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nl-OP-Zhs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuerda activar la ubicación del dispositivo para utilizar la aplicación." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nl-OP-Zhs">
                                 <rect key="frame" x="7" y="278" width="400" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="S9w-sw-qCz"/>
@@ -584,6 +585,9 @@
                         <viewLayoutGuide key="safeArea" id="jHK-Po-Idg"/>
                     </view>
                     <navigationItem key="navigationItem" id="93m-bh-yUs"/>
+                    <connections>
+                        <outlet property="signInButton" destination="gLd-Mn-jVF" id="3Ka-eG-tEj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fk7-EV-ZRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
