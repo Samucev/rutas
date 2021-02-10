@@ -41,5 +41,30 @@ class settingsViewController: UIViewController {
         
     }
     
+    
+    
+    @IBAction func signOutButton(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Cerrar sesión", message: "¿Estás seguro de que quieres cerrar sesión?", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Cerrar Sesión", style: .default, handler: { action in
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyboard.instantiateViewController(identifier: "VC") as! ViewController
+                    
+            vc.modalPresentationStyle = .overFullScreen
+            
+            self.present(vc, animated: true)
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
+        
+        
+        
+    }
+    
 
 }
