@@ -9,10 +9,21 @@
 import UIKit
 
 class routeViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var profileButton: UIButton!
+    
+    
+    @IBOutlet weak var settingsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        profileButton.layer.cornerRadius = 30
+        
+        settingsButton.layer.cornerRadius = 30
+        
     }
 
     

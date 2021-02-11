@@ -8,7 +8,17 @@ import MapKit
 import CoreLocation
 
 class mapViewController: UIViewController, MKMapViewDelegate {
-
+    
+    // BOTONES DEL MAPA (Esquinas redondeadas)
+    
+    
+    @IBOutlet weak var settingsButton: UIButton!
+    
+    @IBOutlet weak var profileButton: UIButton!
+    
+    @IBOutlet weak var infoButton: UIButton!
+    
+    
     @IBOutlet weak var mapa: MKMapView!
     let locationManager = CLLocationManager()
         let regionInMeters: Double = 100000
@@ -38,6 +48,15 @@ class mapViewController: UIViewController, MKMapViewDelegate {
             
                     
             self.mapa.delegate = self
+            
+            
+            settingsButton.layer.cornerRadius = 25
+            
+            profileButton.layer.cornerRadius = 25
+            
+            infoButton.layer.cornerRadius = 25
+            
+            
                 
                 
             
