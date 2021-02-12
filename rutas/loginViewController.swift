@@ -9,20 +9,14 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class loginViewController: UIViewController {
     
     
     
     @IBOutlet weak var emailTextField: UITextField!
-    
-    
     @IBOutlet weak var passwordTextField: UITextField!
     
-    
-    
     @IBOutlet weak var visualEffect: UIVisualEffectView!
-    
-    
     
     @IBOutlet weak var loginButton: UIButton!
     
@@ -42,13 +36,32 @@ class ViewController: UIViewController {
     
     @IBAction func routeListButton(_ sender: Any) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let pass = passwordTextField.text!
+        let email = emailTextField.text!
         
-        let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+        let user = User(name: "", email: email, password: pass)
+        
+        let postRequest = APIManager(endpoint: "users/login")
+
+        postRequest.login(user, completion: {result in
+            switch result{
+            case .success(let user):
                 
-        vc.modalPresentationStyle = .overFullScreen
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+                        
+                vc.modalPresentationStyle = .overFullScreen
+                
+                self.present(vc, animated: true)
+                
+                print("El siguiente usuario ha inciado sesión:\(user.email) ")
+            case .failure(let error):
+                print("Ha ocurrido un error \(error)")
+            }
+        })
         
-        present(vc, animated: true)
+
         
     }
     

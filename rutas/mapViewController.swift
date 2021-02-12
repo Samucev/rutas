@@ -35,7 +35,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
                     let sourceLocation = CLLocationCoordinate2D(latitude: 40.4167, longitude: -3.70325)
                     let destinationLocation = CLLocationCoordinate2D(latitude: 40.4207500 , longitude: -3.7517500)
                     let coordenadasCirculo = CLLocationCoordinate2D(latitude: 40.4167, longitude: -3.70325)
-                    let radio = CLLocationDistance(1000)
+                    let radio = CLLocationDistance(50)
             
                 
             

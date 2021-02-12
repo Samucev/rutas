@@ -12,7 +12,12 @@ class registerViewController: UIViewController {
 
     @IBOutlet weak var signInButton: UIButton!
     
-    
+
+    @IBOutlet weak var userField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var confirmPassField: UITextField!
+    @IBOutlet weak var passField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,13 +30,44 @@ class registerViewController: UIViewController {
     
     @IBAction func signInButton(_ sender: Any) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
         
-        let vc = storyboard.instantiateViewController(identifier: "VC") as! ViewController
-                
-        vc.modalPresentationStyle = .overFullScreen
+        if passField.text! != confirmPassField.text! {
+            print("contraseñas incorrectas")
+            return
+        }else{
+            
+            let userText = userField.text!
+            let emailText = emailField.text!
+            let passText = passField.text!
+            
+        //let user = User(email: emailText, name: userText, password: passText)
         
-        present(vc, animated: true)
+        let user = User(name: userText, email: emailText, password: passText)
+        
+        //let postRequest = APIManager(endpoint: "api/register")
+        let postRequest = APIManager(endpoint: "users/create")
+            
+            //let postRequest = APIRequest(endpoint: "users/create")
+            
+        postRequest.register(user, completion: {result in
+                switch result{
+                case .success(let user):
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
+                    vc.modalPresentationStyle = .overFullScreen
+                    self.present(vc, animated: true)
+                    
+                    print("El siguiente usuario ha sido creado:\(user.email) ")
+                case .failure(let error):
+                    
+                    print("Ha ocurrido un error \(error)")
+
+                }
+            })
+            
+        }
         
     }
     

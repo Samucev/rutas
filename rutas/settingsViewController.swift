@@ -51,7 +51,7 @@ class settingsViewController: UIViewController {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let vc = storyboard.instantiateViewController(identifier: "VC") as! ViewController
+            let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
                     
             vc.modalPresentationStyle = .overFullScreen
             
