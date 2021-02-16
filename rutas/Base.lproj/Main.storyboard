@@ -160,12 +160,8 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il0-O2-sN1">
-                                <rect key="frame" x="57" y="117.66666666666669" width="300" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="geh-uv-pkF"/>
-                                    <constraint firstAttribute="height" constant="21" id="lmD-5F-Ba4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="171.66666666666666" y="113.66666666666667" width="71" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -200,7 +196,7 @@
                                     <constraint firstAttribute="width" constant="300" id="Kiz-eg-sRe"/>
                                     <constraint firstAttribute="height" constant="21" id="P9o-ri-ef3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -255,12 +251,8 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECUPERAR CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtF-zQ-YIu">
-                                <rect key="frame" x="57" y="117.66666666666669" width="300" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Beq-xE-ZmX"/>
-                                    <constraint firstAttribute="height" constant="21" id="sCU-Yr-UbG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="59" y="113.66666666666667" width="296.33333333333331" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -270,7 +262,7 @@
                                     <constraint firstAttribute="width" constant="350" id="RKN-qY-H6o"/>
                                     <constraint firstAttribute="height" constant="50" id="wTn-zg-T4S"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmY-de-46N">
@@ -280,14 +272,14 @@
                                     <constraint firstAttribute="height" constant="65" id="1nK-Lo-7Tz"/>
                                     <constraint firstAttribute="width" constant="350" id="cqU-2Y-CfX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                 <state key="normal" title="ENVIAR CORREO ">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibirás tu contraseña temporal en tu correo electrónico." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-r7-JBX">
-                                <rect key="frame" x="19.333333333333343" y="589.66666666666663" width="375.33333333333326" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="32" y="589.66666666666663" width="350" height="16.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -296,6 +288,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="132" id="1fJ-lZ-Hxl"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system"/>
                                 <connections>
@@ -440,6 +433,7 @@
                                     <constraint firstAttribute="height" constant="65" id="EbW-8Y-AWb"/>
                                     <constraint firstAttribute="width" constant="350" id="pfm-YS-hRm"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                 <state key="normal" title="ABANDONAR RUTA">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -447,13 +441,13 @@
                                     <action selector="routeListButton:" destination="den-20-hey" eventType="touchUpInside" id="7z7-yw-ANk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuerda activar la ubicación del dispositivo para utilizar la aplicación." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nl-OP-Zhs">
-                                <rect key="frame" x="7" y="278" width="400" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuerda activar la ubicación del dispositivo para utilizar la aplicación." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nl-OP-Zhs">
+                                <rect key="frame" x="7" y="270.66666666666669" width="400" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="S9w-sw-qCz"/>
+                                    <constraint firstAttribute="height" constant="55" id="I2a-7B-s0o"/>
                                     <constraint firstAttribute="width" constant="400" id="qpM-55-3GY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -506,8 +500,8 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR UNA CUENTA NUEVA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-PI-Dr6">
-                                <rect key="frame" x="52" y="133.66666666666666" width="310.33333333333331" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="47.333333333333343" y="134" width="319.33333333333326" height="28"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -517,7 +511,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Hrj-vd-rvv"/>
                                     <constraint firstAttribute="width" constant="350" id="S0m-u4-itL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-MAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5UT-58-4Bn">
@@ -526,7 +520,7 @@
                                     <constraint firstAttribute="height" constant="50" id="T0D-Px-HXH"/>
                                     <constraint firstAttribute="width" constant="350" id="cpB-CE-lwb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CN7-IS-w4x">
@@ -535,7 +529,7 @@
                                     <constraint firstAttribute="height" constant="50" id="GE4-fj-U5E"/>
                                     <constraint firstAttribute="width" constant="350" id="gFA-CI-d0i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONFIRMAR CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gk4-7s-1qO">
@@ -544,7 +538,7 @@
                                     <constraint firstAttribute="width" constant="350" id="EaQ-Hs-Tik"/>
                                     <constraint firstAttribute="height" constant="50" id="oac-0B-KBM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLd-Mn-jVF">
@@ -554,7 +548,7 @@
                                     <constraint firstAttribute="height" constant="65" id="52K-VY-tem"/>
                                     <constraint firstAttribute="width" constant="350" id="fzR-Yn-e0e"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                 <state key="normal" title="CREAR">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -627,8 +621,8 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESCOGE TU RUTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-oe-iOR">
-                                <rect key="frame" x="109.66666666666669" y="133.66666666666666" width="195" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="109.33333333333333" y="133.66666666666666" width="195.33333333333337" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -639,7 +633,7 @@
                                     <constraint firstAttribute="height" constant="65" id="QsU-zG-T1c"/>
                                     <constraint firstAttribute="width" constant="350" id="wKp-b8-S9f"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <state key="normal" title="MADRID OCULTO">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -654,6 +648,7 @@
                                     <constraint firstAttribute="width" constant="350" id="Ii5-KQ-IER"/>
                                     <constraint firstAttribute="height" constant="65" id="Oje-of-JIF"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" MADRID DE LA GUERRA CIVIL" image="lock.fill" catalog="system">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -666,6 +661,7 @@
                                     <constraint firstAttribute="height" constant="65" id="RSF-Dl-s6j"/>
                                     <constraint firstAttribute="width" constant="350" id="Uch-ma-gxa"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" MADRID DE LOS AUSTRIAS" image="lock.fill" catalog="system">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -759,8 +755,8 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMBIAR CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzV-Ig-JEN">
-                                <rect key="frame" x="74" y="133.66666666666666" width="266" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="73" y="133.66666666666666" width="268.33333333333331" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -770,7 +766,7 @@
                                     <constraint firstAttribute="width" constant="350" id="bpf-P3-w7d"/>
                                     <constraint firstAttribute="height" constant="50" id="kBi-Uz-Vjs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NUEVA CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R45-1S-yp5">
@@ -779,7 +775,7 @@
                                     <constraint firstAttribute="height" constant="50" id="3Tb-ru-lFf"/>
                                     <constraint firstAttribute="width" constant="350" id="eRC-fm-qme"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONFIRMAR CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-Rw-EAC">
@@ -788,7 +784,7 @@
                                     <constraint firstAttribute="height" constant="50" id="FJ3-Qs-G1w"/>
                                     <constraint firstAttribute="width" constant="350" id="h7f-5y-kTn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g7-Sh-DSj">
@@ -798,7 +794,7 @@
                                     <constraint firstAttribute="height" constant="65" id="4tY-0u-Pvr"/>
                                     <constraint firstAttribute="width" constant="350" id="kP5-lb-6rh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                 <state key="normal" title="CAMBIAR">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -811,6 +807,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="132" id="Ugl-sA-RIS"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" Atrás" image="arrow.left" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -859,9 +856,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puertaAlcala.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VxV-BO-kyt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-zk-8f6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="M4D-gJ-anW">
@@ -890,7 +884,7 @@
                                     <constraint firstAttribute="height" constant="65" id="AA0-oK-DVQ"/>
                                     <constraint firstAttribute="width" constant="350" id="LQP-Ht-1Os"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                 <state key="normal" title="CERRAR SESIÓN">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -899,8 +893,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJUSTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ln-NrM">
-                                <rect key="frame" x="156" y="133.66666666666666" width="102" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="159.66666666666666" y="133" width="94.666666666666657" height="30"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -911,7 +905,7 @@
                                     <constraint firstAttribute="height" constant="65" id="EkX-ty-rE2"/>
                                     <constraint firstAttribute="width" constant="350" id="WJO-CV-JrT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                 <state key="normal" title="AJUSTES DE PRIVACIDAD">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -923,7 +917,7 @@
                                     <constraint firstAttribute="width" constant="350" id="F4P-Cb-jFH"/>
                                     <constraint firstAttribute="height" constant="65" id="F7U-OM-FtO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                 <state key="normal" title="CAMBIAR CONTRASEÑA">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
@@ -936,6 +930,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="132" id="gKn-rO-r2P"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" Atrás" image="arrow.left" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -947,16 +942,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="VxV-BO-kyt" firstAttribute="trailing" secondItem="yP8-bm-A1k" secondAttribute="trailing" id="28C-1A-I9U"/>
                             <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="2V9-Zh-FZO"/>
-                            <constraint firstItem="VxV-BO-kyt" firstAttribute="top" secondItem="dkN-4t-Vim" secondAttribute="top" id="67v-nE-y8v"/>
                             <constraint firstItem="sPH-KI-tOk" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-150" id="73s-FQ-Efy"/>
-                            <constraint firstItem="VxV-BO-kyt" firstAttribute="leading" secondItem="yP8-bm-A1k" secondAttribute="leading" id="9l8-lA-r4Y"/>
                             <constraint firstItem="Dbe-Ke-hFh" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="150" id="9yi-6N-AaU"/>
                             <constraint firstItem="jpV-lh-cN9" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="ICI-UB-aeI"/>
                             <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-300" id="IcC-eA-CtQ"/>
                             <constraint firstItem="v2V-rm-2s1" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-380" id="Oze-3Z-AGy"/>
-                            <constraint firstAttribute="bottom" secondItem="VxV-BO-kyt" secondAttribute="bottom" id="aaq-sQ-oqe"/>
                             <constraint firstItem="sPH-KI-tOk" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="dFu-BS-OKp"/>
                             <constraint firstItem="jpV-lh-cN9" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" id="eC1-as-7S2"/>
                             <constraint firstItem="Cky-zk-8f6" firstAttribute="leading" secondItem="yP8-bm-A1k" secondAttribute="leading" id="fgS-3V-5fX"/>
@@ -979,7 +970,6 @@
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="puertaAlcala.jpg" width="1600" height="1200"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
     </resources>
 </document>
