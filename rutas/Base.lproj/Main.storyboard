@@ -803,7 +803,7 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NUEVA CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R45-1S-yp5">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONTRASEÑA ACTUAL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R45-1S-yp5">
                                 <rect key="frame" x="32" y="298" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3Tb-ru-lFf"/>
@@ -812,7 +812,7 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONFIRMAR CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-Rw-EAC">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NUEVA CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-Rw-EAC">
                                 <rect key="frame" x="32" y="373" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FJ3-Qs-G1w"/>
@@ -873,9 +873,9 @@
                         <viewLayoutGuide key="safeArea" id="lBW-TT-vfc"/>
                     </view>
                     <connections>
-                        <outlet property="confirmPassField" destination="Vfz-Rw-EAC" id="Vzd-jV-vLB"/>
+                        <outlet property="currentPassField" destination="R45-1S-yp5" id="OMx-oy-TSO"/>
                         <outlet property="emailField" destination="Et8-Zv-bqw" id="8vn-nK-RyM"/>
-                        <outlet property="passField" destination="R45-1S-yp5" id="eMe-JQ-Lol"/>
+                        <outlet property="passField" destination="Vfz-Rw-EAC" id="hYq-0o-rvD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2e-Ej-aM7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

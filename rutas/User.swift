@@ -18,11 +18,13 @@ struct User: Encodable{
     let name: String
     let email: String
     let password: String
+    let currentPassword: String
     
-    init(name: String, email: String, password: String) {
+    init(name: String, email: String, password: String, currentPassword: String) {
         self.name = name
         self.email = email
         self.password = password
+        self.currentPassword = currentPassword
     }
     
     func getDictRegister() -> [String:String] {
@@ -38,7 +40,7 @@ struct User: Encodable{
     }
     
     func getDictChangePass() -> [String:String] {
-        return ["email":email, "newPassword": password]
+        return ["email":email, "newPassword": password, "currentPassword": currentPassword]
     }
     
     func getDictToken()->[String:String]{

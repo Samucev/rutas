@@ -39,7 +39,7 @@ class loginViewController: UIViewController {
         let pass = passwordTextField.text!
         let email = emailTextField.text!
         
-        let user = User(name: "", email: email, password: pass)
+        let user = User(name: "", email: email, password: pass, currentPassword: "")
         
         let postRequest = APIManager(endpoint: "users/login")
 
