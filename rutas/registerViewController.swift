@@ -43,7 +43,7 @@ class registerViewController: UIViewController {
             
         //let user = User(email: emailText, name: userText, password: passText)
         
-        let user = User(name: userText, email: emailText, password: passText)
+            let user = User(name: userText, email: emailText, password: passText, currentPassword: "")
         
         //let postRequest = APIManager(endpoint: "api/register")
         let postRequest = APIManager(endpoint: "users/create")
