@@ -15,27 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cl2-rf-UQx">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oso.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z0A-2T-Lrz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KOf-dI-S8W">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rf-T8-eZb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pPO-HF-ml7">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-w1-gv3">
-                                            <rect key="frame" x="0.0" y="0.0" width="528" height="896"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mby-qQ-loW">
-                                                <rect key="frame" x="0.0" y="0.0" width="528" height="896"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </view>
-                                            <vibrancyEffect>
-                                                <blurEffect style="regular"/>
-                                            </vibrancyEffect>
-                                        </visualEffectView>
-                                    </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-sp-Znz">
                                 <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
@@ -109,12 +99,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="4gZ-dg-fkP"/>
+                            <constraint firstItem="6Rf-T8-eZb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="66U-sY-VTb"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5X-CH-wEw"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kam-DL-mKn"/>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="LXj-iD-WuR"/>
                             <constraint firstItem="00Y-0C-pFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Phe-GB-QYK"/>
+                            <constraint firstAttribute="bottom" secondItem="6Rf-T8-eZb" secondAttribute="bottom" id="Qnz-SR-TNX"/>
                             <constraint firstItem="00Y-0C-pFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140" id="UL4-2a-t0P"/>
+                            <constraint firstItem="6Rf-T8-eZb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XBu-NB-H6K"/>
+                            <constraint firstItem="6Rf-T8-eZb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bcY-Hw-lKc"/>
                             <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezv-qt-Bvd"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="hT9-Kz-mMr"/>
@@ -129,12 +123,11 @@
                         <outlet property="emailTextField" destination="2Vx-FG-Srp" id="pcK-KL-cxp"/>
                         <outlet property="loginButton" destination="awl-sp-Znz" id="FQL-ua-41i"/>
                         <outlet property="passwordTextField" destination="a6i-MC-P2l" id="4On-cA-u33"/>
-                        <outlet property="visualEffect" destination="Cl2-rf-UQx" id="pGU-Oh-Rml"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572.65625" y="12.3046875"/>
+            <point key="canvasLocation" x="-573.91304347826087" y="12.053571428571429"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Kjb-DA-1kv">
@@ -144,6 +137,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puertaAlcala.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r1Y-Qw-zXp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-IA-1fm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b1l-3L-8RX">
@@ -163,7 +160,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il0-O2-sN1">
                                 <rect key="frame" x="7" y="113.66666666666669" width="400" height="29"/>
@@ -239,6 +236,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="debod.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DwO-oK-aTe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAt-VF-9mr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="c3d-eb-sDF">
@@ -258,7 +259,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECUPERAR CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtF-zQ-YIu">
                                 <rect key="frame" x="7" y="113.66666666666669" width="400" height="29"/>
@@ -425,6 +426,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="casaCorreos.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="k7I-tm-BjG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g76-HO-yEK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9QY-CA-Pbn">
@@ -444,7 +449,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kz-uz-0Vb">
                                 <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
@@ -498,6 +503,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="casaCorreos.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="owE-m5-JVA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2g-gW-DTO">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OE6-Gs-7MZ">
@@ -517,7 +526,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR UNA CUENTA NUEVA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-PI-Dr6">
                                 <rect key="frame" x="7" y="134" width="400" height="28"/>
@@ -622,6 +631,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nepetuno.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DjJ-iX-9ju">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHJ-eW-OjB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LLM-fa-WdW">
@@ -641,7 +654,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESCOGE TU RUTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-oe-iOR">
                                 <rect key="frame" x="57" y="133.66666666666666" width="300" height="29"/>
@@ -763,6 +776,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yIJ-1t-Tqq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-hQ-VBI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Q9-n0-2tx">
@@ -782,7 +799,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMBIAR CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzV-Ig-JEN">
                                 <rect key="frame" x="7" y="133.66666666666666" width="400" height="29"/>
@@ -890,6 +907,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plasaMaior.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y2T-IC-Jvh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-zk-8f6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="M4D-gJ-anW">
@@ -909,7 +930,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="dark"/>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbe-Ke-hFh">
                                 <rect key="frame" x="32" y="565.66666666666663" width="350" height="65"/>
@@ -1006,8 +1027,15 @@
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="casaCorreos.jpg" width="720" height="960"/>
+        <image name="colon.jpg" width="576" height="768"/>
+        <image name="debod.jpg" width="666" height="382"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
+        <image name="nepetuno.jpg" width="892.5" height="1184.25"/>
+        <image name="oso.jpg" width="768" height="1152"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plasaMaior.jpg" width="1350" height="913"/>
+        <image name="puertaAlcala.jpg" width="1600" height="1200"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
     </resources>
 </document>
