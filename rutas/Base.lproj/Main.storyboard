@@ -379,6 +379,21 @@
                                     <action selector="mapSettingsButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="dTj-r1-htz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-ZN-hY4">
+                                <rect key="frame" x="182" y="773" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Gak-mM-BMi"/>
+                                    <constraint firstAttribute="height" constant="50" id="NjZ-iS-QZ2"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="camera.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="13n-ZG-Qj2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -389,13 +404,16 @@
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="bottom" secondItem="wQ6-5c-j0i" secondAttribute="bottom" id="LdV-I7-Mvp"/>
                             <constraint firstItem="UFL-tn-haj" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="Lz9-NV-D9t"/>
                             <constraint firstItem="apO-s0-3df" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="160" id="NSr-dp-fYX"/>
+                            <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" id="Pn3-Ou-9Wq"/>
                             <constraint firstItem="yNK-dV-zwt" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="UYB-2M-1yt"/>
+                            <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="VFy-xy-yfu"/>
                             <constraint firstItem="yNK-dV-zwt" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="enR-hA-QfU"/>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="top" secondItem="cRG-vc-xQ7" secondAttribute="top" id="giZ-b7-2VR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cRG-vc-xQ7"/>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="fmM-ZN-hY4" id="XDD-3o-hCn"/>
                         <outlet property="infoButton" destination="apO-s0-3df" id="eBT-cj-8rr"/>
                         <outlet property="mapa" destination="wQ6-5c-j0i" id="ODy-ew-3bn"/>
                         <outlet property="profileButton" destination="yNK-dV-zwt" id="58Z-im-Ss3"/>
@@ -682,7 +700,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0F-mY-Gko">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0F-mY-Gko">
                                 <rect key="frame" x="27" y="768" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -995,6 +1013,7 @@
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
