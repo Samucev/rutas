@@ -22,7 +22,34 @@ class registerViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        signInButton.layer.cornerRadius = 30
+        signInButton.layer.cornerRadius = 30 // Botón redondeado
+        
+    }
+    
+    // Animación del botón.
+    
+    func buttonAnimation(sender:UIButton) {
+        
+        print("Botón animado.")
+        self.animatedView(sender)
+        
+    }
+    
+    func animatedView(_ viewToAnimate:UIView) {
+        
+        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
+            
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
+            
+        }) { (_) in
+            
+            UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+                
+                viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
+                
+            }, completion: nil)
+            
+        }
         
     }
     
@@ -30,7 +57,7 @@ class registerViewController: UIViewController {
     
     @IBAction func signInButton(_ sender: Any) {
         
-
+        /*// API.
         
         if passField.text! != confirmPassField.text! {
             print("contraseñas incorrectas")
@@ -54,6 +81,8 @@ class registerViewController: UIViewController {
                 switch result{
                 case .success(let user):
                     
+                    // Navegación de pantalla.
+                    
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
                     vc.modalPresentationStyle = .overFullScreen
@@ -67,7 +96,11 @@ class registerViewController: UIViewController {
                 }
             })
             
-        }
+        }*/
+        
+        
+        buttonAnimation(sender: signInButton)
+        
         
     }
     
