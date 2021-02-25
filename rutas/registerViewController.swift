@@ -37,13 +37,15 @@ class registerViewController: UIViewController {
     
     func animatedView(_ viewToAnimate:UIView) {
         
-        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.1, animations: {
             
-            viewToAnimate.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)
             
         }) { (_) in
             
-            UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            
+            
+            UIView.animate(withDuration: 0.1, animations: {
                 
                 viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
                 
@@ -56,6 +58,8 @@ class registerViewController: UIViewController {
     /* BOTÓN PARA VOLVER A LA PANTALLA DE LOGIN */
     
     @IBAction func signInButton(_ sender: Any) {
+        
+        buttonAnimation(sender: signInButton) // Animación del botón
         
         /*// API.
         
@@ -79,7 +83,7 @@ class registerViewController: UIViewController {
             
         postRequest.register(user, completion: {result in
                 switch result{
-                case .success(let user):
+                case .success(let user):*/
                     
                     // Navegación de pantalla.
                     
@@ -88,21 +92,21 @@ class registerViewController: UIViewController {
                     vc.modalPresentationStyle = .overFullScreen
                     self.present(vc, animated: true)
                     
-                    print("El siguiente usuario ha sido creado:\(user.email) ")
+                    /*print("El siguiente usuario ha sido creado:\(user.email) ")
                 case .failure(let error):
                     
                     print("Ha ocurrido un error \(error)")
 
                 }
-            })
+            })*/
             
-        }*/
+        }
         
         
-        buttonAnimation(sender: signInButton)
+        
         
         
     }
     
 
-}
+
