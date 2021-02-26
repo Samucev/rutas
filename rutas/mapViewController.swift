@@ -18,6 +18,8 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var infoButton: UIButton!
     
+    @IBOutlet weak var cameraButton: UIButton!
+    
     
     @IBOutlet weak var mapa: MKMapView!
     let locationManager = CLLocationManager()
@@ -49,6 +51,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
                     
             self.mapa.delegate = self
             
+            // Redondeo de Botones
             
             settingsButton.layer.cornerRadius = 25
             
@@ -56,13 +59,11 @@ class mapViewController: UIViewController, MKMapViewDelegate {
             
             infoButton.layer.cornerRadius = 25
             
+            cameraButton.layer.cornerRadius = 25
             
-                
-                
+    }
             
-            
-            
-        }
+     
     
     /* BOTONES DEL MAPA */
     
@@ -106,6 +107,13 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         /*vc.modalPresentationStyle = .overFullScreen*/
         
         present(vc, animated: true)
+        
+    }
+    
+    
+    @IBAction func cameraButton(_ sender: Any) {
+        
+        // Función para activar la cámara :)
         
     }
     

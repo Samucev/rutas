@@ -22,7 +22,36 @@ class registerViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        signInButton.layer.cornerRadius = 30
+        signInButton.layer.cornerRadius = 30 // Botón redondeado
+        
+    }
+    
+    // Animación del botón.
+    
+    func buttonAnimation(sender:UIButton) {
+        
+        print("Botón animado.")
+        self.animatedView(sender)
+        
+    }
+    
+    func animatedView(_ viewToAnimate:UIView) {
+        
+        UIView.animate(withDuration: 0.1, animations: {
+            
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)
+            
+        }) { (_) in
+            
+            
+            
+            UIView.animate(withDuration: 0.1, animations: {
+                
+                viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
+                
+            }, completion: nil)
+            
+        }
         
     }
     
@@ -30,7 +59,9 @@ class registerViewController: UIViewController {
     
     @IBAction func signInButton(_ sender: Any) {
         
-
+        buttonAnimation(sender: signInButton) // Animación del botón
+        
+        /*// API.
         
         if passField.text! != confirmPassField.text! {
             print("contraseñas incorrectas")
@@ -52,24 +83,30 @@ class registerViewController: UIViewController {
             
         postRequest.register(user, completion: {result in
                 switch result{
-                case .success(let user):
+                case .success(let user):*/
+                    
+                    // Navegación de pantalla.
                     
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
                     vc.modalPresentationStyle = .overFullScreen
                     self.present(vc, animated: true)
                     
-                    print("El siguiente usuario ha sido creado:\(user.email) ")
+                    /*print("El siguiente usuario ha sido creado:\(user.email) ")
                 case .failure(let error):
                     
                     print("Ha ocurrido un error \(error)")
 
                 }
-            })
+            })*/
             
         }
+        
+        
+        
+        
         
     }
     
 
-}
+
