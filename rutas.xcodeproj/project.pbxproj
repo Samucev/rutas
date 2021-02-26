@@ -16,15 +16,6 @@
 		0D8E6A8A25C42A6900E9A583 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */; };
 		0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */; };
 		0D8E6A9025C42B3100E9A583 /* recoverPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */; };
-		0DF4B00025E5295200CFD7ED /* debod.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4AFFF25E5295200CFD7ED /* debod.jpg */; };
-		0DF4B00225E5295F00CFD7ED /* madridWP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00125E5295F00CFD7ED /* madridWP.jpg */; };
-		0DF4B00425E5296500CFD7ED /* oso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00325E5296500CFD7ED /* oso.jpg */; };
-		0DF4B00625E5296B00CFD7ED /* casaCorreos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00525E5296B00CFD7ED /* casaCorreos.jpg */; };
-		0DF4B00825E5297200CFD7ED /* nepetuno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00725E5297200CFD7ED /* nepetuno.jpg */; };
-		0DF4B00A25E5298500CFD7ED /* colon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00925E5298500CFD7ED /* colon.jpg */; };
-		0DF4B00C25E5298E00CFD7ED /* puertaAlcala.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00B25E5298E00CFD7ED /* puertaAlcala.jpg */; };
-		0DF4B00E25E5299B00CFD7ED /* cibeles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00D25E5299B00CFD7ED /* cibeles.jpg */; };
-		0DF4B01025E529B500CFD7ED /* plasaMaior.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4B00F25E529B500CFD7ED /* plasaMaior.jpg */; };
 		7F38F2E025D6B3360002E75E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2DF25D6B3360002E75E /* APIManager.swift */; };
 		7F38F2E225D6B4230002E75E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2E125D6B4230002E75E /* User.swift */; };
 		7FF80BD325B99D5900723384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF80BD225B99D5900723384 /* AppDelegate.swift */; };
@@ -65,15 +56,6 @@
 		0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePWViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverPWViewController.swift; sourceTree = "<group>"; };
-		0DF4AFFF25E5295200CFD7ED /* debod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = debod.jpg; path = ../../Downloads/debod.jpg; sourceTree = "<group>"; };
-		0DF4B00125E5295F00CFD7ED /* madridWP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = madridWP.jpg; path = ../../Downloads/madridWP.jpg; sourceTree = "<group>"; };
-		0DF4B00325E5296500CFD7ED /* oso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oso.jpg; path = ../../Downloads/oso.jpg; sourceTree = "<group>"; };
-		0DF4B00525E5296B00CFD7ED /* casaCorreos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casaCorreos.jpg; path = ../../Downloads/casaCorreos.jpg; sourceTree = "<group>"; };
-		0DF4B00725E5297200CFD7ED /* nepetuno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nepetuno.jpg; path = ../../Downloads/nepetuno.jpg; sourceTree = "<group>"; };
-		0DF4B00925E5298500CFD7ED /* colon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = colon.jpg; path = ../../Downloads/colon.jpg; sourceTree = "<group>"; };
-		0DF4B00B25E5298E00CFD7ED /* puertaAlcala.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = puertaAlcala.jpg; path = ../../Downloads/puertaAlcala.jpg; sourceTree = "<group>"; };
-		0DF4B00D25E5299B00CFD7ED /* cibeles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cibeles.jpg; path = ../../Downloads/cibeles.jpg; sourceTree = "<group>"; };
-		0DF4B00F25E529B500CFD7ED /* plasaMaior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = plasaMaior.jpg; path = ../../Downloads/plasaMaior.jpg; sourceTree = "<group>"; };
 		6798D9637F3096D5C2A5DDC3 /* Pods-rutas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutas.release.xcconfig"; path = "Target Support Files/Pods-rutas/Pods-rutas.release.xcconfig"; sourceTree = "<group>"; };
 		7F38F2DF25D6B3360002E75E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7F38F2E125D6B4230002E75E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -163,15 +145,6 @@
 		7FF80BD125B99D5900723384 /* rutas */ = {
 			isa = PBXGroup;
 			children = (
-				0DF4AFFF25E5295200CFD7ED /* debod.jpg */,
-				0DF4B00125E5295F00CFD7ED /* madridWP.jpg */,
-				0DF4B00325E5296500CFD7ED /* oso.jpg */,
-				0DF4B00525E5296B00CFD7ED /* casaCorreos.jpg */,
-				0DF4B00725E5297200CFD7ED /* nepetuno.jpg */,
-				0DF4B00925E5298500CFD7ED /* colon.jpg */,
-				0DF4B00D25E5299B00CFD7ED /* cibeles.jpg */,
-				0DF4B00B25E5298E00CFD7ED /* puertaAlcala.jpg */,
-				0DF4B00F25E529B500CFD7ED /* plasaMaior.jpg */,
 				7FF80BD225B99D5900723384 /* AppDelegate.swift */,
 				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
 				7FF80BD625B99D5900723384 /* loginViewController.swift */,
@@ -318,18 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF4B00A25E5298500CFD7ED /* colon.jpg in Resources */,
-				0DF4B00625E5296B00CFD7ED /* casaCorreos.jpg in Resources */,
-				0DF4B00825E5297200CFD7ED /* nepetuno.jpg in Resources */,
 				7FF80BDF25B99D5A00723384 /* LaunchScreen.storyboard in Resources */,
 				7FF80BDC25B99D5A00723384 /* Assets.xcassets in Resources */,
-				0DF4B00225E5295F00CFD7ED /* madridWP.jpg in Resources */,
-				0DF4B01025E529B500CFD7ED /* plasaMaior.jpg in Resources */,
-				0DF4B00425E5296500CFD7ED /* oso.jpg in Resources */,
-				0DF4B00025E5295200CFD7ED /* debod.jpg in Resources */,
-				0DF4B00C25E5298E00CFD7ED /* puertaAlcala.jpg in Resources */,
 				7FF80BDA25B99D5900723384 /* Main.storyboard in Resources */,
-				0DF4B00E25E5299B00CFD7ED /* cibeles.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
