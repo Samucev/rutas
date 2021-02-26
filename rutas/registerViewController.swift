@@ -61,7 +61,7 @@ class registerViewController: UIViewController {
         
         buttonAnimation(sender: signInButton) // Animación del botón
         
-        /*// API.
+        // API.
         
         if passField.text! != confirmPassField.text! {
             print("contraseñas incorrectas")
@@ -83,7 +83,7 @@ class registerViewController: UIViewController {
             
         postRequest.register(user, completion: {result in
                 switch result{
-                case .success(let user):*/
+                case .success(let user):
                     
                     // Navegación de pantalla.
                     
@@ -92,13 +92,13 @@ class registerViewController: UIViewController {
                     vc.modalPresentationStyle = .overFullScreen
                     self.present(vc, animated: true)
                     
-                    /*print("El siguiente usuario ha sido creado:\(user.email) ")
+                    print("El siguiente usuario ha sido creado:\(user.email) ")
                 case .failure(let error):
                     
                     print("Ha ocurrido un error \(error)")
 
                 }
-            })*/
+            })
             
         }
         
@@ -110,3 +110,4 @@ class registerViewController: UIViewController {
     
 
 
+}
