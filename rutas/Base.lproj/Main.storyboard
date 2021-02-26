@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jPO-EG-exD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hy-Ko-2h0">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -328,14 +328,14 @@
             <objects>
                 <viewController storyboardIdentifier="mapVC" id="H90-WN-rKM" customClass="mapViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QzG-Bi-gQg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-5c-j0i">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-dV-zwt">
-                                <rect key="frame" x="32" y="773" width="50" height="50"/>
+                                <rect key="frame" x="32" y="746" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="X0t-dW-NKT"/>
@@ -350,7 +350,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apO-s0-3df">
-                                <rect key="frame" x="342" y="773" width="50" height="50"/>
+                                <rect key="frame" x="342" y="746" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="F7O-8e-ZZc"/>
@@ -365,7 +365,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-tn-haj">
-                                <rect key="frame" x="32" y="83" width="50" height="50"/>
+                                <rect key="frame" x="32" y="56" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="TVx-23-p7I"/>
@@ -380,7 +380,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-ZN-hY4">
-                                <rect key="frame" x="182" y="773" width="50" height="50"/>
+                                <rect key="frame" x="182" y="746" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Gak-mM-BMi"/>
@@ -391,7 +391,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                                 <connections>
-                                    <action selector="cameraButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="13n-ZG-Qj2"/>
+                                    <action selector="cameraButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="5MM-of-R8D"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -412,6 +412,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cRG-vc-xQ7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QFY-ei-gOn"/>
                     <connections>
                         <outlet property="cameraButton" destination="fmM-ZN-hY4" id="XDD-3o-hCn"/>
                         <outlet property="infoButton" destination="apO-s0-3df" id="eBT-cj-8rr"/>
@@ -496,6 +497,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwj-YB-HVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3495.652173913044" y="10.714285714285714"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="M44-xp-h9L">
+            <objects>
+                <viewController storyboardIdentifier="cameraVC" id="kMh-L8-Ehg" customClass="cameraViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NMc-Fv-tve">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f68-5n-yS8">
+                                <rect key="frame" x="87" y="609" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVr-iX-p9L">
+                                        <rect key="frame" x="74" y="49" width="46" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="H90-WN-rKM" kind="show" id="zCe-3w-zoV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oVb-ap-QoI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfp-dd-hGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4502.898550724638" y="12.723214285714285"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="AoD-Sl-wFE">
