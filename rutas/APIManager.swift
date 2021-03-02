@@ -10,6 +10,9 @@ import Foundation
 import Alamofire
 
 public var token = "TOKEN_KEY"
+public var altitude = "ALTITUDE_KEY"
+public var longitude = "LONGITUDE_KEY"
+
 
 enum MyResult<T,E:Error> {
     case succes(T)
@@ -169,10 +172,18 @@ class APIManager {
                             
                             if let array = json as? [[String: Any]] {
 
-                                let altitude = array.compactMap{ $0["altitude"] as? String}
-                                let latitude = array.compactMap{ $0["latitude"] as? String}
-                                print(altitude)
-                                print(latitude)
+                                let altitudeArray = array.compactMap{ $0["altitude"] as? String}
+                                let latitudeArray = array.compactMap{ $0["latitude"] as? String}
+
+                                
+                                
+                                UserDefaults.standard.set(altitudeArray, forKey: altitude)
+                                UserDefaults.standard.set(latitudeArray, forKey: longitude)
+                                
+                                UserDefaults.standard.synchronize()
+                                
+//                                print(altitudeArray[0])
+//                                print(latitudeArray[0])
                             }
                             
                             
@@ -182,8 +193,8 @@ class APIManager {
 //
 //                                print(tokenJSON)
 //
-////                                UserDefaults.standard.set(tokenJSON, forKey: token)
-////                                UserDefaults.standard.synchronize()
+//                               UserDefaults.standard.set(tokenJSON, forKey: token)
+//                               UserDefaults.standard.synchronize()
 //
 //                            }
                             

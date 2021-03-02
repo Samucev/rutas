@@ -77,13 +77,13 @@ class routeViewController: UIViewController {
             }
         })
         
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//
-//        let vc = storyboard.instantiateViewController(identifier: "mapVC") as! mapViewController
-//
-//        vc.modalPresentationStyle = .overFullScreen
-//
-//        present(vc, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let vc = storyboard.instantiateViewController(identifier: "mapVC") as! mapViewController
+
+        vc.modalPresentationStyle = .overFullScreen
+
+        present(vc, animated: true)
         
     }
     
