@@ -100,6 +100,8 @@ class registerViewController: UIViewController {
                 }
             })
             
+            self.dismiss(animated:true, completion: nil)
+            
         }
         
         
