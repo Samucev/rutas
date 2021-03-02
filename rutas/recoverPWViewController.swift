@@ -19,6 +19,8 @@ class recoverPWViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         
+        self.dismiss(animated:true, completion: nil)
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
@@ -26,6 +28,8 @@ class recoverPWViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         
         present(vc, animated: true)
+        
+        
         
     }
     

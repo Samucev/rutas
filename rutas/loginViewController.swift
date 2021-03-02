@@ -46,6 +46,8 @@ class loginViewController: UIViewController {
         postRequest.login(user, completion: {result in
             switch result{
             case .success(let user):
+        
+                
                 
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 
@@ -54,6 +56,8 @@ class loginViewController: UIViewController {
                 vc.modalPresentationStyle = .overFullScreen
                 
                 self.present(vc, animated: true)
+        
+                
                 
                 print("El siguiente usuario ha inciado sesión:\(user.email) ")
             case .failure(let error):
@@ -69,6 +73,8 @@ class loginViewController: UIViewController {
         
     @IBAction func registerButton(_ sender: Any) {
         
+        
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "registerVC") as! registerViewController
@@ -76,6 +82,7 @@ class loginViewController: UIViewController {
         /*vc.modalPresentationStyle = .overFullScreen*/
         
         present(vc, animated: true)
+        
         
     }
     
@@ -85,6 +92,7 @@ class loginViewController: UIViewController {
    
     @IBAction func recoverPWButton(_ sender: Any) {
         
+                
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "recoverPWCV") as! recoverPWViewController
@@ -92,6 +100,7 @@ class loginViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         
         present(vc, animated: true)
+        
         
     }
     
