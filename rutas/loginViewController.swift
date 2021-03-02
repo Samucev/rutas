@@ -36,7 +36,7 @@ class loginViewController: UIViewController {
     
     @IBAction func routeListButton(_ sender: Any) {
         
-        /*let pass = passwordTextField.text!
+        let pass = passwordTextField.text!
         let email = emailTextField.text!
         
         let user = User(name: "", email: email, password: pass, currentPassword: "")
@@ -45,7 +45,7 @@ class loginViewController: UIViewController {
 
         postRequest.login(user, completion: {result in
             switch result{
-            case .success(let user):*/
+            case .success(let user):
         
                 
                 
@@ -59,11 +59,11 @@ class loginViewController: UIViewController {
         
                 
                 
-                /*print("El siguiente usuario ha inciado sesión:\(user.email) ")
+                print("El siguiente usuario ha inciado sesión:\(user.email) ")
             case .failure(let error):
                 print("Ha ocurrido un error \(error)")
             }
-        })*/
+        })
         
 
         
