@@ -57,13 +57,33 @@ class routeViewController: UIViewController {
     
     @IBAction func mapButton(_ sender: Any) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let route = Route(name: "MadridOculto")
+                
+                //let postRequest = APIManager(endpoint: "api/register")
+        let postRequest = APIManager(endpoint: "coordinates/list")
+                    
+                    //let postRequest = APIRequest(endpoint: "users/create")
+                    
+        postRequest.getRoutes(route, completion: {result in
+            switch result{
+                case .success(let route):
+                            
+                    print("El siguiente usuario ha sido enviado:\(route.name) ")
+                            
+                case .failure(let error):
+                            
+                    print("Ha ocurrido un error \(error)")
+
+            }
+        })
         
-        let vc = storyboard.instantiateViewController(identifier: "mapVC") as! mapViewController
-        
-        vc.modalPresentationStyle = .overFullScreen
-        
-        present(vc, animated: true)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//        let vc = storyboard.instantiateViewController(identifier: "mapVC") as! mapViewController
+//
+//        vc.modalPresentationStyle = .overFullScreen
+//
+//        present(vc, animated: true)
         
     }
     

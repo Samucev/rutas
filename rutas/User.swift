@@ -54,16 +54,3 @@ struct User: Encodable{
     
     
 }
-
-
-
-//class User: Codable{
-//    public var id: Int?
-//    let user: String
-//    let pass: String
-//
-//    init(user: String, pass: String) {
-//            self.user = user
-//            self.pass = pass
-//        }
-//}

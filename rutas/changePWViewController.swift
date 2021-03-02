@@ -38,32 +38,32 @@ class changePWViewController: UIViewController {
         
         
             
-            let emailText = emailField.text!
+        let emailText = emailField.text!
         let currentPassText = currentPassField.text!
-            let passText = passField.text!
+        let passText = passField.text!
                     
                 //let user = User(email: emailText, name: userText, password: passText)
                 
-            let user = User(name: "", email: emailText, password: passText, currentPassword: currentPassText)
+        let user = User(name: "", email: emailText, password: passText, currentPassword: currentPassText)
                 
                 //let postRequest = APIManager(endpoint: "api/register")
-                let postRequest = APIManager(endpoint: "users/update")
+        let postRequest = APIManager(endpoint: "users/update")
                     
                     //let postRequest = APIRequest(endpoint: "users/create")
                     
-                postRequest.changePass(user, completion: {result in
-                        switch result{
-                        case .success(let user):
+        postRequest.changePass(user, completion: {result in
+            switch result{
+                case .success(let user):
                             
-                            print("El siguiente usuario ha sido enviado:\(user.email) ")
+                    print("El siguiente usuario ha sido enviado:\(user.email) ")
                             
-                        case .failure(let error):
+                case .failure(let error):
                             
-                            print("Ha ocurrido un error \(error)")
+                    print("Ha ocurrido un error \(error)")
 
-                        }
-                    })
             }
+        })
+    }
     
 
 }
