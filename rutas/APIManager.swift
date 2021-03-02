@@ -79,22 +79,10 @@ class APIManager {
                             
                             print(json)
                             if let json = json as? [String: String] {
-                               // now you have a top-level json dictionary
-                                //print(json["token"]!)
-                                
                                 let tokenJSON = json["token"]
                                 
                                 UserDefaults.standard.set(tokenJSON, forKey: token)
                                 UserDefaults.standard.synchronize()
-                                
-//                                if let value = UserDefaults.standard.string(forKey: "TOKEN_KEY"){
-//                                    print(value)
-//                                }else{
-//                                    print("No hay nada")
-//                                }
-                                
-                                //let tokenUser = User(name: "", email: "", password: "", token: self.token)
-                                
 
                             }
                             
@@ -104,7 +92,6 @@ class APIManager {
                             completion(.failure(APIError.responseProblem))
                         }
                     }catch{
-                        //let json = try JSONSerialization.jsonObject(with: data, options: [])
                         print(response.response!.statusCode)
                         
                         print("Usuario o contraseña incorrectas")
@@ -113,7 +100,6 @@ class APIManager {
                     }
                     
                 case .failure(_):
-                    //print(err.localizedDescription)
                     completion(.failure(APIError.responseProblem))
                 }
             }
@@ -162,6 +148,64 @@ class APIManager {
         }
         
         
+    
+    func getRoutes(_ Route: Route, completion: @escaping(Swift.Result<Route,Error>)->Void){
+        
+        Alamofire.request(resourceURL, method: .post, parameters: Route.getDictRoute(), encoding: JSONEncoding.default, headers: nil).responseData{ response in
+            switch response.result{
+                    
+                case .success(let data):
+                    do{
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        
+                        let jsonObject = json as! NSArray
+                        
+                        if response.response?.statusCode == 200 {
+                        
+//
+//                            print(json)
+//
+//                            print(jsonObject[0])
+                            
+                            if let array = json as? [[String: Any]] {
+
+                                let altitude = array.compactMap{ $0["altitude"] as? String}
+                                let latitude = array.compactMap{ $0["latitude"] as? String}
+                                print(altitude)
+                                print(latitude)
+                            }
+                            
+                            
+
+//                            if let json = json as? [String: String] {
+//                                let tokenJSON = json["latitude"]
+//
+//                                print(tokenJSON)
+//
+////                                UserDefaults.standard.set(tokenJSON, forKey: token)
+////                                UserDefaults.standard.synchronize()
+//
+//                            }
+                            
+                            completion(.success(Route))
+                        }else{
+                            print(json)
+                            completion(.failure(APIError.responseProblem))
+                        }
+                    }catch{
+                        print(response.response!.statusCode)
+                        
+                        print("Usuario o contraseña incorrectas")
+                        
+                        completion(.failure(APIError.decodingProblem))
+                    }
+                    
+                case .failure(_):
+                    completion(.failure(APIError.responseProblem))
+                }
+            }
+        }
+    
         
     }
     
