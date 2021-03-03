@@ -9,11 +9,16 @@
 import UIKit
 
 class mapSettingsViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var routeListButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        routeListButton.layer.cornerRadius = 30
     }
     
     

@@ -12,17 +12,22 @@ class routeViewController: UIViewController {
     
     
     @IBOutlet weak var profileButton: UIButton!
-    
-    
     @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var madridOculto: UIButton!
+    @IBOutlet weak var guerraCivil: UIButton!
+    @IBOutlet weak var madridAustrias: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         profileButton.layer.cornerRadius = 30
-        
         settingsButton.layer.cornerRadius = 30
+        madridOculto.layer.cornerRadius = 30
+        guerraCivil.layer.cornerRadius = 30
+        madridAustrias.layer.cornerRadius = 30
+        
+        
         
     }
 

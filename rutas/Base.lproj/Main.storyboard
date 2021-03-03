@@ -332,6 +332,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1mG-MY-HYv"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="YmY-de-46N" id="fFn-fs-N4g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hf-Jg-Jet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -498,6 +501,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cWN-cD-qYp"/>
                     </view>
+                    <connections>
+                        <outlet property="routeListButton" destination="2kz-uz-0Vb" id="h4a-B9-vf1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwj-YB-HVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -806,6 +812,9 @@
                         <viewLayoutGuide key="safeArea" id="XPE-vE-IKg"/>
                     </view>
                     <connections>
+                        <outlet property="guerraCivil" destination="vVH-M5-6xk" id="1ZE-CY-fUw"/>
+                        <outlet property="madridAustrias" destination="zPC-CW-OFK" id="NF9-pB-KMW"/>
+                        <outlet property="madridOculto" destination="ZNT-Pw-xk2" id="NOk-qf-iWO"/>
                         <outlet property="profileButton" destination="O0F-mY-Gko" id="NWW-po-5xK"/>
                         <outlet property="settingsButton" destination="ZiE-Lk-l30" id="UYU-m5-mBb"/>
                     </connections>
@@ -939,6 +948,7 @@
                         <viewLayoutGuide key="safeArea" id="lBW-TT-vfc"/>
                     </view>
                     <connections>
+                        <outlet property="changePW" destination="1g7-Sh-DSj" id="aBR-Y8-ArD"/>
                         <outlet property="currentPassField" destination="R45-1S-yp5" id="OMx-oy-TSO"/>
                         <outlet property="emailField" destination="Et8-Zv-bqw" id="8vn-nK-RyM"/>
                         <outlet property="passField" destination="Vfz-Rw-EAC" id="hYq-0o-rvD"/>
@@ -1070,6 +1080,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yP8-bm-A1k"/>
                     </view>
+                    <connections>
+                        <outlet property="changePWButton" destination="jpV-lh-cN9" id="Neg-kY-Smq"/>
+                        <outlet property="privacyButton" destination="sPH-KI-tOk" id="kRI-d1-ArY"/>
+                        <outlet property="signOutButton" destination="Dbe-Ke-hFh" id="13P-RY-hRM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHZ-jz-Lcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

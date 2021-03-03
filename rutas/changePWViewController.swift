@@ -14,10 +14,13 @@ class changePWViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passField: UITextField!
     @IBOutlet weak var currentPassField: UITextField!
+    @IBOutlet weak var changePW: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        changePW.layer.cornerRadius = 30
     }
     
     
@@ -67,6 +70,10 @@ class changePWViewController: UIViewController {
         })
         
         self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 
