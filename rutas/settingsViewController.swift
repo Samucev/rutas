@@ -18,6 +18,8 @@ class settingsViewController: UIViewController {
     
     @IBAction func routeListButton(_ sender: Any) {
         
+        self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
@@ -45,9 +47,13 @@ class settingsViewController: UIViewController {
     
     @IBAction func signOutButton(_ sender: Any) {
         
+        
+        
         let alert = UIAlertController(title: "Cerrar sesión", message: "¿Estás seguro de que quieres cerrar sesión?", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Cerrar Sesión", style: .default, handler: { action in
+            
+            
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
@@ -56,6 +62,7 @@ class settingsViewController: UIViewController {
             vc.modalPresentationStyle = .overFullScreen
             
             self.present(vc, animated: true)
+            
             
         }))
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))

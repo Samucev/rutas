@@ -23,6 +23,8 @@ class changePWViewController: UIViewController {
     
     @IBAction func settingsButton(_ sender: Any) {
         
+        self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
@@ -63,6 +65,8 @@ class changePWViewController: UIViewController {
 
             }
         })
+        
+        self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
     }
     
 

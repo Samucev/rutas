@@ -17,16 +17,5 @@ class profileViewController: UIViewController {
     }
     
     
-    @IBAction func routeListButton(_ sender: Any) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
-                
-        vc.modalPresentationStyle = .overFullScreen
-        
-        present(vc, animated: true)
-        
-    }
     
 }

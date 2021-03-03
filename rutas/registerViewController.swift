@@ -44,7 +44,6 @@ class registerViewController: UIViewController {
         }) { (_) in
             
             
-            
             UIView.animate(withDuration: 0.1, animations: {
                 
                 viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
@@ -85,6 +84,9 @@ class registerViewController: UIViewController {
                 switch result{
                 case .success(let user):
                     
+                    
+
+                    
                     // Navegación de pantalla.
                     
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -93,14 +95,14 @@ class registerViewController: UIViewController {
                     self.present(vc, animated: true)
                     
                     print("El siguiente usuario ha sido creado:\(user.email) ")
-                case .failure(let error):
+                    case .failure(let error):
                     
                     print("Ha ocurrido un error \(error)")
 
                 }
             })
             
-            self.dismiss(animated:true, completion: nil)
+            self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
             
         }
         
