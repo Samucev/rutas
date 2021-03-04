@@ -101,7 +101,11 @@ class registerViewController: UIViewController {
                     
                     print("Ha ocurrido un error \(error)")
                     
-                    self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior * TEMPORAL *
+                    // Se notifica al usuario del error.
+                    
+                    let alert = UIAlertController(title: "Error", message: "Ya existe un usuario con este correo electrónico o faltan datos.", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                     
                 }
             })
