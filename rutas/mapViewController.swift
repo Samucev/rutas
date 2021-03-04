@@ -63,15 +63,15 @@ class mapViewController: UIViewController {
             let altituded = UserDefaults.standard.array(forKey: altitude)
             let hoff = "hola"
             
-//            print(altituded![0])
+           print(altituded![0])
             print("hola" + hoff)
             
-//            if let altitude = UserDefaults.standard.string(forKey: altitude){
-//
-//                print(altitude)
-//            }else{
-//                print("no hay datos")
-//            }
+          if let altitude = UserDefaults.standard.string(forKey: altitude){
+
+                print(altitude)
+            }else{
+                print("no hay datos")
+            }
      
             
           // https://www.adictosaltrabajo.com/2017/08/16/geofences-en-ios-swift/

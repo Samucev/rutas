@@ -80,21 +80,25 @@ class registerViewController: UIViewController {
             
             //let postRequest = APIRequest(endpoint: "users/create")
             
-        postRequest.register(user, completion: {result in
+            postRequest.register(user, completion: {result,error  in
                 switch result{
                 case .success(let user):
                     
+                    print(error!)
                     
+                    if error as! Int == 403{
+                        
+                    }
 
                     
                     // Navegación de pantalla.
                     
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
-                    vc.modalPresentationStyle = .overFullScreen
-                    self.present(vc, animated: true)
-                    
-                    print("El siguiente usuario ha sido creado:\(user.email) ")
+//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
+//                    vc.modalPresentationStyle = .overFullScreen
+//                    self.present(vc, animated: true)
+//
+//                    print("El siguiente usuario ha sido creado:\(user.email) ")
                     case .failure(let error):
                     
                     print("Ha ocurrido un error \(error)")

@@ -40,28 +40,61 @@ class APIManager {
         self.resourceURL = resourceURL
     }
 
-    func register(_ userToSave: User, completion: @escaping(Swift.Result<User,Error>)->Void){
+    func register(_ userToSave: User, completion: @escaping(Swift.Result<User,Error>, Any?)->Void){
         
         
         Alamofire.request(resourceURL, method: .post, parameters: userToSave.getDictRegister(), encoding: JSONEncoding.default, headers: nil).responseData{ response in
             switch response.result{
                     
-                case .success(_):
+                case .success(let data):
                     
-                    if response.response?.statusCode == 200 {
+                    do{
                         
-                        print("El usuario " + userToSave.name + " ha sido creado")
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        
+                        if response.response?.statusCode == 200 {
+                            
+                            if let json = json as? [String: Any] {
+                                let tokenJSON = json["message"]
+                                
+//                                if tokenJSON == 403 {
+//                                    print(tokenJSON!)
+//                                    completion(.success(userToSave), tokenJSON)
+//
+//
+//                                }
+                                
+                                print(tokenJSON!)
 
-                        completion(.success(userToSave))
-                    }else{
-                        print("No se ha podido crear el usuario")
+                                completion(.success(userToSave), tokenJSON)
+                            }
+                            
+//                            print(json)
+//
+//                            print("El usuario " + userToSave.name + " ha sido creado")
+//
+                            
+                        }else{
+                            print("No se ha podido crear el usuario")
 
+                        }
+                        
+                        
+                    }catch{
+                        
+                        print(response.response!.statusCode)
+                        
+                        print("Usuario o contraseña incorrectas")
+                        
+                        completion(.failure(APIError.decodingProblem), nil)
                     }
+                    
+
                     
                     
                 case .failure(_):
                     //print(err.localizedDescription)
-                    completion(.failure(APIError.responseProblem))
+                    completion(.failure(APIError.responseProblem), nil)
                 }
             }
         
