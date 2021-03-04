@@ -59,7 +59,7 @@ class settingsViewController: UIViewController {
         
         
         
-        let alert = UIAlertController(title: "Cerrar sesión", message: "¿Estás seguro de que quieres cerrar sesión?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Cerrar Sesión", message: "¿Estás seguro de que quieres cerrar sesión?", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Cerrar Sesión", style: .default, handler: { action in
             

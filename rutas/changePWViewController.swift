@@ -72,6 +72,8 @@ class changePWViewController: UIViewController {
         self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
     }
     
+    // Deshabilitar teclado.
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

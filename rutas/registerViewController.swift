@@ -80,12 +80,18 @@ class registerViewController: UIViewController {
             
             //let postRequest = APIRequest(endpoint: "users/create")
             
+<<<<<<< HEAD
             postRequest.register(user, completion: {result,error  in
+=======
+        postRequest.register(user, completion: {result in
+            
+>>>>>>> 4f929edb78deb107e2f2c0bbcd029b6dc80fd26e
                 switch result{
                 case .success(let user):
                     
                     print(error!)
                     
+<<<<<<< HEAD
                     if error as! Int == 403{
                         
                     }
@@ -100,13 +106,33 @@ class registerViewController: UIViewController {
 //
 //                    print("El siguiente usuario ha sido creado:\(user.email) ")
                     case .failure(let error):
+=======
+                    // Navegación de pantalla.
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
+                    vc.modalPresentationStyle = .overFullScreen
+                    self.present(vc, animated: true)
+                    
+                    print("El siguiente usuario ha sido creado:\(user.email) ")
+                    self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
+                    
+                    
+                case .failure(let error):
+>>>>>>> 4f929edb78deb107e2f2c0bbcd029b6dc80fd26e
                     
                     print("Ha ocurrido un error \(error)")
-
+                    
+                    // Se notifica al usuario del error.
+                    
+                    let alert = UIAlertController(title: "Error", message: "Ya existe un usuario con este correo electrónico o faltan datos.", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    
                 }
             })
             
-            self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
+            
             
         }
         
@@ -115,6 +141,8 @@ class registerViewController: UIViewController {
         
         
     }
+    
+    // Deshabilitar teclado.
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
