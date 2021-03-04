@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hy-Ko-2h0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -450,9 +450,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plasaMaior.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-kC-AaU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plasaMaior.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-kC-AaU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g76-HO-yEK">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -493,11 +492,15 @@
                             <constraint firstItem="2kz-uz-0Vb" firstAttribute="centerX" secondItem="RK7-z9-kHg" secondAttribute="centerX" id="2wE-H5-vi6"/>
                             <constraint firstItem="g76-HO-yEK" firstAttribute="trailing" secondItem="cWN-cD-qYp" secondAttribute="trailing" id="8XN-t1-pTE"/>
                             <constraint firstItem="2kz-uz-0Vb" firstAttribute="centerY" secondItem="RK7-z9-kHg" secondAttribute="centerY" id="8nP-8I-rts"/>
+                            <constraint firstAttribute="bottom" secondItem="rkz-kC-AaU" secondAttribute="bottom" id="ByY-MZ-QRw"/>
                             <constraint firstAttribute="bottom" secondItem="g76-HO-yEK" secondAttribute="bottom" id="Npj-AV-5hO"/>
                             <constraint firstItem="g76-HO-yEK" firstAttribute="leading" secondItem="cWN-cD-qYp" secondAttribute="leading" id="Wng-Cq-r4a"/>
+                            <constraint firstItem="rkz-kC-AaU" firstAttribute="leading" secondItem="cWN-cD-qYp" secondAttribute="leading" id="bN5-cY-Tsa"/>
                             <constraint firstItem="0nl-OP-Zhs" firstAttribute="centerX" secondItem="RK7-z9-kHg" secondAttribute="centerX" id="gjd-d5-jhr"/>
+                            <constraint firstItem="rkz-kC-AaU" firstAttribute="top" secondItem="RK7-z9-kHg" secondAttribute="top" id="q7K-7b-aBR"/>
                             <constraint firstItem="g76-HO-yEK" firstAttribute="top" secondItem="RK7-z9-kHg" secondAttribute="top" id="qYH-ZU-Oud"/>
                             <constraint firstItem="0nl-OP-Zhs" firstAttribute="centerY" secondItem="RK7-z9-kHg" secondAttribute="centerY" constant="-150" id="sgt-ya-faM"/>
+                            <constraint firstItem="rkz-kC-AaU" firstAttribute="trailing" secondItem="cWN-cD-qYp" secondAttribute="trailing" id="vfs-eL-6O8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cWN-cD-qYp"/>
                     </view>

@@ -81,11 +81,10 @@ class registerViewController: UIViewController {
             //let postRequest = APIRequest(endpoint: "users/create")
             
         postRequest.register(user, completion: {result in
+            
                 switch result{
                 case .success(let user):
                     
-                    
-
                     
                     // Navegación de pantalla.
                     
@@ -95,14 +94,19 @@ class registerViewController: UIViewController {
                     self.present(vc, animated: true)
                     
                     print("El siguiente usuario ha sido creado:\(user.email) ")
-                    case .failure(let error):
+                    self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
+                    
+                    
+                case .failure(let error):
                     
                     print("Ha ocurrido un error \(error)")
-
+                    
+                    self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior * TEMPORAL *
+                    
                 }
             })
             
-            self.dismiss(animated:true, completion: nil) // Destruir la pantalla anterior.
+            
             
         }
         
@@ -111,6 +115,8 @@ class registerViewController: UIViewController {
         
         
     }
+    
+    // Deshabilitar teclado.
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
