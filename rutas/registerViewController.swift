@@ -80,18 +80,18 @@ class registerViewController: UIViewController {
             
             //let postRequest = APIRequest(endpoint: "users/create")
             
-<<<<<<< HEAD
+
             postRequest.register(user, completion: {result,error  in
-=======
-        postRequest.register(user, completion: {result in
+
+                postRequest.register(user, completion: {result,<#arg#>  in
             
->>>>>>> 4f929edb78deb107e2f2c0bbcd029b6dc80fd26e
+
                 switch result{
                 case .success(let user):
                     
                     print(error!)
                     
-<<<<<<< HEAD
+
                     if error as! Int == 403{
                         
                     }
@@ -106,7 +106,7 @@ class registerViewController: UIViewController {
 //
 //                    print("El siguiente usuario ha sido creado:\(user.email) ")
                     case .failure(let error):
-=======
+
                     // Navegación de pantalla.
                     
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -119,7 +119,7 @@ class registerViewController: UIViewController {
                     
                     
                 case .failure(let error):
->>>>>>> 4f929edb78deb107e2f2c0bbcd029b6dc80fd26e
+
                     
                     print("Ha ocurrido un error \(error)")
                     
