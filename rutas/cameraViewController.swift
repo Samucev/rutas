@@ -12,11 +12,17 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
    
     @IBOutlet weak var bellowview: UIView!
     
+    @IBOutlet weak var mapButton: UIButton!
+    @IBOutlet weak var infoButton: UIButton!
+    
     var model = mapa1().model
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        mapButton.layer.cornerRadius = 30 // Botón redondeado
+        infoButton.layer.cornerRadius = 30
         
         let captureseSesion = AVCaptureSession()
         guard let captureDevice = AVCaptureDevice.default(for: .video)else {return}
@@ -67,6 +73,19 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
         
     }
     
+    
+    
+    @IBAction func infoButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
+        let vc = storyboard.instantiateViewController(identifier: "infoVC") as! infoViewController
+
+        /*vc.modalPresentationStyle = .overFullScreen*/
+
+        present(vc, animated: true)
+
+    }
+    
 
 }

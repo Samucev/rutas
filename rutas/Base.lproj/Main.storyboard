@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hy-Ko-2h0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H90-WN-rKM">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -520,25 +520,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f68-5n-yS8">
-                                <rect key="frame" x="87" y="609" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f68-5n-yS8">
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVr-iX-p9L">
-                                        <rect key="frame" x="74" y="49" width="46" height="71"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVr-iX-p9L">
+                                        <rect key="frame" x="27" y="21" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BKO-37-9Jj"/>
+                                            <constraint firstAttribute="width" constant="60" id="fv5-hP-XO4"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="map.fill" catalog="system">
+                                            <color key="titleColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="H90-WN-rKM" kind="show" id="zCe-3w-zoV"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn5-ag-iJj">
+                                        <rect key="frame" x="327" y="21" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SRs-Qs-E1n"/>
+                                            <constraint firstAttribute="width" constant="60" id="UNr-nc-q7S"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="book.fill" catalog="system">
+                                            <color key="titleColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="infoButton:" destination="kMh-L8-Ehg" eventType="touchUpInside" id="hTZ-Fk-X9b"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Dn5-ag-iJj" firstAttribute="centerX" secondItem="f68-5n-yS8" secondAttribute="centerX" constant="150" id="GSg-GE-NIU"/>
+                                    <constraint firstItem="oVr-iX-p9L" firstAttribute="centerX" secondItem="f68-5n-yS8" secondAttribute="centerX" constant="-150" id="L0C-JO-W2T"/>
+                                    <constraint firstItem="Dn5-ag-iJj" firstAttribute="centerY" secondItem="f68-5n-yS8" secondAttribute="centerY" id="Tay-aj-DL4"/>
+                                    <constraint firstItem="oVr-iX-p9L" firstAttribute="centerY" secondItem="f68-5n-yS8" secondAttribute="centerY" id="wzw-ky-ax8"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f68-5n-yS8" firstAttribute="trailing" secondItem="oVb-ap-QoI" secondAttribute="trailing" id="9mS-Fz-XFH"/>
+                            <constraint firstItem="f68-5n-yS8" firstAttribute="leading" secondItem="oVb-ap-QoI" secondAttribute="leading" id="MHQ-hR-9qA"/>
+                            <constraint firstItem="f68-5n-yS8" firstAttribute="top" secondItem="oVb-ap-QoI" secondAttribute="top" constant="750" id="eZj-oU-gF5"/>
+                            <constraint firstAttribute="bottom" secondItem="f68-5n-yS8" secondAttribute="bottom" id="wkg-LZ-vog"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oVb-ap-QoI"/>
                     </view>
+                    <connections>
+                        <outlet property="infoButton" destination="Dn5-ag-iJj" id="wJz-vt-S5d"/>
+                        <outlet property="mapButton" destination="oVr-iX-p9L" id="5dT-cd-vnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfp-dd-hGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1102,6 +1139,7 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="madridWP.jpg" width="1000" height="1333"/>
+        <image name="map.fill" catalog="system" width="128" height="113"/>
         <image name="nepetuno.jpg" width="892.5" height="1184.25"/>
         <image name="oso.jpg" width="768" height="1152"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
