@@ -29,12 +29,42 @@ class loginViewController: UIViewController {
                                       
     }
     
+    // Animación del botón.
+
+    func buttonAnimation(sender:UIButton) {
+
+        print("Botón animado.")
+
+        self.animatedView(sender)
+
+    }
+
+
+    func animatedView(_ viewToAnimate:UIView) {
+
+        UIView.animate(withDuration: 0.1, animations: {
+
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)}) { (_) in
+
+            UIView.animate(withDuration: 0.1, animations: {
+
+                viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
+
+            }, completion: nil)
+
+        }
+
+    }
+
+    
     
     
     /* BOTÓN DE LOGIN */
     
     
     @IBAction func routeListButton(_ sender: Any) {
+        
+        buttonAnimation(sender: loginButton) //Animación del botón
         
         let pass = passwordTextField.text!
         let email = emailTextField.text!

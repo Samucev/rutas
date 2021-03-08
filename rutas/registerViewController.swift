@@ -43,37 +43,20 @@ class registerViewController: UIViewController {
 
     }
 
-    
 
     func animatedView(_ viewToAnimate:UIView) {
 
         UIView.animate(withDuration: 0.1, animations: {
 
-            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)
-
-            
-
-        }) { (_) in
-
-            
-
-            
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)}) { (_) in
 
             UIView.animate(withDuration: 0.1, animations: {
 
-                
-
                 viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
-
-                
 
             }, completion: nil)
 
-            
-
         }
-
-        
 
     }
 
@@ -85,15 +68,9 @@ class registerViewController: UIViewController {
 
     @IBAction func signInButton(_ sender: Any) {
 
-        
-
         buttonAnimation(sender: signInButton) // Animación del botón
 
-        
-
         // API.
-
-        
 
         if passField.text! != confirmPassField.text! {
 
@@ -111,31 +88,19 @@ class registerViewController: UIViewController {
 
             let passText = passField.text!
 
-
-
-        //let user = User(email: emailText, name: userText, password: passText)
-
-
-
-        let user = User(name: userText, email: emailText, password: passText, currentPassword: "")
+            let user = User(name: userText, email: emailText, password: passText, currentPassword: "")
+            
+            let postRequest = APIManager(endpoint: "users/create")
 
 
 
-
-
-        let postRequest = APIManager(endpoint: "users/create")
-
-
-
-        postRequest.register(user, completion: {result, noPermission  in
+            postRequest.register(user, completion: {result, noPermission  in
 
 
 
             switch result{
 
                 case .success(let user):
-
-
 
                     print(noPermission)
 
@@ -164,22 +129,18 @@ class registerViewController: UIViewController {
                     print("El siguiente usuario ha sido creado:\(user.email) ")
 
                     self.dismiss(animated:true, completion: nil)// Destruir la pantalla anterior.
+                
 
-
-
-                case .failure(let error):
-
-
+                    case .failure(let error):
 
                     print("Ha ocurrido un error \(error)")
 
-                    let alert = UIAlertController(title: "Error", message: "Ha ocurrido un problema, inténtelo de nuevo perro.", preferredStyle: UIAlertController.Style.alert)
+                    let alert = UIAlertController(title: "Error", message: "Ha ocurrido un problema, inténtelo de nuevo.", preferredStyle: UIAlertController.Style.alert)
 
                     alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
 
                     self.present(alert, animated: true, completion: nil)
 
-                    // Se notifica al usuario del error.
 
 
 
@@ -196,80 +157,6 @@ class registerViewController: UIViewController {
     }
 
         
-
-//        if passField.text! != confirmPassField.text! {
-
-//                    print("contraseñas incorrectas")
-
-//                    return
-
-//                }else{
-
-//
-
-//                    let userText = userField.text!
-
-//                    let emailText = emailField.text!
-
-//                    let passText = passField.text!
-
-//
-
-//                //let user = User(email: emailText, name: userText, password: passText)
-
-//
-
-//                    let user = User(name: userText, email: emailText, password: passText, currentPassword: "")
-
-//
-
-//                //let postRequest = APIManager(endpoint: "api/register")
-
-//                let postRequest = APIManager(endpoint: "users/create")
-
-//
-
-//                    //let postRequest = APIRequest(endpoint: "users/create")
-
-//
-
-//            postRequest.register(user, completion: {result  in
-
-//                        switch result{
-
-//                        case .success(let user):
-
-//
-
-//                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-//                            let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
-
-//                            vc.modalPresentationStyle = .overFullScreen
-
-//                            self.present(vc, animated: true)
-
-//
-
-//                            print("El siguiente usuario ha sido creado:\(user.email) ")
-
-//                        case .failure(let error):
-
-//
-
-//                            print("Ha ocurrido un error \(error)")
-
-//
-
-//                        }
-
-//                    })
-
-//
-
-//                }
-
-//    }
 
     
 

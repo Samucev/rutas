@@ -24,6 +24,7 @@ class mapSettingsViewController: UIViewController {
     
     @IBAction func routeListButton(_ sender: Any) {
         
+
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
@@ -31,6 +32,8 @@ class mapSettingsViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         
         present(vc, animated: true)
+        
+        
         
     }
     

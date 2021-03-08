@@ -121,6 +121,7 @@ class mapViewController: UIViewController {
     
     
     @IBAction func profileButton(_ sender: Any) {
+        
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
@@ -134,7 +135,7 @@ class mapViewController: UIViewController {
 
 
     @IBAction func infoButton(_ sender: Any) {
-
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
         let vc = storyboard.instantiateViewController(identifier: "infoVC") as! infoViewController
@@ -147,6 +148,8 @@ class mapViewController: UIViewController {
 
 
     @IBAction func cameraButton(_ sender: Any) {
+        
+        self.dismiss(animated:true, completion: nil)
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 

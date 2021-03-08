@@ -11,15 +11,44 @@ import UIKit
 class recoverPWViewController: UIViewController {
     
     
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var recoverPWButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        loginButton.layer.cornerRadius = 30
+        recoverPWButton.layer.cornerRadius = 30
         
     }
+    
+    // Animación del botón.
+
+    func buttonAnimation(sender:UIButton) {
+
+        print("Botón animado.")
+
+        self.animatedView(sender)
+
+    }
+
+
+    func animatedView(_ viewToAnimate:UIView) {
+
+        UIView.animate(withDuration: 0.1, animations: {
+
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)}) { (_) in
+
+            UIView.animate(withDuration: 0.1, animations: {
+
+                viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
+
+            }, completion: nil)
+
+        }
+
+    }
+    
+    
 
     /* BOTÓN PARA VOLVER A LA PANTALLA DE LOGIN */
     
@@ -35,9 +64,19 @@ class recoverPWViewController: UIViewController {
         
         present(vc, animated: true)
         
+    }
+    
+    /* BOTÓN PARA RECUPERAR CONTRASEÑA */
+    
+    
+    @IBAction func recoverPWButton(_ sender: Any) {
         
+        // Función para recuperar contraseña :v
+        
+        buttonAnimation(sender: recoverPWButton) // Animación del botón
         
     }
+    
     
     // Deshabilitar teclado.
     

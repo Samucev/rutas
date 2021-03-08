@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H90-WN-rKM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -289,6 +289,9 @@
                                 <state key="normal" title="ENVIAR CORREO ">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="recoverPWButton:" destination="hQE-27-Eo0" eventType="touchUpInside" id="KiT-qM-p15"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibirás tu contraseña temporal en tu correo electrónico." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-r7-JBX">
                                 <rect key="frame" x="39.333333333333343" y="590" width="335.33333333333326" height="16.333333333333371"/>
@@ -305,7 +308,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" Iniciar Sesión" image="arrow.left" catalog="system"/>
                                 <connections>
-                                    <action selector="loginButton:" destination="hQE-27-Eo0" eventType="touchUpInside" id="Eye-Zw-NVh"/>
+                                    <action selector="loginButton:" destination="hQE-27-Eo0" eventType="touchUpInside" id="Vgc-fP-3Ie"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -333,7 +336,7 @@
                         <viewLayoutGuide key="safeArea" id="1mG-MY-HYv"/>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="YmY-de-46N" id="fFn-fs-N4g"/>
+                        <outlet property="recoverPWButton" destination="YmY-de-46N" id="HZk-Qg-xSf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hf-Jg-Jet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
