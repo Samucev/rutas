@@ -25,6 +25,33 @@ class settingsViewController: UIViewController {
         
     }
     
+    // Animación del botón.
+
+    func buttonAnimation(sender:UIButton) {
+
+        print("Botón animado.")
+
+        self.animatedView(sender)
+
+    }
+
+
+    func animatedView(_ viewToAnimate:UIView) {
+
+        UIView.animate(withDuration: 0.1, animations: {
+
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)}) { (_) in
+
+            UIView.animate(withDuration: 0.1, animations: {
+
+                viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
+
+            }, completion: nil)
+
+        }
+
+    }
+    
     
     @IBAction func routeListButton(_ sender: Any) {
         
@@ -43,6 +70,9 @@ class settingsViewController: UIViewController {
     
     @IBAction func changePWButton(_ sender: Any) {
         
+        buttonAnimation(sender: changePWButton) // Animación del botón
+        
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "changePWVC") as! changePWViewController
@@ -57,6 +87,7 @@ class settingsViewController: UIViewController {
     
     @IBAction func signOutButton(_ sender: Any) {
         
+        buttonAnimation(sender: signOutButton) // Animación del botón
         
         
         let alert = UIAlertController(title: "Cerrar Sesión", message: "¿Estás seguro de que quieres cerrar sesión?", preferredStyle: .alert)

@@ -23,6 +23,33 @@ class changePWViewController: UIViewController {
         changePW.layer.cornerRadius = 30
     }
     
+    // Animación del botón.
+
+    func buttonAnimation(sender:UIButton) {
+
+        print("Botón animado.")
+
+        self.animatedView(sender)
+
+    }
+
+
+    func animatedView(_ viewToAnimate:UIView) {
+
+        UIView.animate(withDuration: 0.1, animations: {
+
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)}) { (_) in
+
+            UIView.animate(withDuration: 0.1, animations: {
+
+                viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
+
+            }, completion: nil)
+
+        }
+
+    }
+    
     
     @IBAction func settingsButton(_ sender: Any) {
         
@@ -41,8 +68,8 @@ class changePWViewController: UIViewController {
     
     @IBAction func changePass(_ sender: Any) {
         
-        
-            
+        buttonAnimation(sender: changePW) // Animación del botón
+                    
         let emailText = emailField.text!
         let currentPassText = currentPassField.text!
         let passText = passField.text!
