@@ -20,8 +20,6 @@
 class mapViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIButton!
     
-    @IBOutlet weak var profileButton: UIButton!
-    
     @IBOutlet weak var infoButton: UIButton!
     
     @IBOutlet weak var cameraButton: UIButton!
@@ -92,11 +90,9 @@ class mapViewController: UIViewController {
 
                  showCircle(coordinate: coordenadasCirculo, radius: radio)
 
-//            // Redondeo de Botones
-//
+            // Redondeo de Botones
+            
             settingsButton.layer.cornerRadius = 25
-
-            profileButton.layer.cornerRadius = 25
 
             infoButton.layer.cornerRadius = 25
 
@@ -117,21 +113,6 @@ class mapViewController: UIViewController {
         
 
     }
-    
-    
-    
-    @IBAction func profileButton(_ sender: Any) {
-        
-
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-        let vc = storyboard.instantiateViewController(identifier: "profileVC") as! profileViewController
-
-        /*vc.modalPresentationStyle = .overFullScreen*/
-
-        present(vc, animated: true)
-
-    }
 
 
     @IBAction func infoButton(_ sender: Any) {
@@ -149,8 +130,6 @@ class mapViewController: UIViewController {
 
     @IBAction func cameraButton(_ sender: Any) {
         
-        self.dismiss(animated:true, completion: nil)
-
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
         let vc = storyboard.instantiateViewController(identifier: "cameraVC") as! cameraViewController
@@ -158,6 +137,7 @@ class mapViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
 
         present(vc, animated: true)
+
 
     }
 

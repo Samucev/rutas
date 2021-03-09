@@ -354,21 +354,6 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-5c-j0i">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-dV-zwt">
-                                <rect key="frame" x="32" y="746" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="X0t-dW-NKT"/>
-                                    <constraint firstAttribute="width" constant="50" id="ZZo-15-x08"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="person.circle.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                </state>
-                                <connections>
-                                    <action selector="profileButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="jcr-4V-TKj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apO-s0-3df">
                                 <rect key="frame" x="342" y="746" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -400,7 +385,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-ZN-hY4">
-                                <rect key="frame" x="182" y="746" width="50" height="50"/>
+                                <rect key="frame" x="32" y="746" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Gak-mM-BMi"/>
@@ -424,10 +409,8 @@
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="bottom" secondItem="wQ6-5c-j0i" secondAttribute="bottom" id="LdV-I7-Mvp"/>
                             <constraint firstItem="UFL-tn-haj" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="Lz9-NV-D9t"/>
                             <constraint firstItem="apO-s0-3df" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="160" id="NSr-dp-fYX"/>
-                            <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" id="Pn3-Ou-9Wq"/>
-                            <constraint firstItem="yNK-dV-zwt" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="UYB-2M-1yt"/>
+                            <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="Uyz-Rb-xjg"/>
                             <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="VFy-xy-yfu"/>
-                            <constraint firstItem="yNK-dV-zwt" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="enR-hA-QfU"/>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="top" secondItem="cRG-vc-xQ7" secondAttribute="top" id="giZ-b7-2VR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cRG-vc-xQ7"/>
@@ -437,7 +420,6 @@
                         <outlet property="cameraButton" destination="fmM-ZN-hY4" id="XDD-3o-hCn"/>
                         <outlet property="infoButton" destination="apO-s0-3df" id="eBT-cj-8rr"/>
                         <outlet property="mapa" destination="wQ6-5c-j0i" id="ODy-ew-3bn"/>
-                        <outlet property="profileButton" destination="yNK-dV-zwt" id="58Z-im-Ss3"/>
                         <outlet property="settingsButton" destination="UFL-tn-haj" id="Ps8-aQ-bbg"/>
                     </connections>
                 </viewController>
@@ -1034,7 +1016,7 @@
                                 <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbe-Ke-hFh">
-                                <rect key="frame" x="32" y="565.66666666666663" width="350" height="65"/>
+                                <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="AA0-oK-DVQ"/>
@@ -1058,20 +1040,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-KI-tOk">
-                                <rect key="frame" x="32" y="265.66666666666669" width="350" height="65"/>
-                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="EkX-ty-rE2"/>
-                                    <constraint firstAttribute="width" constant="350" id="WJO-CV-JrT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
-                                <state key="normal" title="AJUSTES DE PRIVACIDAD">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpV-lh-cN9">
-                                <rect key="frame" x="32" y="415.66666666666669" width="350" height="65"/>
+                                <rect key="frame" x="32" y="265.66666666666669" width="350" height="65"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="F4P-Cb-jFH"/>
@@ -1099,24 +1069,34 @@
                                     <action selector="routeListButton:" destination="7u5-LR-IYA" eventType="touchUpInside" id="451-yq-ej3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuerda activar la ubicación del dispositivo para utilizar la aplicación." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94f-gc-5Bl">
+                                <rect key="frame" x="7" y="570.66666666666663" width="400" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Cd4-yg-JrJ"/>
+                                    <constraint firstAttribute="height" constant="55" id="uKH-SD-gtr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="2V9-Zh-FZO"/>
-                            <constraint firstItem="sPH-KI-tOk" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-150" id="73s-FQ-Efy"/>
-                            <constraint firstItem="Dbe-Ke-hFh" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="150" id="9yi-6N-AaU"/>
+                            <constraint firstItem="Dbe-Ke-hFh" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" id="9yi-6N-AaU"/>
                             <constraint firstItem="jpV-lh-cN9" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="ICI-UB-aeI"/>
                             <constraint firstItem="fCy-Ln-NrM" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-300" id="IcC-eA-CtQ"/>
                             <constraint firstAttribute="bottom" secondItem="3CQ-6X-Nv2" secondAttribute="bottom" id="MQF-A8-9qx"/>
                             <constraint firstItem="3CQ-6X-Nv2" firstAttribute="trailing" secondItem="yP8-bm-A1k" secondAttribute="trailing" id="Mrr-sW-5Io"/>
                             <constraint firstItem="v2V-rm-2s1" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-380" id="Oze-3Z-AGy"/>
+                            <constraint firstItem="94f-gc-5Bl" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="PYW-Fk-Ks2"/>
                             <constraint firstItem="3CQ-6X-Nv2" firstAttribute="leading" secondItem="yP8-bm-A1k" secondAttribute="leading" id="Pzy-h4-sAE"/>
                             <constraint firstItem="3CQ-6X-Nv2" firstAttribute="top" secondItem="dkN-4t-Vim" secondAttribute="top" id="Za6-EF-9OA"/>
-                            <constraint firstItem="sPH-KI-tOk" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="dFu-BS-OKp"/>
-                            <constraint firstItem="jpV-lh-cN9" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" id="eC1-as-7S2"/>
+                            <constraint firstItem="jpV-lh-cN9" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="-150" id="eC1-as-7S2"/>
                             <constraint firstItem="Cky-zk-8f6" firstAttribute="leading" secondItem="yP8-bm-A1k" secondAttribute="leading" id="fgS-3V-5fX"/>
                             <constraint firstItem="Cky-zk-8f6" firstAttribute="trailing" secondItem="yP8-bm-A1k" secondAttribute="trailing" id="hIw-n9-4Zp"/>
                             <constraint firstItem="Dbe-Ke-hFh" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" id="jby-y0-NLf"/>
+                            <constraint firstItem="94f-gc-5Bl" firstAttribute="centerY" secondItem="dkN-4t-Vim" secondAttribute="centerY" constant="150" id="u3Z-u8-UOH"/>
                             <constraint firstItem="v2V-rm-2s1" firstAttribute="centerX" secondItem="dkN-4t-Vim" secondAttribute="centerX" constant="-130" id="vTO-az-28W"/>
                             <constraint firstItem="Cky-zk-8f6" firstAttribute="top" secondItem="dkN-4t-Vim" secondAttribute="top" id="vzh-NN-EgM"/>
                             <constraint firstAttribute="bottom" secondItem="Cky-zk-8f6" secondAttribute="bottom" id="wAy-Lw-zJW"/>
@@ -1125,7 +1105,6 @@
                     </view>
                     <connections>
                         <outlet property="changePWButton" destination="jpV-lh-cN9" id="Neg-kY-Smq"/>
-                        <outlet property="privacyButton" destination="sPH-KI-tOk" id="kRI-d1-ArY"/>
                         <outlet property="signOutButton" destination="Dbe-Ke-hFh" id="13P-RY-hRM"/>
                     </connections>
                 </viewController>

@@ -11,7 +11,7 @@ import UIKit
 class settingsViewController: UIViewController {
     
     
-    @IBOutlet weak var privacyButton: UIButton!
+
     @IBOutlet weak var changePWButton: UIButton!
     @IBOutlet weak var signOutButton: UIButton!
     
@@ -19,7 +19,6 @@ class settingsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        privacyButton.layer.cornerRadius = 30
         changePWButton.layer.cornerRadius = 30
         signOutButton.layer.cornerRadius = 30
         
