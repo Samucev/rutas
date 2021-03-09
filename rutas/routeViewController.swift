@@ -30,12 +30,40 @@ class routeViewController: UIViewController {
         
         
     }
+    
+    // Animación del botón.
+
+    func buttonAnimation(sender:UIButton) {
+
+        print("Botón animado.")
+
+        self.animatedView(sender)
+
+    }
+
+
+    func animatedView(_ viewToAnimate:UIView) {
+
+        UIView.animate(withDuration: 0.1, animations: {
+
+            viewToAnimate.transform = CGAffineTransform(scaleX: 0.80, y: 0.80)}) { (_) in
+
+            UIView.animate(withDuration: 0.1, animations: {
+
+                viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
+
+            }, completion: nil)
+
+        }
+
+    }
 
     
     
     
     @IBAction func profileButton(_ sender: Any) {
         
+        buttonAnimation(sender: profileButton) // Animación del botón
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -50,6 +78,8 @@ class routeViewController: UIViewController {
     
     @IBAction func settingsButton(_ sender: Any) {
         
+        buttonAnimation(sender: settingsButton) // Animación del botón
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
@@ -62,6 +92,8 @@ class routeViewController: UIViewController {
     
     
     @IBAction func mapButton(_ sender: Any) {
+        
+        
         
         let route = Route(name: "MadridOculto")
                 
@@ -83,6 +115,7 @@ class routeViewController: UIViewController {
             }
         })
         
+        buttonAnimation(sender: madridOculto) // Animación del botón
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
