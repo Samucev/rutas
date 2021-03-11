@@ -7,12 +7,16 @@
 		<key>Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-rutas.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>2</integer>
+=======
+			<integer>0</integer>
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
 		</dict>
 	</dict>
 </dict>
