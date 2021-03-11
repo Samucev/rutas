@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gC1-V8-oer">
+=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hy-Ko-2h0">
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -157,18 +161,7 @@
                                                 <blurEffect style="regular"/>
                                             </vibrancyEffect>
                                         </visualEffectView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n0k-he-RyI">
-                                            <rect key="frame" x="97" y="188" width="220" height="220"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="220" id="XJb-wU-0HU"/>
-                                                <constraint firstAttribute="width" constant="220" id="adn-Nz-1nb"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="n0k-he-RyI" firstAttribute="centerY" secondItem="b1l-3L-8RX" secondAttribute="centerY" constant="-150" id="CjU-gK-k8e"/>
-                                        <constraint firstItem="n0k-he-RyI" firstAttribute="centerX" secondItem="b1l-3L-8RX" secondAttribute="centerX" id="sTv-GI-qtm"/>
-                                    </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
@@ -194,9 +187,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ooq-fI-i14"/>
                     </view>
-                    <connections>
-                        <outlet property="profileIV" destination="n0k-he-RyI" id="oc1-Zc-fZr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy7-tE-drO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,18 +403,6 @@
                                     <action selector="cameraButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="5MM-of-R8D"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-AB-lMt">
-                                <rect key="frame" x="87" y="357" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-v2-Hng">
-                                        <rect key="frame" x="8" y="8" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="xmark.circle.fill" catalog="system"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -447,12 +425,11 @@
                         <outlet property="infoButton" destination="apO-s0-3df" id="eBT-cj-8rr"/>
                         <outlet property="mapa" destination="wQ6-5c-j0i" id="ODy-ew-3bn"/>
                         <outlet property="settingsButton" destination="UFL-tn-haj" id="Ps8-aQ-bbg"/>
-                        <outlet property="tipView" destination="3Jw-AB-lMt" id="wuQ-Pf-Jz9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SO-Pr-x3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.8695652173915" y="12.723214285714285"/>
+            <point key="canvasLocation" x="2362" y="13"/>
         </scene>
         <!--Map Settings View Controller-->
         <scene sceneID="I2a-Ka-8b5">
@@ -1139,6 +1116,66 @@
             </objects>
             <point key="canvasLocation" x="-572.46376811594212" y="745.98214285714278"/>
         </scene>
+        <!--List Monuments View Controller-->
+        <scene sceneID="z2H-wM-0qr">
+            <objects>
+                <viewController id="gC1-V8-oer" customClass="listMonumentsViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hco-1i-puY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QET-bS-6Eb">
+                                <rect key="frame" x="0.0" y="116" width="414" height="746"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellMonument" textLabel="qsf-uS-jpL" rowHeight="63" style="IBUITableViewCellStyleDefault" id="a1O-1f-v0c">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a1O-1f-v0c" id="bVI-MX-rPc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qsf-uS-jpL">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY0-dl-uBw">
+                                <rect key="frame" x="143.66666666666666" y="44" width="126.99999999999997" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="a8m-GJ-vaO"/>
+                                    <constraint firstAttribute="width" constant="127" id="pjc-dg-0ND"/>
+                                </constraints>
+                                <state key="normal" title="PERFIL"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NY0-dl-uBw" firstAttribute="top" secondItem="6So-E2-9Ds" secondAttribute="top" id="J4a-Ar-0p4"/>
+                            <constraint firstItem="QET-bS-6Eb" firstAttribute="bottom" secondItem="6So-E2-9Ds" secondAttribute="bottom" id="UYY-3W-ZTr"/>
+                            <constraint firstItem="NY0-dl-uBw" firstAttribute="centerX" secondItem="QET-bS-6Eb" secondAttribute="centerX" id="W6d-7p-f4f"/>
+                            <constraint firstItem="QET-bS-6Eb" firstAttribute="top" secondItem="NY0-dl-uBw" secondAttribute="bottom" constant="20" id="YHO-XZ-udN"/>
+                            <constraint firstItem="NY0-dl-uBw" firstAttribute="centerX" secondItem="hco-1i-puY" secondAttribute="centerX" id="jh5-1q-ZMX"/>
+                            <constraint firstItem="QET-bS-6Eb" firstAttribute="leading" secondItem="6So-E2-9Ds" secondAttribute="leading" id="yUG-Ta-jay"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6So-E2-9Ds"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="QET-bS-6Eb" id="9Oc-K7-uh8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhK-fk-6bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4504" y="728"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
@@ -1155,6 +1192,5 @@
         <image name="plasaMaior.jpg" width="1350" height="913"/>
         <image name="puertaAlcala.jpg" width="1600" height="1200"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
-        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
