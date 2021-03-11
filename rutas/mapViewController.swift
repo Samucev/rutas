@@ -24,6 +24,8 @@ class mapViewController: UIViewController {
     
     @IBOutlet weak var cameraButton: UIButton!
     
+    @IBOutlet weak var tipView: UIView!
+    
         @IBOutlet weak var mapa: MKMapView!
         @IBOutlet weak var nombreP: UILabel!
         var locationManager = CLLocationManager()
@@ -142,6 +144,8 @@ class mapViewController: UIViewController {
 
 
     }
+    
+    
 
 
    //entrar en la zona
@@ -337,6 +341,8 @@ extension mapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
         self.checkLocationAuthorization(authorizationStatus: status)
 
     }
+    
+    
 
 }
 

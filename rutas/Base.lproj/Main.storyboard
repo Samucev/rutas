@@ -157,7 +157,18 @@
                                                 <blurEffect style="regular"/>
                                             </vibrancyEffect>
                                         </visualEffectView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n0k-he-RyI">
+                                            <rect key="frame" x="97" y="188" width="220" height="220"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="220" id="XJb-wU-0HU"/>
+                                                <constraint firstAttribute="width" constant="220" id="adn-Nz-1nb"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="n0k-he-RyI" firstAttribute="centerY" secondItem="b1l-3L-8RX" secondAttribute="centerY" constant="-150" id="CjU-gK-k8e"/>
+                                        <constraint firstItem="n0k-he-RyI" firstAttribute="centerX" secondItem="b1l-3L-8RX" secondAttribute="centerX" id="sTv-GI-qtm"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
@@ -183,6 +194,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ooq-fI-i14"/>
                     </view>
+                    <connections>
+                        <outlet property="profileIV" destination="n0k-he-RyI" id="oc1-Zc-fZr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy7-tE-drO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,6 +413,18 @@
                                     <action selector="cameraButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="5MM-of-R8D"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-AB-lMt">
+                                <rect key="frame" x="87" y="357" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-v2-Hng">
+                                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="xmark.circle.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -421,11 +447,12 @@
                         <outlet property="infoButton" destination="apO-s0-3df" id="eBT-cj-8rr"/>
                         <outlet property="mapa" destination="wQ6-5c-j0i" id="ODy-ew-3bn"/>
                         <outlet property="settingsButton" destination="UFL-tn-haj" id="Ps8-aQ-bbg"/>
+                        <outlet property="tipView" destination="3Jw-AB-lMt" id="wuQ-Pf-Jz9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SO-Pr-x3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2362" y="13"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="12.723214285714285"/>
         </scene>
         <!--Map Settings View Controller-->
         <scene sceneID="I2a-Ka-8b5">
@@ -1128,5 +1155,6 @@
         <image name="plasaMaior.jpg" width="1350" height="913"/>
         <image name="puertaAlcala.jpg" width="1600" height="1200"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
