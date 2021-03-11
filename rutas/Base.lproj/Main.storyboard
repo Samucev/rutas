@@ -157,18 +157,7 @@
                                                 <blurEffect style="regular"/>
                                             </vibrancyEffect>
                                         </visualEffectView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n0k-he-RyI">
-                                            <rect key="frame" x="97" y="188" width="220" height="220"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="220" id="XJb-wU-0HU"/>
-                                                <constraint firstAttribute="width" constant="220" id="adn-Nz-1nb"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="n0k-he-RyI" firstAttribute="centerY" secondItem="b1l-3L-8RX" secondAttribute="centerY" constant="-150" id="CjU-gK-k8e"/>
-                                        <constraint firstItem="n0k-he-RyI" firstAttribute="centerX" secondItem="b1l-3L-8RX" secondAttribute="centerX" id="sTv-GI-qtm"/>
-                                    </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
@@ -194,13 +183,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ooq-fI-i14"/>
                     </view>
-                    <connections>
-                        <outlet property="profileIV" destination="n0k-he-RyI" id="oc1-Zc-fZr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy7-tE-drO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.8695652173915" y="745.98214285714278"/>
+            <point key="canvasLocation" x="2361" y="746"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="9Nc-hQ-4wi">
