@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D13B70425C2E1DD009FA822 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D13B70325C2E1DD009FA822 /* mapViewController.swift */; };
+		0D44E9E325FA506800ADD81A /* listMonumentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44E9E225FA506700ADD81A /* listMonumentsController.swift */; };
 		0D61C2AD25E9145E00EA316E /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61C2AC25E9145E00EA316E /* cameraViewController.swift */; };
 		0D80403C25D15E6100D42874 /* mapSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */; };
 		0D80403E25D1653B00D42874 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403D25D1653B00D42874 /* infoViewController.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		0D13B70325C2E1DD009FA822 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		0D44E9E225FA506700ADD81A /* listMonumentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = listMonumentsController.swift; path = ../../Downloads/listMonumentsController.swift; sourceTree = "<group>"; };
 		0D61C2AC25E9145E00EA316E /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapSettingsViewController.swift; sourceTree = "<group>"; };
 		0D80403D25D1653B00D42874 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				0D8E6A8725C42A1000E9A583 /* routeViewController.swift */,
 				0D13B70325C2E1DD009FA822 /* mapViewController.swift */,
 				0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */,
+				0D44E9E225FA506700ADD81A /* listMonumentsController.swift */,
 				7F38F2DF25D6B3360002E75E /* APIManager.swift */,
 				7F38F2E125D6B4230002E75E /* User.swift */,
 				7FF80BDB25B99D5A00723384 /* Assets.xcassets */,
@@ -409,6 +412,7 @@
 				7FF80BD325B99D5900723384 /* AppDelegate.swift in Sources */,
 				0D8E6A9025C42B3100E9A583 /* recoverPWViewController.swift in Sources */,
 				0D80403C25D15E6100D42874 /* mapSettingsViewController.swift in Sources */,
+				0D44E9E325FA506800ADD81A /* listMonumentsController.swift in Sources */,
 				7FF80BD525B99D5900723384 /* SceneDelegate.swift in Sources */,
 				0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */,
 				7F38F2E225D6B4230002E75E /* User.swift in Sources */,
