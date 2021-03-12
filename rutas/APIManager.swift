@@ -32,7 +32,9 @@ class APIManager {
     let resourceURL: URL
    
     init(endpoint: String) {
-        let resourceString = "http://localhost:8888/rutasAPI/public/api/\(endpoint)"
+        //let resourceString = "http://localhost:8888/rutasAPI/public/api/\(endpoint)"
+        let resourceString = "http://rutmaddb.cxxjiznpggzj.us-east-1.rds.amazonaws.com/public/api/\(endpoint)"
+        
        
         //let resourceString = "https://superapi.netlify.app/\(endpoint)"
        
