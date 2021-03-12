@@ -33,7 +33,7 @@ class APIManager {
    
     init(endpoint: String) {
         //let resourceString = "http://localhost:8888/rutasAPI/public/api/\(endpoint)"
-        let resourceString = "http://rutmaddb.cxxjiznpggzj.us-east-1.rds.amazonaws.com/public/api/\(endpoint)"
+        let resourceString = "http://52.91.17.161/rutas/public/index.php/api/\(endpoint)"
         
        
         //let resourceString = "https://superapi.netlify.app/\(endpoint)"
@@ -103,7 +103,7 @@ class APIManager {
    
    
     func login(_ userToSave: User, completion: @escaping(Swift.Result<User,Error>)->Void){
-       
+       print(resourceURL)
         Alamofire.request(resourceURL, method: .post, parameters: userToSave.getDictLogin(), encoding: JSONEncoding.default, headers: nil).responseData{ response in
             switch response.result{
                    
