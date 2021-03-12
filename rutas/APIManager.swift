@@ -11,7 +11,7 @@ import Alamofire
 
 public var token = "TOKEN_KEY"
 public var altitude = "ALTITUDE_KEY"
-public var longitude = "LONGITUDE_KEY"
+public var latitude = "LATITUDE_KEY"
 public var name = "NAME_KEY"
 
 
