@@ -24,18 +24,23 @@ class mapViewController: UIViewController {
     
     @IBOutlet weak var cameraButton: UIButton!
     
-    @IBOutlet weak var tipView: UIView!
-    
         @IBOutlet weak var mapa: MKMapView!
         @IBOutlet weak var nombreP: UILabel!
         var locationManager = CLLocationManager()
            var bol = true
         
       
-       let latitud = 40.4345306
-       let altitud = -3.7190748
+      let latitud = 40.4345306
+      let altitud = -3.7190748
+    
+      var arrayLatitud = [40.4193729,40.4154279]
+      var arrayLongitud = [-3.6932277,-3.6942327]
+    
+      var arrayCirculoLatitud = [40.4193729,40.4154279]
+      var arrayCirculoLongitud = [-3.6932277,-3.6942327]
+      var numeroRuta = 0
         
-        
+      
         
     
     
@@ -47,6 +52,7 @@ class mapViewController: UIViewController {
             mapa.showsUserLocation = true
             self.mapa.delegate = self
             self.locationManager.requestAlwaysAuthorization()
+            print(arrayLatitud)
 
             mapa.setUserTrackingMode(.followWithHeading, animated: true)
             self.checkLocationAuthorization()
@@ -84,10 +90,10 @@ class mapViewController: UIViewController {
        
            locationManager.distanceFilter = 525
 
-                 let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(40.4345306,-3.7190748), radius: 525, identifier: "Boise")
+                 let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(arrayCirculoLatitud[0],arrayCirculoLatitud[0]), radius: 525, identifier: "Boise")
 
                  locationManager.startMonitoring(for: geoFenceRegion)
-                 let coordenadasCirculo = CLLocationCoordinate2D(latitude: 40.4345306, longitude: -3.7190748)
+                 let coordenadasCirculo = CLLocationCoordinate2D(latitude: arrayCirculoLatitud[0], longitude: arrayCirculoLongitud[0])
                  let radio = CLLocationDistance(525)
 
                  showCircle(coordinate: coordenadasCirculo, radius: radio)
@@ -144,8 +150,6 @@ class mapViewController: UIViewController {
 
 
     }
-    
-    
 
 
    //entrar en la zona
@@ -161,6 +165,9 @@ class mapViewController: UIViewController {
                  let destinationLocation = CLLocationCoordinate2D(latitude: latitud , longitude: altitud)
 
                  createPath(sourceLocation: sourceLocation, destinationLocation: destinationLocation, bol: bol)
+                numeroRuta = +1
+        print(numeroRuta)
+        print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 
 
 
@@ -173,7 +180,7 @@ class mapViewController: UIViewController {
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         // coordenadas del usuario
         let sourceLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
-        let destinationLocation = CLLocationCoordinate2D(latitude: 40.4207500 , longitude: -3.7517500)
+        let destinationLocation = CLLocationCoordinate2D(latitude: arrayLatitud[numeroRuta] , longitude: arrayLongitud[numeroRuta])
 
         createPath(sourceLocation: sourceLocation, destinationLocation: destinationLocation, bol: bol)
 
@@ -341,8 +348,6 @@ extension mapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
         self.checkLocationAuthorization(authorizationStatus: status)
 
     }
-    
-    
 
 }
 

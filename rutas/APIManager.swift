@@ -13,6 +13,12 @@ public var token = "TOKEN_KEY"
 public var altitude = "ALTITUDE_KEY"
 public var longitude = "LONGITUDE_KEY"
 public var name = "NAME_KEY"
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
 
 
 enum MyResult<T,E:Error> {
@@ -41,9 +47,24 @@ class APIManager {
         self.resourceURL = resourceURL
     }
 
+<<<<<<< HEAD
     func register(_ userToSave: User ,completion: @escaping(Swift.Result<User,Error>, String?)->Void){
        
        
+=======
+<<<<<<< HEAD
+    func register(_ userToSave: User ,completion: @escaping(Swift.Result<User,Error>, String?)->Void){
+=======
+
+
+    func register(_ userToSave: User ,completion: @escaping(Swift.Result<User,Error>, String?)->Void){
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+        
+
+        
+
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
         Alamofire.request(resourceURL, method: .post, parameters: userToSave.getDictRegister(), encoding: JSONEncoding.default, headers: nil).responseData{ response in
             switch response.result{
                    
@@ -54,7 +75,23 @@ class APIManager {
                         let json = try JSONSerialization.jsonObject(with: data, options: [])
                        
                         if response.response?.statusCode == 200 {
+<<<<<<< HEAD
                            
+=======
+
+                            
+<<<<<<< HEAD
+                            if let json = json as? [String: String?] {
+                                let noPermission = json["message"]
+                                
+                                print("hola")
+                                print(noPermission)
+
+                                completion(.success(userToSave), noPermission!)
+                                return
+=======
+
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
                             if let json = json as? [String: String?] {
                                 let noPermission = json["message"]
                                
@@ -63,11 +100,30 @@ class APIManager {
 
                                 completion(.success(userToSave), noPermission!)
                                 return
+<<<<<<< HEAD
                             }
                            
+=======
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+                            }
+
+                            
+<<<<<<< HEAD
+                            completion(.success(userToSave), nil)
+                            
+                            print(json)
+=======
+
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
                             completion(.success(userToSave), nil)
                            
                             print(json)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
 //
 //                            print("El usuario " + userToSave.name + " ha sido creado")
 //
@@ -83,16 +139,45 @@ class APIManager {
                         print(response.response!.statusCode)
                        
                         print("Usuario o contraseña incorrectas")
+<<<<<<< HEAD
                        
                         completion(.failure(APIError.decodingProblem),nil)
                     }
                    
                    
+=======
+
+                        
+<<<<<<< HEAD
+                        completion(.failure(APIError.decodingProblem),nil)
+=======
+
+                        completion(.failure(APIError.decodingProblem),nil)
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+                    }
+
+                    
+                    
+<<<<<<< HEAD
+                case .failure(let data):
+                    
+                    print(data)
+                    //print(err.localizedDescription)
+                    completion(.failure(APIError.responseProblem),nil)
+=======
+
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
                 case .failure(let data):
                    
                     print(data)
                     //print(err.localizedDescription)
                     completion(.failure(APIError.responseProblem),nil)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
                 }
             }
        
@@ -191,9 +276,23 @@ class APIManager {
                 case .success(let data):
                     do{
                         let json = try JSONSerialization.jsonObject(with: data, options: [])
+<<<<<<< HEAD
                        
                         //let jsonObject = json as! NSArray
                        
+=======
+
+                        
+<<<<<<< HEAD
+                        //let jsonObject = json as! NSArray
+=======
+
+                        let jsonObject = json as! NSArray
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+                        
+
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
                         if response.response?.statusCode == 200 {
                        
 //
@@ -211,17 +310,72 @@ class APIManager {
                                
                                 UserDefaults.standard.set(altitudeArray, forKey: altitude)
                                 UserDefaults.standard.set(latitudeArray, forKey: longitude)
+<<<<<<< HEAD
                                 UserDefaults.standard.set(nameArray, forKey: name)
                                
                                 UserDefaults.standard.synchronize()
                                
+=======
+<<<<<<< HEAD
+                                UserDefaults.standard.set(nameArray, forKey: name)
+=======
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+                                
+
+                                UserDefaults.standard.synchronize()
+
+                                
+<<<<<<< HEAD
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
                      //           print(altitudeArray)
                //                 print(latitudeArray)
                                 print(nameArray)
 //                                print(json)
+<<<<<<< HEAD
                             }
                            
                            
+=======
+=======
+
+//                                print(altitudeArray[0])
+
+//                                print(latitudeArray[0])
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+                            }
+
+                            
+
+                            
+<<<<<<< HEAD
+=======
+
+
+
+//                            if let json = json as? [String: String] {
+
+//                                let tokenJSON = json["latitude"]
+
+//
+
+//                                print(tokenJSON)
+
+//
+
+//                               UserDefaults.standard.set(tokenJSON, forKey: token)
+
+//                               UserDefaults.standard.synchronize()
+
+//
+
+//                            }
+
+                            
+
+>>>>>>> ca0677cf60fa8375c4dbf828d99bed3db05e19c8
+>>>>>>> b13ce0809c2c353dbe44021cc4b8b37c58450922
                             completion(.success(Route))
                         }else{
                             print(json)
