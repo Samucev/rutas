@@ -14,6 +14,8 @@ class profileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        profileIV.layer.cornerRadius = 150
 
         // Do any additional setup after loading the view.
     }
