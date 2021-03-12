@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jPO-EG-exD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hy-Ko-2h0">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -140,27 +140,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-IA-1fm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b1l-3L-8RX">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0It-0I-Ybk">
-                                            <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6pi-1t-RoH">
-                                                <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </view>
-                                            <vibrancyEffect>
-                                                <blurEffect style="regular"/>
-                                            </vibrancyEffect>
-                                        </visualEffectView>
-                                    </subviews>
-                                </view>
-                                <blurEffect style="systemUltraThinMaterialDark"/>
-                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il0-O2-sN1">
                                 <rect key="frame" x="7" y="113.66666666666669" width="400" height="29"/>
                                 <constraints>
@@ -168,25 +147,57 @@
                                     <constraint firstAttribute="width" constant="400" id="wbu-Q3-qPP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de usuario: Sgt. 23" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdF-g3-aBJ">
+                                <rect key="frame" x="32" y="634" width="350" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27.670000000000002" id="fda-4O-YE3"/>
+                                    <constraint firstAttribute="width" constant="350" id="roj-U7-DbY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutas realizadas: 3" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feP-2q-Gmt">
+                                <rect key="frame" x="32" y="683" width="350" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="MZs-Ox-QWz"/>
+                                    <constraint firstAttribute="height" constant="30" id="peh-6T-yb6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casaCorreos.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-Hp-7Ci">
+                                <rect key="frame" x="57" y="198" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4mG-bB-VJC"/>
+                                    <constraint firstAttribute="height" constant="300" id="Ky9-HO-TXv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="il0-O2-sN1" firstAttribute="centerY" secondItem="Ry2-KF-LyX" secondAttribute="centerY" constant="-320" id="5QQ-Nf-jMN"/>
-                            <constraint firstItem="3TY-IA-1fm" firstAttribute="leading" secondItem="Ooq-fI-i14" secondAttribute="leading" id="Ohj-J0-QnY"/>
-                            <constraint firstAttribute="bottom" secondItem="3TY-IA-1fm" secondAttribute="bottom" id="Yg2-Kb-ccw"/>
-                            <constraint firstItem="3TY-IA-1fm" firstAttribute="top" secondItem="Ry2-KF-LyX" secondAttribute="top" id="ccQ-e8-2mb"/>
-                            <constraint firstItem="3TY-IA-1fm" firstAttribute="trailing" secondItem="Ooq-fI-i14" secondAttribute="trailing" id="f9y-fB-tFG"/>
+                            <constraint firstItem="GdF-g3-aBJ" firstAttribute="centerY" secondItem="Ry2-KF-LyX" secondAttribute="centerY" constant="200" id="BeS-eX-o3b"/>
+                            <constraint firstItem="feP-2q-Gmt" firstAttribute="centerX" secondItem="Ry2-KF-LyX" secondAttribute="centerX" id="D6Q-Gl-8PY"/>
+                            <constraint firstItem="GdF-g3-aBJ" firstAttribute="centerX" secondItem="Ry2-KF-LyX" secondAttribute="centerX" id="HtW-9W-FEZ"/>
+                            <constraint firstItem="WrL-Hp-7Ci" firstAttribute="centerY" secondItem="Ry2-KF-LyX" secondAttribute="centerY" constant="-100" id="IaF-Z3-rOh"/>
+                            <constraint firstItem="feP-2q-Gmt" firstAttribute="centerY" secondItem="Ry2-KF-LyX" secondAttribute="centerY" constant="250" id="gNi-Aq-x9j"/>
+                            <constraint firstItem="WrL-Hp-7Ci" firstAttribute="centerX" secondItem="Ry2-KF-LyX" secondAttribute="centerX" id="gj7-9E-oDM"/>
                             <constraint firstItem="il0-O2-sN1" firstAttribute="centerX" secondItem="Ry2-KF-LyX" secondAttribute="centerX" id="vS9-DF-nm1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ooq-fI-i14"/>
                     </view>
+                    <connections>
+                        <outlet property="profileIV" destination="WrL-Hp-7Ci" id="gUh-ER-qGa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy7-tE-drO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="746"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="745.98214285714278"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="9Nc-hQ-4wi">
