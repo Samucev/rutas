@@ -17,7 +17,7 @@
 		0D8E6A8A25C42A6900E9A583 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */; };
 		0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */; };
 		0D8E6A9025C42B3100E9A583 /* recoverPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */; };
-		0DE1562625FBA676009B2C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE1562425FBA676009B2C94 /* Main.storyboard */; };
+		1D23B2E225FFC3FF009C20B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D23B2E025FFC3FF009C20B2 /* Main.storyboard */; };
 		7F38F2E025D6B3360002E75E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2DF25D6B3360002E75E /* APIManager.swift */; };
 		7F38F2E225D6B4230002E75E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2E125D6B4230002E75E /* User.swift */; };
 		7FCF03AF25EE5C6900AEC88D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF03AE25EE5C6900AEC88D /* Route.swift */; };
@@ -70,7 +70,7 @@
 		0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePWViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverPWViewController.swift; sourceTree = "<group>"; };
-		0DE1562525FBA676009B2C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../Desktop/rutas copia/rutas/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		1D23B2E125FFC3FF009C20B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6798D9637F3096D5C2A5DDC3 /* Pods-rutas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutas.release.xcconfig"; path = "Target Support Files/Pods-rutas/Pods-rutas.release.xcconfig"; sourceTree = "<group>"; };
 		7F38F2DF25D6B3360002E75E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7F38F2E125D6B4230002E75E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -184,8 +184,8 @@
 				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
 				7FF80BD625B99D5900723384 /* loginViewController.swift */,
 				0D61C2AC25E9145E00EA316E /* cameraViewController.swift */,
-				0DE1562425FBA676009B2C94 /* Main.storyboard */,
 				7FF0932A25E921370059B65B /* mapa1.mlmodel */,
+				1D23B2E025FFC3FF009C20B2 /* Main.storyboard */,
 				0D8E6A8525C428C500E9A583 /* registerViewController.swift */,
 				0D8E644325CAD8A900D8B59F /* profileViewController.swift */,
 				0D80403D25D1653B00D42874 /* infoViewController.swift */,
@@ -333,7 +333,7 @@
 				7FF0933125E922490059B65B /* plasaMaior.jpg in Resources */,
 				7FF0933525E922590059B65B /* nepetuno.jpg in Resources */,
 				7FF80BDF25B99D5A00723384 /* LaunchScreen.storyboard in Resources */,
-				0DE1562625FBA676009B2C94 /* Main.storyboard in Resources */,
+				1D23B2E225FFC3FF009C20B2 /* Main.storyboard in Resources */,
 				7FF0933D25E922790059B65B /* oso.jpg in Resources */,
 				7FF80BDC25B99D5A00723384 /* Assets.xcassets in Resources */,
 				7FF0932F25E9223E0059B65B /* madridWP.jpg in Resources */,
@@ -461,10 +461,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0DE1562425FBA676009B2C94 /* Main.storyboard */ = {
+		1D23B2E025FFC3FF009C20B2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0DE1562525FBA676009B2C94 /* Base */,
+				1D23B2E125FFC3FF009C20B2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
