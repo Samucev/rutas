@@ -78,15 +78,15 @@
 		7FCF03AE25EE5C6900AEC88D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		7FE69CBF25FB8F7F003FB26A /* listMonumentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listMonumentsController.swift; sourceTree = "<group>"; };
 		7FF0932A25E921370059B65B /* mapa1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mapa1.mlmodel; sourceTree = "<group>"; };
-		7FF0932C25E922350059B65B /* casaCorreos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casaCorreos.jpg; path = fondoPantalla/casaCorreos.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0932E25E9223E0059B65B /* madridWP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = madridWP.jpg; path = fondoPantalla/madridWP.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0933025E922490059B65B /* plasaMaior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = plasaMaior.jpg; path = fondoPantalla/plasaMaior.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0933225E922500059B65B /* cibeles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cibeles.jpg; path = fondoPantalla/cibeles.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0933425E922590059B65B /* nepetuno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nepetuno.jpg; path = fondoPantalla/nepetuno.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0933625E922620059B65B /* puertaAlcala.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = puertaAlcala.jpg; path = fondoPantalla/puertaAlcala.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0933825E922690059B65B /* colon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = colon.jpg; path = fondoPantalla/colon.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0933A25E922720059B65B /* debod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = debod.jpg; path = fondoPantalla/debod.jpg; sourceTree = SOURCE_ROOT; };
-		7FF0933C25E922790059B65B /* oso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oso.jpg; path = fondoPantalla/oso.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0932C25E922350059B65B /* casaCorreos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casaCorreos.jpg; path = rutas/Image/casaCorreos.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0932E25E9223E0059B65B /* madridWP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = madridWP.jpg; path = rutas/Image/madridWP.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0933025E922490059B65B /* plasaMaior.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = plasaMaior.jpg; path = rutas/Image/plasaMaior.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0933225E922500059B65B /* cibeles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cibeles.jpg; path = rutas/Image/cibeles.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0933425E922590059B65B /* nepetuno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nepetuno.jpg; path = rutas/Image/nepetuno.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0933625E922620059B65B /* puertaAlcala.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = puertaAlcala.jpg; path = rutas/Image/puertaAlcala.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0933825E922690059B65B /* colon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = colon.jpg; path = rutas/Image/colon.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0933A25E922720059B65B /* debod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = debod.jpg; path = rutas/Image/debod.jpg; sourceTree = SOURCE_ROOT; };
+		7FF0933C25E922790059B65B /* oso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oso.jpg; path = rutas/Image/oso.jpg; sourceTree = SOURCE_ROOT; };
 		7FF80BCF25B99D5900723384 /* rutas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rutas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF80BD225B99D5900723384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FF80BD425B99D5900723384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +129,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D23B2F125FFDFD1009C20B2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7F38F2DF25D6B3360002E75E /* APIManager.swift */,
+				7F38F2E125D6B4230002E75E /* User.swift */,
+				7FCF03AE25EE5C6900AEC88D /* Route.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1D23B2F225FFE017009C20B2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7FF80BD625B99D5900723384 /* loginViewController.swift */,
+				0D8E6A8525C428C500E9A583 /* registerViewController.swift */,
+				0D8E644325CAD8A900D8B59F /* profileViewController.swift */,
+				0D80403D25D1653B00D42874 /* infoViewController.swift */,
+				0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */,
+				0D13B70325C2E1DD009FA822 /* mapViewController.swift */,
+				0D8E6A8725C42A1000E9A583 /* routeViewController.swift */,
+				0D61C2AC25E9145E00EA316E /* cameraViewController.swift */,
+				7FE69CBF25FB8F7F003FB26A /* listMonumentsController.swift */,
+				0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */,
+				0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */,
+				0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1D23B2F325FFE182009C20B2 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7FF0932C25E922350059B65B /* casaCorreos.jpg */,
+				7FF0932E25E9223E0059B65B /* madridWP.jpg */,
+				7FF0933025E922490059B65B /* plasaMaior.jpg */,
+				7FF0933225E922500059B65B /* cibeles.jpg */,
+				7FF0933425E922590059B65B /* nepetuno.jpg */,
+				7FF0933625E922620059B65B /* puertaAlcala.jpg */,
+				7FF0933825E922690059B65B /* colon.jpg */,
+				7FF0933A25E922720059B65B /* debod.jpg */,
+				7FF0933C25E922790059B65B /* oso.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		1D23B2F725FFE20E009C20B2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1D23B2E025FFC3FF009C20B2 /* Main.storyboard */,
+				7FF80BDD25B99D5A00723384 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1D23B2FB25FFE24A009C20B2 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7FF80BD225B99D5900723384 /* AppDelegate.swift */,
+				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		1D23B2FC25FFE25B009C20B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FF0932A25E921370059B65B /* mapa1.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		668DBAA2A8CDDE02A9A7E024 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,37 +242,14 @@
 		7FF80BD125B99D5900723384 /* rutas */ = {
 			isa = PBXGroup;
 			children = (
-				7FF0932C25E922350059B65B /* casaCorreos.jpg */,
-				7FF0932E25E9223E0059B65B /* madridWP.jpg */,
-				7FF0933025E922490059B65B /* plasaMaior.jpg */,
-				7FF0933225E922500059B65B /* cibeles.jpg */,
-				7FF0933425E922590059B65B /* nepetuno.jpg */,
-				7FF0933625E922620059B65B /* puertaAlcala.jpg */,
-				7FF0933825E922690059B65B /* colon.jpg */,
-				7FF0933A25E922720059B65B /* debod.jpg */,
-				7FF0933C25E922790059B65B /* oso.jpg */,
-				7FF80BD225B99D5900723384 /* AppDelegate.swift */,
-				7FF80BD425B99D5900723384 /* SceneDelegate.swift */,
-				7FF80BD625B99D5900723384 /* loginViewController.swift */,
-				0D61C2AC25E9145E00EA316E /* cameraViewController.swift */,
-				7FF0932A25E921370059B65B /* mapa1.mlmodel */,
-				1D23B2E025FFC3FF009C20B2 /* Main.storyboard */,
-				0D8E6A8525C428C500E9A583 /* registerViewController.swift */,
-				0D8E644325CAD8A900D8B59F /* profileViewController.swift */,
-				0D80403D25D1653B00D42874 /* infoViewController.swift */,
-				0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */,
-				0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */,
-				0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */,
-				0D8E6A8725C42A1000E9A583 /* routeViewController.swift */,
-				0D13B70325C2E1DD009FA822 /* mapViewController.swift */,
-				7FE69CBF25FB8F7F003FB26A /* listMonumentsController.swift */,
-				0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */,
-				7F38F2DF25D6B3360002E75E /* APIManager.swift */,
-				7F38F2E125D6B4230002E75E /* User.swift */,
+				1D23B2FC25FFE25B009C20B2 /* Model */,
+				1D23B2FB25FFE24A009C20B2 /* Delegate */,
+				1D23B2F725FFE20E009C20B2 /* Storyboard */,
+				1D23B2F325FFE182009C20B2 /* Image */,
+				1D23B2F225FFE017009C20B2 /* Screens */,
+				1D23B2F125FFDFD1009C20B2 /* API */,
 				7FF80BDB25B99D5A00723384 /* Assets.xcassets */,
-				7FF80BDD25B99D5A00723384 /* LaunchScreen.storyboard */,
 				7FF80BE025B99D5A00723384 /* Info.plist */,
-				7FCF03AE25EE5C6900AEC88D /* Route.swift */,
 			);
 			path = rutas;
 			sourceTree = "<group>";

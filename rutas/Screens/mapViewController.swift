@@ -61,8 +61,13 @@ class mapViewController: UIViewController {
             
         }
 
-    doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
-    doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
+    //doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
+    //doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
+        
+        doubleLatitude = [40.4193488,40.4152912,40.4163972,40.4170382]
+        doubleLongitude = [3.6930709,3.6941321,3.6987904,3.7025768]
+        
+        
         
         print(doubleLatitude)
        print("AAAAAAAAAAAAAAAAAAAAAAAA")

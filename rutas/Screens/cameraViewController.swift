@@ -4,6 +4,7 @@ import Vision
 
 
 
+
 class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBufferDelegate {
     
     override var prefersStatusBarHidden: Bool{return true}
@@ -34,6 +35,8 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
         view.layer.addSublayer(previewLayer)
         previewLayer.frame = view.frame
         //camara creada
+        print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        print(numeroRuta)
         
        
         view.addSubview(bellowview)
@@ -73,7 +76,7 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
         
     }
     
-    
+   
     
     @IBAction func infoButton(_ sender: Any) {
         
