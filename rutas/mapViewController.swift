@@ -24,14 +24,14 @@ class mapViewController: UIViewController {
     
     @IBOutlet weak var cameraButton: UIButton!
     
-    /*@IBOutlet weak var tip: UILabel!*/
+    @IBOutlet weak var tip: UILabel!
     @IBOutlet weak var mapa: MKMapView!
     @IBOutlet weak var nombreP: UILabel!
     var locationManager = CLLocationManager()
     var bol = true
 
-   /*let latitude1 = UserDefaults.standard.array(forKey: latitude)
-   let longitude = UserDefaults.standard.array(forKey: lati)*/
+   let latitude1 = UserDefaults.standard.array(forKey: latitude)
+   let longitude1 = UserDefaults.standard.array(forKey: longitude)
     
 
     
@@ -121,12 +121,12 @@ class mapViewController: UIViewController {
         numeroRuta += 1
         
         var tip1 = ""
-        /*if numeroRuta == 1{
+        if numeroRuta == 1{
             tip.text = "hola"
         }
         if numeroRuta == 2{
                    tip.text = "hola1"
-               }*/
+               }
         var coordenadaAnteriror = numeroRuta
         
         if coordenadaAnteriror == numeroRuta {
@@ -387,6 +387,3 @@ extension mapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
     }
     
 }
-
-
-

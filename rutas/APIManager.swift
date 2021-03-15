@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 
 public var token = "TOKEN_KEY"
-public var altitude = "ALTITUDE_KEY"
 public var latitude = "LATITUDE_KEY"
+public var longitude = "LONGITUDE_KEY"
 public var name = "NAME_KEY"
 
 
@@ -205,13 +205,13 @@ class APIManager {
                            
                             if let array = json as? [[String: Any]] {
 
-                                let altitudeArray = array.compactMap{ $0["altitude"] as? String}
-                                let latitudeArray = array.compactMap{ $0["latitude"] as? String}
+                                let altitudeArray = array.compactMap{ $0["latitude"] as? String}
+                                let latitudeArray = array.compactMap{ $0["longitude"] as? String}
                                 let nameArray = array.compactMap{ $0["name"] as? String}
 
                                
                                
-                                UserDefaults.standard.set(altitudeArray, forKey: altitude)
+                                UserDefaults.standard.set(altitudeArray, forKey: latitude)
                                 UserDefaults.standard.set(latitudeArray, forKey: longitude)
                                 UserDefaults.standard.set(nameArray, forKey: name)
                                
