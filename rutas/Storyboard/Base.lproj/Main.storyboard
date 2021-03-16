@@ -23,6 +23,21 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pPO-HF-ml7">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOMBRE DE USUARIO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vx-FG-Srp">
+                                            <rect key="frame" x="32" y="222" width="350" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="5dK-q1-cW9"/>
+                                                <constraint firstAttribute="width" constant="350" id="RCS-as-5Nt"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="pPO-HF-ml7" secondAttribute="centerX" id="ate-p6-3B9"/>
+                                        <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="pPO-HF-ml7" secondAttribute="centerY" constant="-201" id="qY9-Ga-l3a"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
@@ -42,22 +57,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6i-MC-P2l">
-                                <rect key="frame" x="32" y="283" width="350" height="50"/>
+                                <rect key="frame" x="32" y="323" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Een-PP-hra"/>
                                     <constraint firstAttribute="height" constant="50" id="iUj-8j-o3v"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOMBRE DE USUARIO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vx-FG-Srp">
-                                <rect key="frame" x="32" y="223" width="350" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5dK-q1-cW9"/>
-                                    <constraint firstAttribute="width" constant="350" id="RCS-as-5Nt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUTMAD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-rJ-hoV">
                                 <rect key="frame" x="121.66666666666667" y="133.66666666666666" width="170.66666666666663" height="29"/>
@@ -97,7 +103,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="4gZ-dg-fkP"/>
                             <constraint firstItem="6Rf-T8-eZb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="66U-sY-VTb"/>
                             <constraint firstItem="OW8-hG-k05" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="66o-Dc-nuB"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP"/>
@@ -111,9 +116,8 @@
                             <constraint firstItem="OW8-hG-k05" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V2S-tl-eNy"/>
                             <constraint firstItem="6Rf-T8-eZb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XBu-NB-H6K"/>
                             <constraint firstItem="6Rf-T8-eZb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bcY-Hw-lKc"/>
-                            <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezv-qt-Bvd"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker"/>
-                            <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="hT9-Kz-mMr"/>
+                            <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="hT9-Kz-mMr"/>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofR-5t-Ark"/>
                             <constraint firstItem="OW8-hG-k05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rC5-L5-GjS"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSu-2Y-pym"/>
@@ -792,7 +796,7 @@
                                 <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESCOGE TU RUTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-oe-iOR">
-                                <rect key="frame" x="57" y="134.33333333333334" width="300" height="27.666666666666657"/>
+                                <rect key="frame" x="57" y="134" width="300" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="7kT-oA-MwN"/>
                                 </constraints>
