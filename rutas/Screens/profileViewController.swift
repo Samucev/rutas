@@ -16,6 +16,8 @@ class profileViewController: UIViewController {
         super.viewDidLoad()
         
         profileIV.layer.cornerRadius = 150
+        profileIV.layer.borderColor = UIColor.red.cgColor
+        profileIV.layer.borderWidth = 3
 
         // Do any additional setup after loading the view.
     }
