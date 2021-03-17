@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOMBRE DE USUARIO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vx-FG-Srp">
-                                            <rect key="frame" x="32" y="222" width="350" height="50"/>
+                                            <rect key="frame" x="32" y="223" width="350" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="5dK-q1-cW9"/>
                                                 <constraint firstAttribute="width" constant="350" id="RCS-as-5Nt"/>
@@ -36,7 +36,13 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerX" secondItem="pPO-HF-ml7" secondAttribute="centerX" id="ate-p6-3B9"/>
-                                        <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="pPO-HF-ml7" secondAttribute="centerY" constant="-201" id="qY9-Ga-l3a"/>
+                                        <constraint firstItem="2Vx-FG-Srp" firstAttribute="centerY" secondItem="pPO-HF-ml7" secondAttribute="centerY" constant="-200" id="qY9-Ga-l3a" customClass="NSLayoutHelper">
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                                    <real key="value" value="-200"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </constraint>
                                     </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterialDark"/>
@@ -68,8 +74,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUTMAD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-rJ-hoV">
                                 <rect key="frame" x="121.66666666666667" y="133.66666666666666" width="170.66666666666663" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="170.5" id="ZW6-pi-Jii"/>
-                                    <constraint firstAttribute="height" constant="29" id="sxd-jW-zEB"/>
+                                    <constraint firstAttribute="width" constant="170.5" id="ZW6-pi-Jii" customClass="NSLayoutHelper"/>
+                                    <constraint firstAttribute="height" constant="29" id="sxd-jW-zEB" customClass="NSLayoutHelper"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,23 +111,47 @@
                         <constraints>
                             <constraint firstItem="6Rf-T8-eZb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="66U-sY-VTb"/>
                             <constraint firstItem="OW8-hG-k05" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="66o-Dc-nuB"/>
-                            <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP"/>
+                            <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KW-Xm-tIP" customClass="NSLayoutHelper"/>
                             <constraint firstAttribute="bottom" secondItem="OW8-hG-k05" secondAttribute="bottom" id="CfD-Wj-V8v"/>
                             <constraint firstItem="awl-sp-Znz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5X-CH-wEw"/>
                             <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kam-DL-mKn"/>
-                            <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="LXj-iD-WuR"/>
+                            <constraint firstItem="7H2-vU-gDy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="LXj-iD-WuR" customClass="NSLayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
                             <constraint firstItem="00Y-0C-pFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Phe-GB-QYK"/>
                             <constraint firstAttribute="bottom" secondItem="6Rf-T8-eZb" secondAttribute="bottom" id="Qnz-SR-TNX"/>
-                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140" id="UL4-2a-t0P"/>
+                            <constraint firstItem="00Y-0C-pFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140" id="UL4-2a-t0P" customClass="NSLayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                        <real key="value" value="140"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
                             <constraint firstItem="OW8-hG-k05" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V2S-tl-eNy"/>
                             <constraint firstItem="6Rf-T8-eZb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XBu-NB-H6K"/>
                             <constraint firstItem="6Rf-T8-eZb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bcY-Hw-lKc"/>
-                            <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker"/>
-                            <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="hT9-Kz-mMr"/>
+                            <constraint firstItem="awl-sp-Znz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hQn-yB-Ker" customClass="NSLayoutHelper"/>
+                            <constraint firstItem="a6i-MC-P2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="hT9-Kz-mMr" customClass="NSLayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                        <real key="value" value="-100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
                             <constraint firstItem="7H2-vU-gDy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofR-5t-Ark"/>
                             <constraint firstItem="OW8-hG-k05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rC5-L5-GjS"/>
                             <constraint firstItem="a6i-MC-P2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSu-2Y-pym"/>
-                            <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="wbZ-5K-f2u"/>
+                            <constraint firstItem="Ic0-rJ-hoV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="wbZ-5K-f2u" customClass="NSLayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Max">
+                                        <real key="value" value="-300"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -134,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-573.91304347826087" y="12.053571428571429"/>
+            <point key="canvasLocation" x="-572" y="11"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Kjb-DA-1kv">
@@ -441,9 +471,8 @@
                                     <action selector="cameraButton:" destination="H90-WN-rKM" eventType="touchUpInside" id="5MM-of-R8D"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-AB-lMt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-AB-lMt">
                                 <rect key="frame" x="87" y="357" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-v2-Hng">
                                         <rect key="frame" x="8" y="8" width="20" height="20"/>
@@ -462,6 +491,10 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Rj4-tT-6l2"/>
+                                    <constraint firstAttribute="width" constant="240" id="nq5-h0-YM9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -470,11 +503,13 @@
                             <constraint firstItem="apO-s0-3df" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="8xJ-Uu-WVl"/>
                             <constraint firstItem="UFL-tn-haj" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="-340" id="At0-aK-5qy"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="trailing" secondItem="wQ6-5c-j0i" secondAttribute="trailing" id="BTL-Pu-eUF"/>
+                            <constraint firstItem="3Jw-AB-lMt" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" id="Jum-pe-JRR"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="bottom" secondItem="wQ6-5c-j0i" secondAttribute="bottom" id="LdV-I7-Mvp"/>
                             <constraint firstItem="UFL-tn-haj" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="Lz9-NV-D9t"/>
                             <constraint firstItem="apO-s0-3df" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="160" id="NSr-dp-fYX"/>
                             <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="Uyz-Rb-xjg"/>
                             <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="VFy-xy-yfu"/>
+                            <constraint firstItem="3Jw-AB-lMt" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" id="Wov-eW-UwW"/>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="top" secondItem="cRG-vc-xQ7" secondAttribute="top" id="giZ-b7-2VR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cRG-vc-xQ7"/>
@@ -771,8 +806,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madridWP.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-Fs-LRf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="madridWP.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-Fs-LRf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHJ-eW-OjB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -880,23 +916,37 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZNT-Pw-xk2" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="2CQ-0n-szD"/>
-                            <constraint firstItem="5n3-Fs-LRf" firstAttribute="leading" secondItem="XPE-vE-IKg" secondAttribute="leading" id="8dG-zP-uow"/>
                             <constraint firstItem="ZNT-Pw-xk2" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-150" id="CgY-wh-icr"/>
                             <constraint firstItem="jHJ-eW-OjB" firstAttribute="leading" secondItem="XPE-vE-IKg" secondAttribute="leading" id="DPo-Yc-Aa4"/>
-                            <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="Fjy-le-vMj"/>
-                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="I88-Pe-Ecv"/>
+                            <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="Fjy-le-vMj" customClass="NSLayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                        <real key="value" value="320"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="I88-Pe-Ecv" customClass="NSLayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                        <real key="value" value="331"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                        <real key="value" value="331"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
                             <constraint firstItem="jHJ-eW-OjB" firstAttribute="trailing" secondItem="XPE-vE-IKg" secondAttribute="trailing" id="KG6-QX-hqe"/>
-                            <constraint firstItem="5n3-Fs-LRf" firstAttribute="top" secondItem="le6-Lx-gd7" secondAttribute="top" id="P9j-BT-vr7"/>
                             <constraint firstItem="zPC-CW-OFK" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="150" id="QJa-Xh-GND"/>
                             <constraint firstItem="zPC-CW-OFK" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="R3y-h7-KPB"/>
                             <constraint firstItem="UNs-oe-iOR" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="RA1-3v-RTT"/>
                             <constraint firstItem="UNs-oe-iOR" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-300" id="RpM-gt-g7K"/>
-                            <constraint firstAttribute="bottom" secondItem="5n3-Fs-LRf" secondAttribute="bottom" id="XOK-wm-If0"/>
                             <constraint firstItem="vVH-M5-6xk" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" id="fTF-qe-bN9"/>
                             <constraint firstAttribute="bottom" secondItem="jHJ-eW-OjB" secondAttribute="bottom" id="gAD-NO-RKQ"/>
                             <constraint firstItem="jHJ-eW-OjB" firstAttribute="top" secondItem="le6-Lx-gd7" secondAttribute="top" id="j71-DL-zA1"/>
-                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="-150" id="nji-Pn-bUC"/>
-                            <constraint firstItem="5n3-Fs-LRf" firstAttribute="trailing" secondItem="XPE-vE-IKg" secondAttribute="trailing" id="tFu-Am-6dB"/>
+                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="-150" id="nji-Pn-bUC" customClass="NSLayoutHelper"/>
                             <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="150" id="u1R-y4-Cok"/>
                             <constraint firstItem="vVH-M5-6xk" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="vvs-G6-M74"/>
                         </constraints>
