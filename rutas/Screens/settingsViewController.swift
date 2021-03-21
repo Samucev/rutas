@@ -58,7 +58,7 @@ class settingsViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "routeVC") as! routeViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         
@@ -74,7 +74,7 @@ class settingsViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "changePWVC") as! changePWViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "changePWVC") as! changePWViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         
@@ -97,7 +97,7 @@ class settingsViewController: UIViewController {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
+            let vc = storyboard.instantiateViewController(withIdentifier: "VC") as! loginViewController
                     
             vc.modalPresentationStyle = .overFullScreen
             

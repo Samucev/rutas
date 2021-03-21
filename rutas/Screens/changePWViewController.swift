@@ -57,7 +57,7 @@ class changePWViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "settingsVC") as! settingsViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         

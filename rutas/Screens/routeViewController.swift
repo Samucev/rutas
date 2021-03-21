@@ -67,7 +67,7 @@ class routeViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "profileVC") as! profileViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "profileVC") as! profileViewController
                 
         //vc.modalPresentationStyle = .overFullScreen
         
@@ -82,7 +82,7 @@ class routeViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "settingsVC") as! settingsViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "settingsVC") as! settingsViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         
@@ -91,6 +91,7 @@ class routeViewController: UIViewController {
     }
     
     
+    @available(iOS 13.0, *)
     @IBAction func mapButton(_ sender: Any) {
         
         
@@ -119,7 +120,7 @@ class routeViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        let vc = storyboard.instantiateViewController(identifier: "mapVC") as! mapViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "mapVC") as! mapViewController
 
         vc.modalPresentationStyle = .overFullScreen
 

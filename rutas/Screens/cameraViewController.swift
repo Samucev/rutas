@@ -2,10 +2,13 @@ import UIKit
 import AVKit
 import Vision
 
-
-
+public var name1 = String()
+public var arrayMonumentsFinal = [String]()
 
 class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBufferDelegate {
+    
+    var capSession = AVCaptureSession()
+    var previewLayer: AVCaptureVideoPreviewLayer?
     
     override var prefersStatusBarHidden: Bool{return true}
     
@@ -16,7 +19,7 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
     @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var infoButton: UIButton!
     
-    var model = mapa1().model
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,29 +28,23 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
         mapButton.layer.cornerRadius = 30 // Botón redondeado
         infoButton.layer.cornerRadius = 30
         
-        let captureseSesion = AVCaptureSession()
-        guard let captureDevice = AVCaptureDevice.default(for: .video)else {return}
-        guard let input = try? AVCaptureDeviceInput(device: captureDevice)else {return}
-        captureseSesion.addInput(input)
-        captureseSesion.startRunning()
+        capSession.sessionPreset = .photo
         
-        let previewLayer = AVCaptureVideoPreviewLayer(session: captureseSesion)
-        view.layer.addSublayer(previewLayer)
-        previewLayer.frame = view.frame
-        //camara creada
-        print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-        print(numeroRuta)
+        guard let capDevice = AVCaptureDevice.default(for: AVMediaType.video)else{return}
         
-       
-        view.addSubview(bellowview)
-              bellowview.clipsToBounds = true
-              bellowview.layer.cornerRadius = 15.0
-              bellowview.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMaxYCorner]
+        guard let input = try? AVCaptureDeviceInput(device: capDevice)else{return}
         
-        let dataOutput = AVCaptureVideoDataOutput()
-        dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label:"videoQueue"))
-        captureseSesion.addOutput(dataOutput)
+        capSession.addInput(input)
+        capSession.startRunning()
         
+        previewLayer = AVCaptureVideoPreviewLayer(session: capSession)
+        view.layer.addSublayer(previewLayer!)
+        previewLayer!.frame = view.frame
+        
+        let outputData = AVCaptureVideoDataOutput()
+        
+        outputData.setSampleBufferDelegate(self, queue: DispatchQueue(label: "Queue"))
+        capSession.addOutput(outputData)
         
         
         
@@ -57,24 +54,66 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
     
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        
-        guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)else {return}
-        
-        guard let model = try? VNCoreMLModel(for: model )else{return}
-        let request = VNCoreMLRequest(model: model ){ (finishedReq,err)
-         in
-            guard let results = finishedReq.results as? [VNClassificationObservation] else {return}
-            guard let firstObservation = results.first else {return}
             
-            var name: String = firstObservation.identifier
-            var acc: Int = Int(firstObservation.confidence * 100)
-           
-         
+            guard let buffer:CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else{
+                return
+            }
+            
+            guard let dataModel = try? VNCoreMLModel(for: rutf_1().model) else {
+                return
+            }
+            let request = VNCoreMLRequest(model: dataModel){(res, error)
+                in
+                
+                guard let result = res.results as?
+                    [VNClassificationObservation] else {return}
+                
+                guard let observationData = result.first else {return}
+                
+                //print(observationData.identifier, observationData.confidence)
+                
+                name1 = observationData.identifier
+                
+                if !arrayMonumentsFinal.contains(name1) && observationData.confidence > 0.95{
+                    
+                    arrayMonumentsFinal.append(name1)
+                    
+                    
+                    DispatchQueue.main.async {
+                        
+
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+                        let redViewController = storyboard.instantiateViewController(withIdentifier: "listVC") as! listMonumentsViewController
+                        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                        appDelegate.window?.rootViewController = redViewController
+                        
+                        
+                    }
+
+                    
+
+                    
+                    
+                    
+    //                self.capSession.stopRunning()
+                }
+                //print(arrayMonumentsFinal)
+                
+            }
+            
+            try? VNImageRequestHandler(cvPixelBuffer: buffer, options: [:]).perform([request])
+            
+            
         }
-        //https://www.youtube.com/watch?v=SkgHz8nw5V8&t=1031s
-        try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
         
-    }
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            
+    //        previewLayer?.removeFromSuperlayer()
+    //        capSession.stopRunning()
+            self.dismiss(animated: false, completion: nil)
+        }
     
    
     
@@ -82,7 +121,7 @@ class cameraViewController: UIViewController , AVCaptureVideoDataOutputSampleBuf
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        let vc = storyboard.instantiateViewController(identifier: "infoVC") as! infoViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "infoVC") as! infoViewController
 
         /*vc.modalPresentationStyle = .overFullScreen*/
 

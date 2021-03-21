@@ -58,7 +58,7 @@ class recoverPWViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "VC") as! loginViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "VC") as! loginViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         

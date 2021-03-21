@@ -27,7 +27,7 @@ class mapSettingsViewController: UIViewController {
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "cameraVC") as! cameraViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         

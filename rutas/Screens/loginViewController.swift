@@ -81,7 +81,7 @@ class loginViewController: UIViewController {
                 
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 
-                let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+                let vc = storyboard.instantiateViewController(withIdentifier: "routeVC") as! routeViewController
                         
                 vc.modalPresentationStyle = .overFullScreen
                 
@@ -107,7 +107,7 @@ class loginViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "registerVC") as! registerViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "registerVC") as! registerViewController
                 
         /*vc.modalPresentationStyle = .overFullScreen*/
         
@@ -125,7 +125,7 @@ class loginViewController: UIViewController {
                 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "recoverPWCV") as! recoverPWViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "recoverPWCV") as! recoverPWViewController
                 
         vc.modalPresentationStyle = .overFullScreen
         
