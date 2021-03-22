@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572" y="11"/>
+            <point key="canvasLocation" x="-284" y="11"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Kjb-DA-1kv">
@@ -304,7 +304,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXw-8q-BCN">
                                 <rect key="frame" x="-37" y="438" width="1341" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">En 1936, durante la guerra civil, la fuente fué cubierta por una estructura de ladrillo con forma piramidal y rellenada con sacos de arena, para protegerla de los bombardeos. Lo que desconocen muchas personas, es que existe una réplica de la fuente en el centro de la Ciudad de México. Se inauguró en 1980 por el presidente mexicano López Portillo y el alcalde Tierno Galván. Fué un regalo del Ayuntamiento de Madrid como símbolo de hermanamiento entre ambas ciudades.Desde hace varios años la Fuente de Cibeles es un símbolo para los seguidores del equipo de fútbol Real Madrid, ya que es el punto de celebración de los títulos que consigue el equipo madrileño. También se celebran los éxitos de la selección española de fútbol.</mutableString>
+                                <string key="text">En 1936, durante la guerra civil, la fuente fué cubierta por una estructura de ladrillo con forma piramidal y rellenada con sacos de arena, para protegerla de los bombardeos.
+ 
+Lo que desconocen muchas personas, es que existe una réplica de la fuente en el centro de la Ciudad de México. Se inauguró en 1980 por el presidente mexicano López Portillo y el alcalde Tierno Galván. Fué un regalo del Ayuntamiento de Madrid como símbolo de hermanamiento entre ambas ciudades.
+Desde hace varios años la Fuente de Cibeles es un símbolo para los seguidores del equipo de fútbol Real Madrid, ya que es el punto de celebración de los títulos que consigue el equipo madrileño. También se celebran los éxitos de la selección española de fútbol.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -336,7 +339,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-tY-0rM">
                                 <rect key="frame" x="162" y="457" width="1827" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">La fuente se terminó de construir en 1786, y como curiosidad, su primer emplazamiento fue en la bajada de la Carrera de San Jerónimo, pero en 1898 se instaló en en su ubicación actual, en el centro de la citada plaza de Cánovas del Castillo.En la actualidad, Neptuno es el punto de encuentro de los seguidores del club Atlético de Madrid para celebrar sus éxitos deportivos, en contraposición a la Fuente de Cibeles, tradicional punto de cita de los madridistas.</string>
+                                <string key="text">La fuente se terminó de construir en 1786, y como curiosidad, su primer emplazamiento fue en la bajada de la Carrera de San Jerónimo, pero en 1898 se instaló en en su ubicación actual, en el centro de la citada plaza de Cánovas del Castillo.
+En la actualidad, Neptuno es el punto de encuentro de los seguidores del club Atlético de Madrid para celebrar sus éxitos deportivos, en contraposición a la Fuente de Cibeles, tradicional punto de cita de los madridistas.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -368,7 +372,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtO-AQ-AEO">
                                 <rect key="frame" x="186" y="473" width="3632" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Durante el proceso de creación de las esculturas, Ponzano se dio cuenta de que faltaría algo de material y decidió prescindir de éste en los testículos del león izquierdo, al cual representó con el rabo enroscado, lo cual servía para tapar la pudorosa falta de material.  La situación algo más elevada de éste permitía que el detalle pasase desapercibido. Tanto fue así que hasta el año 1985, durante la restauración del conjunto no se descubrió el “secreto” de los leones del Congreso.Pero las curiosidades y misterios de los leones van más allá. Ponciano Ponzano fue un hombre con una fuerte personalidad, perfeccionista, supersticioso. Siempre fue reticente a ser el creador de los leones del Congreso. Pocas veces había realizado una escultural animal, por considerar que le traían mala suerte. Pues bien, su peculiar fallecimiento en 1877, atragantado por una uva, creó un halo de misterio en torno al escultor y los leones del Congreso</mutableString>
+                                <string key="text">Durante el proceso de creación de las esculturas, Ponzano se dio cuenta de que faltaría algo de material y decidió prescindir de éste en los testículos del león izquierdo, al cual representó con el rabo enroscado, lo cual servía para tapar la pudorosa falta de material.  La situación algo más elevada de éste permitía que el detalle pasase desapercibido. Tanto fue así que hasta el año 1985, durante la restauración del conjunto no se descubrió el “secreto” de los leones del Congreso.
+Pero las curiosidades y misterios de los leones van más allá. Ponciano Ponzano fue un hombre con una fuerte personalidad, perfeccionista, supersticioso. Siempre fue reticente a ser el creador de los leones del Congreso. Pocas veces había realizado una escultural animal, por considerar que le traían mala suerte. Pues bien, su peculiar fallecimiento en 1877, atragantado por una uva, creó un halo de misterio en torno al escultor y los leones del Congreso
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -400,7 +406,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-Tq-zJG">
                                 <rect key="frame" x="197" y="489" width="1329" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">El origen de este simbolo para la ciudad de madrid se remonta siglo XIII, cuando el rey Alfonso VIII ya utilizaba en sus estandartes la imagen del oso, muy abundante en la zona.existe constancia de que el oso en realidad es una osa, pues viene a representar una constelación asociada al mito de las dos osas.Frente a lo que puedas pensar, la escultura que puedes ver en la Puerta del Sol es muy reciente, pues fue esculpida por Antonio Navarro Santafé en 1967Tras la remodelación de la plaza impulsada por Tierno Galván en 1986, la escultura se trasladó frente a la calle del Carmen.Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre de 2009, la escultura ha vuelto a la zona oriental, ahora frente a la calle de Alcalá.</mutableString>
+                                <string key="text">El origen de este simbolo para la ciudad de madrid se remonta siglo XIII, cuando el rey Alfonso VIII ya utilizaba en sus estandartes la imagen del oso, muy abundante en la zona.
+existe constancia de que el oso en realidad es una osa, pues viene a representar una constelación asociada al mito de las dos osas.
+Frente a lo que puedas pensar, la escultura que puedes ver en la Puerta del Sol es muy reciente, pues fue esculpida por Antonio Navarro Santafé en 1967
+
+
+Tras la remodelación de la plaza impulsada por Tierno Galván en 1986, la escultura se trasladó frente a la calle del Carmen.
+Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre de 2009, la escultura ha vuelto a la zona oriental, ahora frente a la calle de Alcalá.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1341,7 +1354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHZ-jz-Lcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572.46376811594212" y="745.98214285714278"/>
+            <point key="canvasLocation" x="-284" y="761"/>
         </scene>
         <!--List Monuments View Controller-->
         <scene sceneID="Y2V-Bt-oZU">

@@ -132,13 +132,7 @@ class mapViewController: UIViewController {
         if numeroRuta == 2{
                    tip.text = "hola1"
                }
-        var coordenadaAnteriror = numeroRuta
         
-        if coordenadaAnteriror == numeroRuta {
-            cameraButton.isHidden = false
-        }else{
-            cameraButton.isHidden = true
-        }
         let destinationLocation = CLLocationCoordinate2D(latitude:  doubleLatitude[numeroRuta] , longitude:  -(doubleLongitude[numeroRuta]))
         locationManager.distanceFilter = 100
 
