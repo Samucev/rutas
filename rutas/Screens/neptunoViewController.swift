@@ -1,14 +1,14 @@
 //
-//  storyViewController.swift
+//  neptunoViewController.swift
 //  rutas
 //
-//  Created by Apps2m on 16/03/2021.
+//  Created by Apps2m on 22/03/2021.
 //  Copyright © 2021 alumnos. All rights reserved.
 //
 
 import UIKit
 
-class storyViewController: UIViewController {
+class neptunoViewController: UIViewController {
 
     
     @IBOutlet weak var mapButton: UIButton!
@@ -35,14 +35,6 @@ class storyViewController: UIViewController {
         
     }
 
-    
-
-    
-
-    
-
-
-
-
 
 }
+

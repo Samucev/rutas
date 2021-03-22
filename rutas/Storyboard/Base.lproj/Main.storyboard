@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hy-Ko-2h0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P3l-yE-Beg">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -283,128 +283,220 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF5-jO-2rF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3209" y="746"/>
+            <point key="canvasLocation" x="3164" y="746"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="ebF-yI-kdU">
             <objects>
-                <viewController storyboardIdentifier="cibelesvc" id="P3l-yE-Beg" customClass="storyViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cibelesVC" id="P3l-yE-Beg" customClass="storyViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yuv-9Y-lxo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cibeles " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlZ-pf-uBP">
-                                <rect key="frame" x="186" y="151" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cibeles " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlZ-pf-uBP">
+                                <rect key="frame" x="167.66666666666666" y="134.33333333333334" width="78.666666666666657" height="27.666666666666657"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXw-8q-BCN">
-                                <rect key="frame" x="-37" y="438" width="1341" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">En 1936, durante la guerra civil, la fuente fué cubierta por una estructura de ladrillo con forma piramidal y rellenada con sacos de arena, para protegerla de los bombardeos.
- 
-Lo que desconocen muchas personas, es que existe una réplica de la fuente en el centro de la Ciudad de México. Se inauguró en 1980 por el presidente mexicano López Portillo y el alcalde Tierno Galván. Fué un regalo del Ayuntamiento de Madrid como símbolo de hermanamiento entre ambas ciudades.
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXw-8q-BCN">
+                                <rect key="frame" x="32" y="198" width="350" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="CAF-Sa-JvL"/>
+                                    <constraint firstAttribute="width" constant="350" id="HRi-Ap-luP"/>
+                                </constraints>
+                                <string key="text">En 1936, durante la guerra civil, la fuente fue cubierta por una estructura de ladrillo con forma piramidal y rellenada con sacos de arena, para protegerla de los bombardeos.
+
+Lo que desconocen muchas personas, es que existe una réplica de la fuente en el centro de la Ciudad de México. Se inauguró en 1980 por el presidente mexicano López Portillo y el alcalde Tierno Galván. Fue un regalo del Ayuntamiento de Madrid como símbolo de hermanamiento entre ambas ciudades.                      
+     
 Desde hace varios años la Fuente de Cibeles es un símbolo para los seguidores del equipo de fútbol Real Madrid, ya que es el punto de celebración de los títulos que consigue el equipo madrileño. También se celebran los éxitos de la selección española de fútbol.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTL-sI-nUR">
+                                <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
+                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Oct-oh-ewS"/>
+                                    <constraint firstAttribute="width" constant="350" id="eTn-9s-Lns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapButton:" destination="P3l-yE-Beg" eventType="touchUpInside" id="Cet-If-YmR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NXw-8q-BCN" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" id="CpO-xm-ReK"/>
+                            <constraint firstItem="xlZ-pf-uBP" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="Hot-JK-1gK"/>
+                            <constraint firstItem="NXw-8q-BCN" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="RXb-86-fJU"/>
+                            <constraint firstItem="oTL-sI-nUR" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="hog-S9-gbH"/>
+                            <constraint firstItem="xlZ-pf-uBP" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" constant="-300" id="ti1-nl-CCd"/>
+                            <constraint firstItem="oTL-sI-nUR" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" constant="330" id="zo0-Hp-YAn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1LJ-mi-4re"/>
                     </view>
+                    <connections>
+                        <outlet property="mapButton" destination="oTL-sI-nUR" id="lgY-AR-5g0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ter-sU-Ylk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3853.6231884057975" y="745.98214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Neptuno View Controller-->
         <scene sceneID="hLe-Mi-7J3">
             <objects>
-                <viewController storyboardIdentifier="neptunovc" id="QDB-gE-gak" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="neptunovc" id="QDB-gE-gak" customClass="neptunoViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GAR-Q7-3eh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="neptuno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ9-9p-u3T">
-                                <rect key="frame" x="186" y="155" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neptuno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ9-9p-u3T">
+                                <rect key="frame" x="163.33333333333334" y="134.33333333333334" width="87.666666666666657" height="27.666666666666657"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-tY-0rM">
-                                <rect key="frame" x="162" y="457" width="1827" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-tY-0rM">
+                                <rect key="frame" x="32" y="198" width="350" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="2JW-cK-sgD"/>
+                                    <constraint firstAttribute="height" constant="500" id="fMA-kZ-P6y"/>
+                                </constraints>
                                 <string key="text">La fuente se terminó de construir en 1786, y como curiosidad, su primer emplazamiento fue en la bajada de la Carrera de San Jerónimo, pero en 1898 se instaló en en su ubicación actual, en el centro de la citada plaza de Cánovas del Castillo.
+
 En la actualidad, Neptuno es el punto de encuentro de los seguidores del club Atlético de Madrid para celebrar sus éxitos deportivos, en contraposición a la Fuente de Cibeles, tradicional punto de cita de los madridistas.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-mf-rqA">
+                                <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
+                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="NaB-qB-wtu"/>
+                                    <constraint firstAttribute="height" constant="65" id="a5M-wz-vfe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapButton:" destination="QDB-gE-gak" eventType="touchUpInside" id="CEx-6Y-J6U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TJ9-9p-u3T" firstAttribute="centerX" secondItem="GAR-Q7-3eh" secondAttribute="centerX" id="1a8-dC-oHk"/>
+                            <constraint firstItem="a6g-tY-0rM" firstAttribute="centerX" secondItem="GAR-Q7-3eh" secondAttribute="centerX" id="5Oo-am-TTG"/>
+                            <constraint firstItem="a6g-tY-0rM" firstAttribute="centerY" secondItem="GAR-Q7-3eh" secondAttribute="centerY" id="AnB-TQ-hPa"/>
+                            <constraint firstItem="1iN-mf-rqA" firstAttribute="centerY" secondItem="GAR-Q7-3eh" secondAttribute="centerY" constant="330" id="TWb-rU-CzU"/>
+                            <constraint firstItem="TJ9-9p-u3T" firstAttribute="centerY" secondItem="GAR-Q7-3eh" secondAttribute="centerY" constant="-300" id="nGN-NP-Y9R"/>
+                            <constraint firstItem="1iN-mf-rqA" firstAttribute="centerX" secondItem="GAR-Q7-3eh" secondAttribute="centerX" id="tPA-DK-zDc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Nxl-NG-jlA"/>
                     </view>
+                    <connections>
+                        <outlet property="mapButton" destination="1iN-mf-rqA" id="Adn-rK-C7U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRF-8K-lkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4471" y="746"/>
+            <point key="canvasLocation" x="4543" y="746"/>
         </scene>
-        <!--View Controller-->
+        <!--Leones View Controller-->
         <scene sceneID="31R-ht-hnR">
             <objects>
-                <viewController storyboardIdentifier="leonvc" id="nA6-Hi-BPr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="leonvc" id="nA6-Hi-BPr" customClass="leonesViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I3A-Tw-HbL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="leon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol6-uS-YjP">
-                                <rect key="frame" x="186" y="151" width="33" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leones del Congreso de los Diputados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol6-uS-YjP">
+                                <rect key="frame" x="17.666666666666657" y="134" width="379" height="28"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtO-AQ-AEO">
-                                <rect key="frame" x="186" y="473" width="3632" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtO-AQ-AEO">
+                                <rect key="frame" x="32" y="198" width="350" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="9rO-l1-Ogn"/>
+                                    <constraint firstAttribute="width" constant="350" id="dcI-DD-D6l"/>
+                                </constraints>
                                 <string key="text">Durante el proceso de creación de las esculturas, Ponzano se dio cuenta de que faltaría algo de material y decidió prescindir de éste en los testículos del león izquierdo, al cual representó con el rabo enroscado, lo cual servía para tapar la pudorosa falta de material.  La situación algo más elevada de éste permitía que el detalle pasase desapercibido. Tanto fue así que hasta el año 1985, durante la restauración del conjunto no se descubrió el “secreto” de los leones del Congreso.
+
 Pero las curiosidades y misterios de los leones van más allá. Ponciano Ponzano fue un hombre con una fuerte personalidad, perfeccionista, supersticioso. Siempre fue reticente a ser el creador de los leones del Congreso. Pocas veces había realizado una escultural animal, por considerar que le traían mala suerte. Pues bien, su peculiar fallecimiento en 1877, atragantado por una uva, creó un halo de misterio en torno al escultor y los leones del Congreso
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg5-HB-iDQ">
+                                <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
+                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Hkc-1K-d2u"/>
+                                    <constraint firstAttribute="width" constant="350" id="Mbu-FK-kWw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapButton:" destination="nA6-Hi-BPr" eventType="touchUpInside" id="db2-8X-6dc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ol6-uS-YjP" firstAttribute="centerY" secondItem="I3A-Tw-HbL" secondAttribute="centerY" constant="-300" id="1yg-ng-Sp1"/>
+                            <constraint firstItem="JtO-AQ-AEO" firstAttribute="centerY" secondItem="I3A-Tw-HbL" secondAttribute="centerY" id="5jc-en-g6u"/>
+                            <constraint firstItem="JtO-AQ-AEO" firstAttribute="centerX" secondItem="I3A-Tw-HbL" secondAttribute="centerX" id="Bjl-9A-D6T"/>
+                            <constraint firstItem="zg5-HB-iDQ" firstAttribute="centerY" secondItem="I3A-Tw-HbL" secondAttribute="centerY" constant="330" id="ICP-iT-TCP"/>
+                            <constraint firstItem="ol6-uS-YjP" firstAttribute="centerX" secondItem="I3A-Tw-HbL" secondAttribute="centerX" id="LJM-ri-4FQ"/>
+                            <constraint firstItem="zg5-HB-iDQ" firstAttribute="centerX" secondItem="I3A-Tw-HbL" secondAttribute="centerX" id="qik-Pl-YbI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d1k-vk-gSh"/>
                     </view>
+                    <connections>
+                        <outlet property="mapButton" destination="zg5-HB-iDQ" id="PYa-dg-TRd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bcw-fQ-f4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5070" y="746"/>
+            <point key="canvasLocation" x="5329" y="746"/>
         </scene>
         <!--oso-->
         <scene sceneID="8M6-aY-0pL">
             <objects>
-                <viewController storyboardIdentifier="osovc" title="oso" id="NIC-b2-2Fz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="osovc" title="oso" id="NIC-b2-2Fz" customClass="osoViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7k2-wg-MHa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="oso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ5-VN-9Ec">
-                                <rect key="frame" x="186" y="153" width="28" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El Oso y el Madroño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ5-VN-9Ec">
+                                <rect key="frame" x="105.66666666666669" y="134" width="203" height="28"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-Tq-zJG">
-                                <rect key="frame" x="197" y="489" width="1329" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-Tq-zJG">
+                                <rect key="frame" x="32" y="198" width="350" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="JWF-4s-bUp"/>
+                                    <constraint firstAttribute="height" constant="500" id="VQy-3E-H8B"/>
+                                </constraints>
                                 <string key="text">El origen de este simbolo para la ciudad de madrid se remonta siglo XIII, cuando el rey Alfonso VIII ya utilizaba en sus estandartes la imagen del oso, muy abundante en la zona.
 existe constancia de que el oso en realidad es una osa, pues viene a representar una constelación asociada al mito de las dos osas.
 Frente a lo que puedas pensar, la escultura que puedes ver en la Puerta del Sol es muy reciente, pues fue esculpida por Antonio Navarro Santafé en 1967
@@ -417,14 +509,41 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1H-td-TAc">
+                                <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
+                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="qzt-Z3-PWO"/>
+                                    <constraint firstAttribute="width" constant="350" id="sfR-PW-FgD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapButton:" destination="NIC-b2-2Fz" eventType="touchUpInside" id="N44-S6-g95"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="x1H-td-TAc" firstAttribute="centerY" secondItem="7k2-wg-MHa" secondAttribute="centerY" constant="330" id="Fuv-83-3aC"/>
+                            <constraint firstItem="LZ5-VN-9Ec" firstAttribute="centerX" secondItem="7k2-wg-MHa" secondAttribute="centerX" id="JfS-FX-6jA"/>
+                            <constraint firstItem="sgq-Tq-zJG" firstAttribute="centerY" secondItem="7k2-wg-MHa" secondAttribute="centerY" id="LQ5-o6-kg1"/>
+                            <constraint firstItem="LZ5-VN-9Ec" firstAttribute="centerY" secondItem="7k2-wg-MHa" secondAttribute="centerY" constant="-300" id="SIe-o4-HEQ"/>
+                            <constraint firstItem="sgq-Tq-zJG" firstAttribute="centerX" secondItem="7k2-wg-MHa" secondAttribute="centerX" id="eTw-dr-4GG"/>
+                            <constraint firstItem="x1H-td-TAc" firstAttribute="centerX" secondItem="7k2-wg-MHa" secondAttribute="centerX" id="ubR-aX-fkP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lHb-Vj-3W7"/>
                     </view>
+                    <connections>
+                        <outlet property="mapButton" destination="x1H-td-TAc" id="HWy-Mn-qf3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTD-2t-taA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5682.608695652174" y="745.98214285714278"/>
+            <point key="canvasLocation" x="6183" y="746"/>
         </scene>
         <!--RecoverPW View Controller-->
         <scene sceneID="NoE-hf-yFd">
@@ -1418,6 +1537,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="casaCorreos.jpg" width="720" height="960"/>
