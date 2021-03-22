@@ -51,7 +51,7 @@ class listMonumentsViewController: UIViewController, UITableViewDelegate {
             
             var nombref  = tableView.cellForRow(at: indexPath)?.textLabel?.text
             
-            //-------------------
+            
             
             if nombref ==  "cibeles" {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
