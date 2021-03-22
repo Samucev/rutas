@@ -45,6 +45,7 @@
 		7FF80BEA25B99D5A00723384 /* rutasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF80BE925B99D5A00723384 /* rutasTests.swift */; };
 		7FF80BF525B99D5A00723384 /* rutasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF80BF425B99D5A00723384 /* rutasUITests.swift */; };
 		C06146A6F6B21B93FE71C4FA /* Pods_rutas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E796129CFEC1BE0ABB2EFE50 /* Pods_rutas.framework */; };
+		CFE1158026094FE900F25CC7 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1157F26094FE900F25CC7 /* Circle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		7FF80BF025B99D5A00723384 /* rutasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rutasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF80BF425B99D5A00723384 /* rutasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rutasUITests.swift; sourceTree = "<group>"; };
 		7FF80BF625B99D5A00723384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE1157F26094FE900F25CC7 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		E796129CFEC1BE0ABB2EFE50 /* Pods_rutas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rutas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				7F38F2DF25D6B3360002E75E /* APIManager.swift */,
 				7F38F2E125D6B4230002E75E /* User.swift */,
 				7FCF03AE25EE5C6900AEC88D /* Route.swift */,
+				CFE1157F26094FE900F25CC7 /* Circle.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				7FCF03AF25EE5C6900AEC88D /* Route.swift in Sources */,
 				0D2A612E260390C300F38C99 /* rutf 1.mlmodel in Sources */,
 				0D8E6A8625C428C500E9A583 /* registerViewController.swift in Sources */,
+				CFE1158026094FE900F25CC7 /* Circle.swift in Sources */,
 				0D8E6A8825C42A1000E9A583 /* routeViewController.swift in Sources */,
 				0D13B70425C2E1DD009FA822 /* mapViewController.swift in Sources */,
 				7FF0932B25E921370059B65B /* mapa1.mlmodel in Sources */,

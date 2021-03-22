@@ -13,6 +13,12 @@ public var token = "TOKEN_KEY"
 public var latitude = "LATITUDE_KEY"
 public var longitude = "LONGITUDE_KEY"
 public var name = "NAME_KEY"
+public var longitudeC = "longitudeC_KEY"
+public var longitudeG = "longitudeG_KEY"
+public var latitudeC = "latitudeC_KEY"
+public var latitudeG = "latitudeG_KEY"
+public var radiusC = "radiusC_KEY"
+public var radiusG = "radiusG_KEY"
 
 
 enum MyResult<T,E:Error> {
@@ -241,7 +247,73 @@ class APIManager {
                     completion(.failure(APIError.responseProblem))
                 }
             }
+        
+        func getCircle(_ Circle: Circle, completion: @escaping(Swift.Result<Route,Error>)->Void){
+           
+            Alamofire.request(resourceURL, method: .post, parameters: Route.getDictRoute(), encoding: JSONEncoding.default, headers: nil).responseData{ response in
+                switch response.result{
+                       
+                    case .success(let data):
+                        do{
+                            let json = try JSONSerialization.jsonObject(with: data, options: [])
+                           
+                            //let jsonObject = json as! NSArray
+                           
+                            if response.response?.statusCode == 200 {
+                           
+    //
+    //                            print(json)
+    //
+    //                            print(jsonObject[0])
+                               
+                                if let array = json as? [[String: Any]] {
+
+                                    let longitudeC = array.compactMap{ $0["longitudeC"] as? String}
+                                    let longitudeG = array.compactMap{ $0["longitudeG"] as? String}
+                                    let latitudeC = array.compactMap{ $0["latitudeC"] as? String}
+                                    let latitudeG = array.compactMap{ $0["latitudeG"] as? String}
+                                    let radiusC = array.compactMap{ $0["radiusC"] as? String}
+                                    let radiusG = array.compactMap{ $0["radiusG"] as? String}
+                                    
+
+                                   
+                                   
+                                    UserDefaults.standard.set(longitudeC, forKey: latitude)
+                                    UserDefaults.standard.set(longitudeG, forKey: latitude)
+                                    UserDefaults.standard.set(latitudeC, forKey: latitude)
+                                    UserDefaults.standard.set(latitudeG, forKey: latitude)
+                                    UserDefaults.standard.set(radiusC, forKey: longitude)
+                                    UserDefaults.standard.set(radiusG, forKey: name)
+                                   
+                                    UserDefaults.standard.synchronize()
+                                   
+                         //           print(altitudeArray)
+                   //                 print(latitudeArray)
+                                   
+    //                                print(json)
+                                }
+                               
+                               
+                                completion(.success(Route))
+                            }else{
+                                print(json)
+                                completion(.failure(APIError.responseProblem))
+                            }
+                        }catch{
+                            print(response.response!.statusCode)
+                           
+                            print("Usuario o contraseña incorrectas")
+                           
+                            completion(.failure(APIError.decodingProblem))
+                        }
+                       
+                    case .failure(_):
+                        completion(.failure(APIError.responseProblem))
+                    }
+                }
+
         }
    
        
     }
+}
