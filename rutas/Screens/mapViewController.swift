@@ -27,6 +27,7 @@ class mapViewController: UIViewController {
     @IBOutlet weak var tip: UILabel!
     @IBOutlet weak var mapa: MKMapView!
     @IBOutlet weak var nombreP: UILabel!
+    @IBOutlet weak var finRoute: UIButton!
     var locationManager = CLLocationManager()
     var bol = true
 
@@ -112,6 +113,7 @@ class mapViewController: UIViewController {
         tipView.isHidden = false
          tip.text = "A veces se viste de blanco"
         
+        finRoute.isHidden = true
         
         
     }
@@ -137,26 +139,18 @@ class mapViewController: UIViewController {
         
         if numeroRuta == 1{
             tip.text = "El rey del mar en Madrid"
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+  
         }
         if numeroRuta == 2{
-            tip.text = "Vienen de la selva y muerden, cuidado"
+            finRoute.isHidden = false
                }
 
         
       
 
-        if numeroRuta == 3{
-            DispatchQueue.main.async {
-                               
-                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-                                              let redViewController = storyboard.instantiateViewController(withIdentifier: "routeVC") as! listMonumentsViewController
-                                              let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                                              appDelegate.window?.rootViewController = redViewController
-                                              
-                                              
-                                          }
-        }
+    
        
         
        
@@ -406,6 +400,15 @@ class mapViewController: UIViewController {
         tipView.isHidden = true
     }
     
+    @IBAction func finRoute(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+        
+        vc.modalPresentationStyle = .overFullScreen
+        
+        present(vc, animated: true)
+    }
     
 }
 @available(iOS 13.0, *)
