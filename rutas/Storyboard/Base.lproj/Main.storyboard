@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hy-Ko-2h0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -609,9 +609,8 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                             <action selector="botonTip:" destination="H90-WN-rKM" eventType="touchUpInside" id="KkN-kk-RkL"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2md-3j-k6r">
-                                        <rect key="frame" x="99" y="60" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2md-3j-k6r">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -619,8 +618,12 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2md-3j-k6r" secondAttribute="trailing" id="2TT-oR-poE"/>
+                                    <constraint firstItem="2md-3j-k6r" firstAttribute="top" secondItem="3Jw-AB-lMt" secondAttribute="top" id="2eE-Ic-450"/>
                                     <constraint firstAttribute="height" constant="128" id="Rj4-tT-6l2"/>
+                                    <constraint firstAttribute="bottom" secondItem="2md-3j-k6r" secondAttribute="bottom" id="W8J-pu-sCc"/>
                                     <constraint firstAttribute="width" constant="240" id="nq5-h0-YM9"/>
+                                    <constraint firstItem="2md-3j-k6r" firstAttribute="leading" secondItem="3Jw-AB-lMt" secondAttribute="leading" id="yEC-PZ-Xi5"/>
                                 </constraints>
                             </view>
                         </subviews>
