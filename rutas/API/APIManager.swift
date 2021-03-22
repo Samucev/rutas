@@ -33,7 +33,7 @@ class APIManager {
    
     init(endpoint: String) {
         //let resourceString = "http://localhost:8888/rutasAPI/public/api/\(endpoint)"
-        let resourceString = "http://52.91.17.161/rutas/public/index.php/api/\(endpoint)"
+        let resourceString = "http://54.152.3.97/rutas/public/index.php/api/\(endpoint)"
         
        
         //let resourceString = "https://superapi.netlify.app/\(endpoint)"

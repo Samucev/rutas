@@ -78,15 +78,7 @@ class mapViewController: UIViewController {
         
         doubleLatitudeFence = [40.4191579,40.4152912,40.4163972,40.4170382]
         doubleLongitudeFence = [3.6919569,3.6941321,3.6987904,3.7025768]
-        
-        
-        
-        print(doubleLatitudeRoute)
-       print("AAAAAAAAAAAAAAAAAAAAAAAA")
-        
-        
-
-        
+       
         cameraButton.isHidden = true
         tipView.isHidden = true
         
@@ -117,6 +109,9 @@ class mapViewController: UIViewController {
         infoButton.layer.cornerRadius = 25
         
         cameraButton.layer.cornerRadius = 25
+        tipView.isHidden = false
+         tip.text = "A veces se viste de blanco"
+        
         
         
     }
@@ -135,15 +130,31 @@ class mapViewController: UIViewController {
         
         self.mapa.removeOverlays(self.mapa.overlays)// Borra los overlays
         let sourceLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
+        
         numeroRuta += 1
         
         var tip1 = ""
+        
         if numeroRuta == 1{
-            tip.text = "hola"
+            tip.text = "El rey del mar en Madrid"
         }
         if numeroRuta == 2{
-                   tip.text = "hola1"
+            tip.text = "Vienen de la selva y muerden, cuidado"
                }
+        if numeroRuta == 3{
+            DispatchQueue.main.async {
+                               
+                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+                                              let redViewController = storyboard.instantiateViewController(withIdentifier: "routeVC") as! listMonumentsViewController
+                                              let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                                              appDelegate.window?.rootViewController = redViewController
+                                              
+                                              
+                                          }
+        }
+       
+        
         var coordenadaAnteriror = numeroRuta
         
         if coordenadaAnteriror == numeroRuta {
@@ -177,6 +188,14 @@ class mapViewController: UIViewController {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         // coordenadas del usuario
+        if numeroRuta == 0{
+            
+            let sourceLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
+                    let destinationLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta] , longitude: -(doubleLongitudeRoute[numeroRuta]))
+                   
+                    createPath(sourceLocation: sourceLocation, destinationLocation: destinationLocation, bol: bol)
+            
+        }
 //        let sourceLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
 //        let destinationLocation = CLLocationCoordinate2D(latitude: doubleLatitude[numeroRuta] , longitude: -(doubleLongitude[numeroRuta]))
 //        self.mapa.removeOverlays(self.mapa.overlays)
