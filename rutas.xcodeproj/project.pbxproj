@@ -19,7 +19,10 @@
 		0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */; };
 		0D8E6A9025C42B3100E9A583 /* recoverPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */; };
 		0D9E121E2600D20500DA8735 /* storyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E121D2600D20500DA8735 /* storyViewController.swift */; };
-		1D23B2E225FFC3FF009C20B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D23B2E025FFC3FF009C20B2 /* Main.storyboard */; };
+		0DC8988D2608D6FE00D2B8F1 /* neptunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8988C2608D6FE00D2B8F1 /* neptunoViewController.swift */; };
+		0DC8988F2608D71D00D2B8F1 /* leonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8988E2608D71D00D2B8F1 /* leonesViewController.swift */; };
+		0DC898912608D72F00D2B8F1 /* osoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC898902608D72F00D2B8F1 /* osoViewController.swift */; };
+		1D0189FA2609096100CF5B6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0189F82609096100CF5B6B /* Main.storyboard */; };
 		7F38F2E025D6B3360002E75E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2DF25D6B3360002E75E /* APIManager.swift */; };
 		7F38F2E225D6B4230002E75E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2E125D6B4230002E75E /* User.swift */; };
 		7FCF03AF25EE5C6900AEC88D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF03AE25EE5C6900AEC88D /* Route.swift */; };
@@ -74,7 +77,10 @@
 		0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePWViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverPWViewController.swift; sourceTree = "<group>"; };
 		0D9E121D2600D20500DA8735 /* storyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyViewController.swift; sourceTree = "<group>"; };
-		1D23B2E125FFC3FF009C20B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DC8988C2608D6FE00D2B8F1 /* neptunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neptunoViewController.swift; sourceTree = "<group>"; };
+		0DC8988E2608D71D00D2B8F1 /* leonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leonesViewController.swift; sourceTree = "<group>"; };
+		0DC898902608D72F00D2B8F1 /* osoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = osoViewController.swift; sourceTree = "<group>"; };
+		1D0189F92609096100CF5B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/rutasjhvgr,hjfbghjr,/rutas/Storyboard/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		6798D9637F3096D5C2A5DDC3 /* Pods-rutas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutas.release.xcconfig"; path = "Target Support Files/Pods-rutas/Pods-rutas.release.xcconfig"; sourceTree = "<group>"; };
 		7F38F2DF25D6B3360002E75E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7F38F2E125D6B4230002E75E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -159,6 +165,9 @@
 				0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */,
 				0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */,
 				0D9E121D2600D20500DA8735 /* storyViewController.swift */,
+				0DC8988C2608D6FE00D2B8F1 /* neptunoViewController.swift */,
+				0DC8988E2608D71D00D2B8F1 /* leonesViewController.swift */,
+				0DC898902608D72F00D2B8F1 /* osoViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -182,7 +191,7 @@
 		1D23B2F725FFE20E009C20B2 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				1D23B2E025FFC3FF009C20B2 /* Main.storyboard */,
+				1D0189F82609096100CF5B6B /* Main.storyboard */,
 				7FF80BDD25B99D5A00723384 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -387,7 +396,7 @@
 				7FF0933125E922490059B65B /* plasaMaior.jpg in Resources */,
 				7FF0933525E922590059B65B /* nepetuno.jpg in Resources */,
 				7FF80BDF25B99D5A00723384 /* LaunchScreen.storyboard in Resources */,
-				1D23B2E225FFC3FF009C20B2 /* Main.storyboard in Resources */,
+				1D0189FA2609096100CF5B6B /* Main.storyboard in Resources */,
 				7FF0933D25E922790059B65B /* oso.jpg in Resources */,
 				7FF80BDC25B99D5A00723384 /* Assets.xcassets in Resources */,
 				7FF0932F25E9223E0059B65B /* madridWP.jpg in Resources */,
@@ -464,13 +473,16 @@
 			files = (
 				7FF80BD725B99D5900723384 /* loginViewController.swift in Sources */,
 				7FF80BD325B99D5900723384 /* AppDelegate.swift in Sources */,
+				0DC8988F2608D71D00D2B8F1 /* leonesViewController.swift in Sources */,
 				0D8E6A9025C42B3100E9A583 /* recoverPWViewController.swift in Sources */,
+				0DC8988D2608D6FE00D2B8F1 /* neptunoViewController.swift in Sources */,
 				0D80403C25D15E6100D42874 /* mapSettingsViewController.swift in Sources */,
 				7FE69CC025FB8F7F003FB26A /* listMonumentsController.swift in Sources */,
 				7FF80BD525B99D5900723384 /* SceneDelegate.swift in Sources */,
 				0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */,
 				7F38F2E225D6B4230002E75E /* User.swift in Sources */,
 				0D61C2AD25E9145E00EA316E /* cameraViewController.swift in Sources */,
+				0DC898912608D72F00D2B8F1 /* osoViewController.swift in Sources */,
 				0D9E121E2600D20500DA8735 /* storyViewController.swift in Sources */,
 				0D80403E25D1653B00D42874 /* infoViewController.swift in Sources */,
 				7FCF03AF25EE5C6900AEC88D /* Route.swift in Sources */,
@@ -517,10 +529,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D23B2E025FFC3FF009C20B2 /* Main.storyboard */ = {
+		1D0189F82609096100CF5B6B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1D23B2E125FFC3FF009C20B2 /* Base */,
+				1D0189F92609096100CF5B6B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

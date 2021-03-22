@@ -37,8 +37,14 @@ class mapViewController: UIViewController {
     
     
     
-    var doubleLatitude = [Double]()
-    var doubleLongitude = [Double]()
+    var doubleLatitudeRoute = [Double]()
+    var doubleLongitudeRoute = [Double]()
+    
+    var doubleLatitudeCircle = [Double]()
+    var doubleLongitudeCircle = [Double]()
+    
+    var doubleLatitudeFence = [Double]()
+    var doubleLongitudeFence = [Double]()
     
     
     
@@ -64,17 +70,15 @@ class mapViewController: UIViewController {
     //doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
     //doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
         
-        doubleLatitude = [40.4193488,40.4152912,40.4163972,40.4170382]
-        doubleLongitude = [3.6930709,3.6941321,3.6987904,3.7025768]
+        doubleLatitudeRoute = [40.4189464,40.4152912,40.4163972,40.4170382]
+        doubleLongitudeRoute = [3.6933072,3.6941321,3.6987904,3.7025768]
         
+        doubleLatitudeCircle = [40.4191579,40.4152912,40.4163972,40.4170382]
+        doubleLongitudeCircle = [3.6919569,3.6941321,3.6987904,3.7025768]
         
-        
-        print(doubleLatitude)
-       print("AAAAAAAAAAAAAAAAAAAAAAAA")
-        
-        
-
-        
+        doubleLatitudeFence = [40.4191579,40.4152912,40.4163972,40.4170382]
+        doubleLongitudeFence = [3.6919569,3.6941321,3.6987904,3.7025768]
+       
         cameraButton.isHidden = true
         tipView.isHidden = true
         
@@ -86,13 +90,13 @@ class mapViewController: UIViewController {
         mapa.addAnnotation(punto)
         
         
-        locationManager.distanceFilter = 100
+        locationManager.distanceFilter = 30
 
-        let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(doubleLatitude[numeroRuta],-(doubleLongitude[numeroRuta])), radius: 100, identifier: "Boise")
+        let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(doubleLatitudeRoute[numeroRuta],-(doubleLongitudeFence[numeroRuta])), radius: 30, identifier: "Boise")
 
         locationManager.startMonitoring(for: geoFenceRegion)
-        let coordenadasCirculo = CLLocationCoordinate2D(latitude: doubleLatitude[numeroRuta], longitude: -(doubleLongitude[numeroRuta]))
-        let radio = CLLocationDistance(100)
+        let coordenadasCirculo = CLLocationCoordinate2D(latitude: doubleLatitudeCircle[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
+        let radio = CLLocationDistance(125)
         
         showCircle(coordinate: coordenadasCirculo, radius: radio)
         
@@ -105,6 +109,9 @@ class mapViewController: UIViewController {
         infoButton.layer.cornerRadius = 25
         
         cameraButton.layer.cornerRadius = 25
+        tipView.isHidden = false
+         tip.text = "A veces se viste de blanco"
+        
         
         
     }
@@ -122,25 +129,46 @@ class mapViewController: UIViewController {
          //coordenadas del usuario
         
         self.mapa.removeOverlays(self.mapa.overlays)// Borra los overlays
-        let sourceLocation = CLLocationCoordinate2D(latitude: doubleLatitude[numeroRuta], longitude: -(doubleLongitude[numeroRuta]))
+        let sourceLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
+        
         numeroRuta += 1
         
         var tip1 = ""
+        
         if numeroRuta == 1{
-            tip.text = "hola"
+            tip.text = "El rey del mar en Madrid"
         }
         if numeroRuta == 2{
-                   tip.text = "hola1"
+            tip.text = "Vienen de la selva y muerden, cuidado"
                }
-        
-        let destinationLocation = CLLocationCoordinate2D(latitude:  doubleLatitude[numeroRuta] , longitude:  -(doubleLongitude[numeroRuta]))
-        locationManager.distanceFilter = 100
 
-        let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(doubleLatitude[numeroRuta],-(doubleLongitude[numeroRuta])), radius: 100, identifier: "Boise")
+        
+      
+
+        if numeroRuta == 3{
+            DispatchQueue.main.async {
+                               
+                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+                                              let redViewController = storyboard.instantiateViewController(withIdentifier: "routeVC") as! listMonumentsViewController
+                                              let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                                              appDelegate.window?.rootViewController = redViewController
+                                              
+                                              
+                                          }
+        }
+       
+        
+       
+        let destinationLocation = CLLocationCoordinate2D(latitude:  doubleLatitudeRoute[numeroRuta] , longitude:  -(doubleLongitudeRoute[numeroRuta]))
+        locationManager.distanceFilter = 30
+
+
+        let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(doubleLatitudeRoute[numeroRuta],-(doubleLongitudeRoute[numeroRuta])), radius: 30, identifier: "Boise")
 
         locationManager.startMonitoring(for: geoFenceRegion)
-        let coordenadasCirculo = CLLocationCoordinate2D(latitude: doubleLatitude[numeroRuta], longitude: -(doubleLongitude[numeroRuta]))
-        let radio = CLLocationDistance(100)
+        let coordenadasCirculo = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
+        let radio = CLLocationDistance(125)
         
         showCircle(coordinate: coordenadasCirculo, radius: radio)
 
@@ -159,6 +187,14 @@ class mapViewController: UIViewController {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         // coordenadas del usuario
+        if numeroRuta == 0{
+            
+            let sourceLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
+                    let destinationLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta] , longitude: -(doubleLongitudeRoute[numeroRuta]))
+                   
+                    createPath(sourceLocation: sourceLocation, destinationLocation: destinationLocation, bol: bol)
+            
+        }
 //        let sourceLocation = CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude)
 //        let destinationLocation = CLLocationCoordinate2D(latitude: doubleLatitude[numeroRuta] , longitude: -(doubleLongitude[numeroRuta]))
 //        self.mapa.removeOverlays(self.mapa.overlays)

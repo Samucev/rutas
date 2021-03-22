@@ -1,17 +1,16 @@
 //
-//  storyViewController.swift
+//  osoViewController.swift
 //  rutas
 //
-//  Created by Apps2m on 16/03/2021.
+//  Created by Apps2m on 22/03/2021.
 //  Copyright © 2021 alumnos. All rights reserved.
 //
 
 import UIKit
 
-class storyViewController: UIViewController {
+class osoViewController: UIViewController {
 
-    
-    @IBOutlet weak var mapButton: UIButton!
+        @IBOutlet weak var mapButton: UIButton!
 
     override func viewDidLoad() {
 
@@ -35,14 +34,6 @@ class storyViewController: UIViewController {
         
     }
 
-    
-
-    
-
-    
-
-
-
-
 
 }
+
