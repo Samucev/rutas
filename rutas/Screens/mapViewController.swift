@@ -74,6 +74,21 @@ class mapViewController: UIViewController {
             
         }
         
+        let circle = Circle(id: 1)
+        
+        let postRequest = APIManager(endpoint: "circles/list")
+        
+        
+
+        postRequest.getCircle(circle, completion: {result in
+            switch result{
+            case .success(let user):
+                print("Se ha enviado el id ")
+            case .failure(let error):
+                print("Ha ocurrido un error \(error)")
+            }
+        })
+        
 //        doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
 //        doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
         let doubleLongitudeCF = longitudeCF!.map{ Double($0 as? String ?? "")!}

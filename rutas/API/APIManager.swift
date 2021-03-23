@@ -20,6 +20,8 @@ public var latitudeG = "latitudeG_KEY"
 public var radiusC = "radiusC_KEY"
 public var radiusG = "radiusG_KEY"
 
+public var info = "INFO_KEY"
+
 
 enum MyResult<T,E:Error> {
     case succes(T)
@@ -246,25 +248,24 @@ class APIManager {
                 case .failure(_):
                     completion(.failure(APIError.responseProblem))
                 }
+            
             }
         
-        func getCircle(_ Circle: Circle, completion: @escaping(Swift.Result<Route,Error>)->Void){
+        
+    }
+        
+        func getCircle(_ Circle: Circle, completion: @escaping(Swift.Result<Circle,Error>)->Void){
            
-            Alamofire.request(resourceURL, method: .post, parameters: Route.getDictRoute(), encoding: JSONEncoding.default, headers: nil).responseData{ response in
+            Alamofire.request(resourceURL, method: .post, encoding: JSONEncoding.default, headers: nil).responseData{ response in
                 switch response.result{
                        
                     case .success(let data):
                         do{
                             let json = try JSONSerialization.jsonObject(with: data, options: [])
                            
-                            //let jsonObject = json as! NSArray
+                            let jsonObject = json as! NSArray
                            
                             if response.response?.statusCode == 200 {
-                           
-    //
-    //                            print(json)
-    //
-    //                            print(jsonObject[0])
                                
                                 if let array = json as? [[String: Any]] {
 
@@ -294,7 +295,7 @@ class APIManager {
                                 }
                                
                                
-                                completion(.success(Route))
+                                completion(.success(Circle))
                             }else{
                                 print(json)
                                 completion(.failure(APIError.responseProblem))
@@ -311,9 +312,48 @@ class APIManager {
                         completion(.failure(APIError.responseProblem))
                     }
                 }
+            
+    }
 
-        }
-   
-       
+        
+        func getMonumets(_ MonumentSave: Monument, completion: @escaping(Swift.Result<Monument,Error>)->Void){
+            Alamofire.request(resourceURL, method: .post, encoding: JSONEncoding.default, headers: nil).responseData{ response in
+                switch response.result{
+                       
+                    case .success(let data):
+                        do{
+                            let json = try JSONSerialization.jsonObject(with: data, options: [])
+                           
+                            if response.response?.statusCode == 200 {
+                               
+                                print(json)
+                                if let json = json as? [String: String] {
+                                    let infoMonumet = json["info"]
+                                   
+                                    UserDefaults.standard.set(infoMonumet, forKey: info)
+                                    UserDefaults.standard.synchronize()
+
+                                }
+                               completion(.success(MonumentSave))
+                                
+                            }else{
+                                print(json)
+                                completion(.failure(APIError.responseProblem))
+                            }
+                        }catch{
+                            print(response.response!.statusCode)
+                           
+                            print("Usuario o contraseña incorrectas")
+                           
+                            completion(.failure(APIError.decodingProblem))
+                        }
+                       
+                    case .failure(_):
+                        completion(.failure(APIError.responseProblem))
+                    }
+                }
     }
 }
+       
+
+

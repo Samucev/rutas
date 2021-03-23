@@ -25,6 +25,7 @@
 		1D0189FA2609096100CF5B6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0189F82609096100CF5B6B /* Main.storyboard */; };
 		7F38F2E025D6B3360002E75E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2DF25D6B3360002E75E /* APIManager.swift */; };
 		7F38F2E225D6B4230002E75E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2E125D6B4230002E75E /* User.swift */; };
+		7F828D3F260A1FAD00824066 /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F828D3E260A1FAD00824066 /* Monument.swift */; };
 		7FCF03AF25EE5C6900AEC88D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF03AE25EE5C6900AEC88D /* Route.swift */; };
 		7FE69CC025FB8F7F003FB26A /* listMonumentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE69CBF25FB8F7F003FB26A /* listMonumentsController.swift */; };
 		7FF0932B25E921370059B65B /* mapa1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0932A25E921370059B65B /* mapa1.mlmodel */; };
@@ -85,6 +86,7 @@
 		6798D9637F3096D5C2A5DDC3 /* Pods-rutas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutas.release.xcconfig"; path = "Target Support Files/Pods-rutas/Pods-rutas.release.xcconfig"; sourceTree = "<group>"; };
 		7F38F2DF25D6B3360002E75E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7F38F2E125D6B4230002E75E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F828D3E260A1FAD00824066 /* Monument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
 		7FB19A09C07514186E0C471D /* Pods-rutas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutas.debug.xcconfig"; path = "Target Support Files/Pods-rutas/Pods-rutas.debug.xcconfig"; sourceTree = "<group>"; };
 		7FCF03AE25EE5C6900AEC88D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		7FE69CBF25FB8F7F003FB26A /* listMonumentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listMonumentsController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				7F38F2E125D6B4230002E75E /* User.swift */,
 				7FCF03AE25EE5C6900AEC88D /* Route.swift */,
 				CFE1157F26094FE900F25CC7 /* Circle.swift */,
+				7F828D3E260A1FAD00824066 /* Monument.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */,
 				7F38F2E225D6B4230002E75E /* User.swift in Sources */,
 				0D61C2AD25E9145E00EA316E /* cameraViewController.swift in Sources */,
+				7F828D3F260A1FAD00824066 /* Monument.swift in Sources */,
 				0DC898912608D72F00D2B8F1 /* osoViewController.swift in Sources */,
 				0D9E121E2600D20500DA8735 /* storyViewController.swift in Sources */,
 				0D80403E25D1653B00D42874 /* infoViewController.swift in Sources */,
