@@ -33,6 +33,12 @@ class mapViewController: UIViewController {
     
     let latitude1 = UserDefaults.standard.array(forKey: latitude)
     let longitude1 = UserDefaults.standard.array(forKey: longitude)
+    let longitudeCF = UserDefaults.standard.array(forKey: longitudeC)
+    let longitudeGF = UserDefaults.standard.array(forKey: longitudeG)
+    let latitudeCF = UserDefaults.standard.array(forKey: latitudeC)
+    let latitudeGF = UserDefaults.standard.array(forKey: latitudeG)
+    let radiusCF = UserDefaults.standard.array(forKey: radiusC)
+    let radiusGF = UserDefaults.standard.array(forKey: radiusG)
     
     
     
@@ -68,8 +74,14 @@ class mapViewController: UIViewController {
             
         }
         
-        //doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
-        //doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
+//        doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
+//        doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
+        let doubleLongitudeCF = longitudeCF!.map{ Double($0 as? String ?? "")!}
+        let doubleLongitudeGF = longitudeGF!.map{ Double($0 as? String ?? "")!}
+        let doubleLatitudeCF = latitudeCF!.map{ Double($0 as? String ?? "")!}
+        let doubleLatitudeGF = latitudeGF!.map{ Double($0 as? String ?? "")!}
+        let doubleRadiusCF = radiusCF!.map{ Double($0 as? String ?? "")!}
+        let doubleRadiusGF = radiusGF!.map{ Double($0 as? String ?? "")!}
         
         doubleLatitudeRoute = [40.4189464,40.4152912,0]
         doubleLongitudeRoute = [3.6933072,3.6941321,0]
