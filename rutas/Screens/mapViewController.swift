@@ -170,8 +170,25 @@ class mapViewController: UIViewController {
         let sourceLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
         let punto1 = MKPointAnnotation()
                            //madrid
-                           punto1.coordinate = CLLocationCoordinate2D(latitude: 40.4167, longitude: -3.70325 )
-                   punto1.title = "Cibeles"
+        punto1.coordinate = CLLocationCoordinate2D(latitude: 40.4167, longitude: -3.70325 )
+        punto1.title = "Cibeles"
+        
+        let monument = Monument(name: punto1.title!)
+        
+        let postRequest = APIManager(endpoint: "monuments/list")
+        
+        
+
+        postRequest.getMonumets(monument, completion: {result in
+            switch result{
+            case .success(_):
+                print("Se ha obtenido la información ")
+            case .failure(let error):
+                print("Ha ocurrido un error \(error)")
+            }
+        })
+        
+        print(info)
                      
                            mapa.addAnnotation(punto1)
         if numeroRuta <= 1{
