@@ -10,6 +10,7 @@
 		0D13B70425C2E1DD009FA822 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D13B70325C2E1DD009FA822 /* mapViewController.swift */; };
 		0D2A612E260390C300F38C99 /* rutf 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0D2A612D260390C300F38C99 /* rutf 1.mlmodel */; };
 		0D61C2AD25E9145E00EA316E /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61C2AC25E9145E00EA316E /* cameraViewController.swift */; };
+		0D63E3FC260A1B77003E77C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D63E3FA260A1B77003E77C8 /* Main.storyboard */; };
 		0D80403C25D15E6100D42874 /* mapSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */; };
 		0D80403E25D1653B00D42874 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80403D25D1653B00D42874 /* infoViewController.swift */; };
 		0D8E644425CAD8A900D8B59F /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E644325CAD8A900D8B59F /* profileViewController.swift */; };
@@ -22,7 +23,6 @@
 		0DC8988D2608D6FE00D2B8F1 /* neptunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8988C2608D6FE00D2B8F1 /* neptunoViewController.swift */; };
 		0DC8988F2608D71D00D2B8F1 /* leonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8988E2608D71D00D2B8F1 /* leonesViewController.swift */; };
 		0DC898912608D72F00D2B8F1 /* osoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC898902608D72F00D2B8F1 /* osoViewController.swift */; };
-		1D0189FA2609096100CF5B6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0189F82609096100CF5B6B /* Main.storyboard */; };
 		7F38F2E025D6B3360002E75E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2DF25D6B3360002E75E /* APIManager.swift */; };
 		7F38F2E225D6B4230002E75E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2E125D6B4230002E75E /* User.swift */; };
 		7FCF03AF25EE5C6900AEC88D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF03AE25EE5C6900AEC88D /* Route.swift */; };
@@ -69,6 +69,7 @@
 		0D13B70325C2E1DD009FA822 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		0D2A612D260390C300F38C99 /* rutf 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "rutf 1.mlmodel"; sourceTree = "<group>"; };
 		0D61C2AC25E9145E00EA316E /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
+		0D63E3FB260A1B77003E77C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/rutas-2/rutas/Storyboard/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		0D80403B25D15E6100D42874 /* mapSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapSettingsViewController.swift; sourceTree = "<group>"; };
 		0D80403D25D1653B00D42874 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		0D8E644325CAD8A900D8B59F /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		0DC8988C2608D6FE00D2B8F1 /* neptunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neptunoViewController.swift; sourceTree = "<group>"; };
 		0DC8988E2608D71D00D2B8F1 /* leonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leonesViewController.swift; sourceTree = "<group>"; };
 		0DC898902608D72F00D2B8F1 /* osoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = osoViewController.swift; sourceTree = "<group>"; };
-		1D0189F92609096100CF5B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/rutasjhvgr,hjfbghjr,/rutas/Storyboard/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		6798D9637F3096D5C2A5DDC3 /* Pods-rutas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutas.release.xcconfig"; path = "Target Support Files/Pods-rutas/Pods-rutas.release.xcconfig"; sourceTree = "<group>"; };
 		7F38F2DF25D6B3360002E75E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7F38F2E125D6B4230002E75E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 		1D23B2F725FFE20E009C20B2 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				1D0189F82609096100CF5B6B /* Main.storyboard */,
+				0D63E3FA260A1B77003E77C8 /* Main.storyboard */,
 				7FF80BDD25B99D5A00723384 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -399,7 +399,7 @@
 				7FF0933125E922490059B65B /* plasaMaior.jpg in Resources */,
 				7FF0933525E922590059B65B /* nepetuno.jpg in Resources */,
 				7FF80BDF25B99D5A00723384 /* LaunchScreen.storyboard in Resources */,
-				1D0189FA2609096100CF5B6B /* Main.storyboard in Resources */,
+				0D63E3FC260A1B77003E77C8 /* Main.storyboard in Resources */,
 				7FF0933D25E922790059B65B /* oso.jpg in Resources */,
 				7FF80BDC25B99D5A00723384 /* Assets.xcassets in Resources */,
 				7FF0932F25E9223E0059B65B /* madridWP.jpg in Resources */,
@@ -533,10 +533,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D0189F82609096100CF5B6B /* Main.storyboard */ = {
+		0D63E3FA260A1B77003E77C8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1D0189F92609096100CF5B6B /* Base */,
+				0D63E3FB260A1B77003E77C8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -76,12 +76,12 @@ class mapViewController: UIViewController {
         
 //        doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
 //        doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
-        let doubleLongitudeCF = longitudeCF!.map{ Double($0 as? String ?? "")!}
-        let doubleLongitudeGF = longitudeGF!.map{ Double($0 as? String ?? "")!}
-        let doubleLatitudeCF = latitudeCF!.map{ Double($0 as? String ?? "")!}
-        let doubleLatitudeGF = latitudeGF!.map{ Double($0 as? String ?? "")!}
-        let doubleRadiusCF = radiusCF!.map{ Double($0 as? String ?? "")!}
-        let doubleRadiusGF = radiusGF!.map{ Double($0 as? String ?? "")!}
+//        let doubleLongitudeCF = longitudeCF!.map{ Double($0 as? String ?? "")!}
+//        let doubleLongitudeGF = longitudeGF!.map{ Double($0 as? String ?? "")!}
+//        let doubleLatitudeCF = latitudeCF!.map{ Double($0 as? String ?? "")!}
+//        let doubleLatitudeGF = latitudeGF!.map{ Double($0 as? String ?? "")!}
+//        let doubleRadiusCF = radiusCF!.map{ Double($0 as? String ?? "")!}
+//        let doubleRadiusGF = radiusGF!.map{ Double($0 as? String ?? "")!}
         
         doubleLatitudeRoute = [40.4189464,40.4152912,0]
         doubleLongitudeRoute = [3.6933072,3.6941321,0]
@@ -121,9 +121,22 @@ class mapViewController: UIViewController {
         tipView.isHidden = false
         tip.text = "A veces se viste de blanco"
         
-        finRoute.isHidden = true
+      //  finRoute.isHidden = true
         
         
+        
+        
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        print(view.annotation?.title!!)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+               
+               let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+               
+               vc.modalPresentationStyle = .overFullScreen
+               
+               present(vc, animated: true)
     }
     
     
@@ -140,6 +153,12 @@ class mapViewController: UIViewController {
         
         self.mapa.removeOverlays(self.mapa.overlays)// Borra los overlays
         let sourceLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
+        let punto1 = MKPointAnnotation()
+                           //madrid
+                           punto1.coordinate = CLLocationCoordinate2D(latitude: 40.4167, longitude: -3.70325 )
+                   punto1.title = "Cibeles"
+                     
+                           mapa.addAnnotation(punto1)
         if numeroRuta <= 1{
             numeroRuta += 1
         }
@@ -155,7 +174,7 @@ class mapViewController: UIViewController {
             
         }
         if numeroRuta == 2{
-            finRoute.isHidden = false
+            //finRoute.isHidden = false
             
         }
           
