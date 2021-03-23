@@ -51,6 +51,23 @@ class listMonumentsViewController: UIViewController, UITableViewDelegate {
             
             var nombref  = tableView.cellForRow(at: indexPath)?.textLabel?.text
             
+            let monument = Monument(name: nombref!)
+            
+            let postRequest = APIManager(endpoint: "monuments/list")
+            
+            
+
+            postRequest.getMonumets(monument, completion: {result in
+                switch result{
+                case .success(_):
+                    print("Se ha obtenido la información ")
+                case .failure(let error):
+                    print("Ha ocurrido un error \(error)")
+                }
+            })
+            
+            print(info)
+            
             
             
             if nombref ==  "cibeles" {
