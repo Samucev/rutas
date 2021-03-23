@@ -151,7 +151,7 @@ class mapViewController: UIViewController {
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         //coordenadas del usuario
         
-        self.mapa.removeOverlays(self.mapa.overlays)// Borra los overlays
+       
         let sourceLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
         let punto1 = MKPointAnnotation()
                            //madrid
@@ -160,6 +160,7 @@ class mapViewController: UIViewController {
                      
                            mapa.addAnnotation(punto1)
         if numeroRuta <= 1{
+             self.mapa.removeOverlays(self.mapa.overlays)// Borra los overlays
             numeroRuta += 1
         }
        
@@ -175,6 +176,10 @@ class mapViewController: UIViewController {
         }
         if numeroRuta == 2{
             finRoute.isHidden = false
+               self.mapa.removeOverlays(self.mapa.overlays)// Borra los overlays
+            
+            
+           
             
         }
           
