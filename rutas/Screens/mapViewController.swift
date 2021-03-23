@@ -121,7 +121,7 @@ class mapViewController: UIViewController {
         tipView.isHidden = false
         tip.text = "A veces se viste de blanco"
         
-      //  finRoute.isHidden = true
+        finRoute.isHidden = true
         
         
         
@@ -174,7 +174,7 @@ class mapViewController: UIViewController {
             
         }
         if numeroRuta == 2{
-            //finRoute.isHidden = false
+            finRoute.isHidden = false
             
         }
           
