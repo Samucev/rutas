@@ -10,15 +10,15 @@ import Foundation
 
 
 struct Circle: Encodable{
-    let id: Int
+    let id: String
     
 
-    init(id: Int) {
+    init(id: String) {
         self.id = id
 
     }
 
-    func getDictRoute() -> [String:Int] {
+    func getDictRoute() -> [String:String] {
         return ["id":id]
     }
 }

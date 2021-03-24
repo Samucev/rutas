@@ -18,7 +18,7 @@
 		0D8E6A8A25C42A6900E9A583 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */; };
 		0D8E6A8E25C42AF800E9A583 /* changePWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */; };
 		0D8E6A9025C42B3100E9A583 /* recoverPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */; };
-		0D920ABD260A27CD00C98CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D920ABB260A27CD00C98CCB /* Main.storyboard */; };
+		0D9D321C260B5D3600D9F0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9D321A260B5D3600D9F0E9 /* Main.storyboard */; };
 		0D9E121E2600D20500DA8735 /* storyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E121D2600D20500DA8735 /* storyViewController.swift */; };
 		0DC8988D2608D6FE00D2B8F1 /* neptunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8988C2608D6FE00D2B8F1 /* neptunoViewController.swift */; };
 		7F38F2E025D6B3360002E75E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38F2DF25D6B3360002E75E /* APIManager.swift */; };
@@ -76,7 +76,7 @@
 		0D8E6A8925C42A6900E9A583 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8D25C42AF800E9A583 /* changePWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePWViewController.swift; sourceTree = "<group>"; };
 		0D8E6A8F25C42B3100E9A583 /* recoverPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverPWViewController.swift; sourceTree = "<group>"; };
-		0D920ABC260A27CD00C98CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Downloads/rutas/rutas/Storyboard/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D9D321B260B5D3600D9F0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D9E121D2600D20500DA8735 /* storyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyViewController.swift; sourceTree = "<group>"; };
 		0DC8988C2608D6FE00D2B8F1 /* neptunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neptunoViewController.swift; sourceTree = "<group>"; };
 		6798D9637F3096D5C2A5DDC3 /* Pods-rutas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rutas.release.xcconfig"; path = "Target Support Files/Pods-rutas/Pods-rutas.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 		1D23B2F725FFE20E009C20B2 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				0D920ABB260A27CD00C98CCB /* Main.storyboard */,
+				0D9D321A260B5D3600D9F0E9 /* Main.storyboard */,
 				7FF80BDD25B99D5A00723384 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -396,7 +396,7 @@
 				7FF0933125E922490059B65B /* plasaMaior.jpg in Resources */,
 				7FF0933525E922590059B65B /* nepetuno.jpg in Resources */,
 				7FF80BDF25B99D5A00723384 /* LaunchScreen.storyboard in Resources */,
-				0D920ABD260A27CD00C98CCB /* Main.storyboard in Resources */,
+				0D9D321C260B5D3600D9F0E9 /* Main.storyboard in Resources */,
 				7FF0933D25E922790059B65B /* oso.jpg in Resources */,
 				7FF80BDC25B99D5A00723384 /* Assets.xcassets in Resources */,
 				7FF0932F25E9223E0059B65B /* madridWP.jpg in Resources */,
@@ -529,10 +529,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0D920ABB260A27CD00C98CCB /* Main.storyboard */ = {
+		0D9D321A260B5D3600D9F0E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0D920ABC260A27CD00C98CCB /* Base */,
+				0D9D321B260B5D3600D9F0E9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

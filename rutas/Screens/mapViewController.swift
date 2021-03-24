@@ -53,6 +53,8 @@ class mapViewController: UIViewController {
     var doubleLatitudeFence = [Double]()
     var doubleLongitudeFence = [Double]()
     
+    var nombre = ""
+    
     
     
     override func viewDidLoad() {
@@ -74,7 +76,7 @@ class mapViewController: UIViewController {
             
         }
         
-        let circle = Circle(id: 1)
+        let circle = Circle(id: "1")
         
         let postRequest = APIManager(endpoint: "circles/list")
         
@@ -88,6 +90,9 @@ class mapViewController: UIViewController {
                 print("Ha ocurrido un error \(error)")
             }
         })
+        numeroRuta = 0
+        print("AAAAAAAAAAAAAAAAAQAA")
+        print(longitudeC)
         
 //        doubleLatitude = latitude1!.map{ Double($0 as? String ?? "")!}
 //        doubleLongitude = longitude1!.map{ Double($0 as? String ?? "")!}
@@ -97,6 +102,8 @@ class mapViewController: UIViewController {
 //        let doubleLatitudeGF = latitudeGF!.map{ Double($0 as? String ?? "")!}
 //        let doubleRadiusCF = radiusCF!.map{ Double($0 as? String ?? "")!}
 //        let doubleRadiusGF = radiusGF!.map{ Double($0 as? String ?? "")!}
+        print("AAAAAAAAAAAAAAAAAA")
+        print(latitude1)
         
         doubleLatitudeRoute = [40.4189464,40.4152912,0]
         doubleLongitudeRoute = [3.6933072,3.6941321,0]
@@ -106,6 +113,22 @@ class mapViewController: UIViewController {
         
         doubleLatitudeFence = [40.4191579,40.4152912,0]
         doubleLongitudeFence = [3.6919569,3.6941321,0]
+       
+        
+        
+//        UserDefaults.standard.set(doubleLongitudeRoute, forKey: "guardar1")
+//        UserDefaults.standard.set(doubleLatitudeRoute, forKey: "guardar")
+//        UserDefaults.standard.set(numeroRuta, forKey: "guardar2")
+       
+       
+       // UserDefaults.standard.synchronize()
+      
+            
+//            let prueba = UserDefaults.standard.array(forKey: "guardar")
+//        let prueba1 = UserDefaults.standard.array(forKey: "guardar1")
+//        print("________________")
+//        print(prueba)
+              
         
         cameraButton.isHidden = true
         tipView.isHidden = true
@@ -143,15 +166,29 @@ class mapViewController: UIViewController {
         
     }
     
+    
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         print(view.annotation?.title!!)
+        if  nombre == "Cibeles"{
+            
+        }
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                
-               let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
+               let vc = storyboard.instantiateViewController(identifier: "cibelesVC") as! storyViewController
                
                vc.modalPresentationStyle = .overFullScreen
                
                present(vc, animated: true)
+        if  nombre == "Neptuno"{
+            
+        }
+        let storyboard1 = UIStoryboard(name: "Main", bundle: nil)
+               
+               let vc1 = storyboard.instantiateViewController(identifier: "neptunoVC") as! neptunoViewController
+               
+               vc1.modalPresentationStyle = .overFullScreen
+               
+               present(vc1, animated: true)
     }
     
     
@@ -170,10 +207,11 @@ class mapViewController: UIViewController {
         let sourceLocation = CLLocationCoordinate2D(latitude: doubleLatitudeRoute[numeroRuta], longitude: -(doubleLongitudeRoute[numeroRuta]))
         let punto1 = MKPointAnnotation()
                            //madrid
-        punto1.coordinate = CLLocationCoordinate2D(latitude: 40.4167, longitude: -3.70325 )
-        punto1.title = "Cibeles"
+        punto1.coordinate = CLLocationCoordinate2D(latitude: 40.4191579, longitude: -3.6919569 )
+       var nombre = punto1.title = "Cibeles"
         
         let monument = Monument(name: punto1.title!)
+       
         
         let postRequest = APIManager(endpoint: "monuments/list")
         
@@ -204,11 +242,21 @@ class mapViewController: UIViewController {
          
             tipView.isHidden = false
             
+         
+            
             
         }
         if numeroRuta == 2{
             finRoute.isHidden = false
                self.mapa.removeOverlays(self.mapa.overlays)// Borra los overlays
+            let punto2 = MKPointAnnotation()
+            
+            punto2.coordinate = CLLocationCoordinate2D(latitude: 40.4152912, longitude:  -3.6941321 )
+           var nombre1 = punto2.title = "Neptuno"
+            
+            let pin = MKPointAnnotation()
+          
+               mapa.addAnnotation(punto2)
             
             
            
@@ -469,7 +517,7 @@ class mapViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         
         present(vc, animated: true)
-        numeroRuta = 0
+       
     }
     
 }

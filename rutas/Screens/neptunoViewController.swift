@@ -22,12 +22,13 @@ class neptunoViewController: UIViewController {
 
     }
     
+    @available(iOS 13.0, *)
     @IBAction func mapButton(_ sender: Any) {
         
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(withIdentifier: "cameraVC") as! cameraViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "mapVC") as! mapViewController
                 
         //vc.modalPresentationStyle = .overFullScreen
         

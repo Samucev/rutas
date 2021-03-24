@@ -62,6 +62,7 @@ class loginViewController: UIViewController {
     /* BOTÓN DE LOGIN */
     
     
+    @available(iOS 13.0, *)
     @IBAction func routeListButton(_ sender: Any) {
         
         buttonAnimation(sender: loginButton) //Animación del botón
@@ -72,6 +73,16 @@ class loginViewController: UIViewController {
         let user = User(name: "", email: email, password: pass, currentPassword: "")
         
         let postRequest = APIManager(endpoint: "users/login")
+        
+        if self.emailTextField.text!.isEmpty || self.passwordTextField.text!.isEmpty {
+            
+            let alert = UIAlertController(title: "Error", message: "Debes completar todos los campos de texto.", preferredStyle: UIAlertController.Style.alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+            self.present(alert, animated: true, completion: nil)
+            
+        }
 
         postRequest.login(user, completion: {result in
             switch result{
@@ -81,7 +92,7 @@ class loginViewController: UIViewController {
                 
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 
-                let vc = storyboard.instantiateViewController(withIdentifier: "routeVC") as! routeViewController
+                let vc = storyboard.instantiateViewController(identifier: "routeVC") as! routeViewController
                         
                 vc.modalPresentationStyle = .overFullScreen
                 
@@ -91,11 +102,13 @@ class loginViewController: UIViewController {
                 
                 print("El siguiente usuario ha inciado sesión:\(user.email) ")
             case .failure(let error):
+                
                 print("Ha ocurrido un error \(error)")
+                
+                
+                
             }
         })
-        
-
         
     }
     

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P3l-yE-Beg">
-=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
->>>>>>> cc1d610bacd9230865b66194c58dc2461304ed4f
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -169,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="11"/>
+            <point key="canvasLocation" x="-572" y="11"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Kjb-DA-1kv">
@@ -189,7 +185,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de usuario: Sgt. 23" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdF-g3-aBJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de usuario: rutMad" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdF-g3-aBJ">
                                 <rect key="frame" x="32" y="542" width="350" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="fda-4O-YE3"/>
@@ -199,7 +195,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutas realizadas: 3" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feP-2q-Gmt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutas realizadas: 1" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feP-2q-Gmt">
                                 <rect key="frame" x="32" y="593" width="350" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="MZs-Ox-QWz"/>
@@ -216,7 +212,7 @@
                                     <constraint firstAttribute="height" constant="300" id="Ky9-HO-TXv"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia recorrida: 50 km" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-wS-mlW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia recorrida: 2 km" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-wS-mlW">
                                 <rect key="frame" x="32" y="643" width="350" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="49w-Cj-OM6"/>
@@ -248,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy7-tE-drO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="746"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="745.98214285714278"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="9Nc-hQ-4wi">
@@ -287,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF5-jO-2rF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3164" y="746"/>
+            <point key="canvasLocation" x="3496" y="746"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="ebF-yI-kdU">
@@ -297,293 +293,143 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cibeles " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlZ-pf-uBP">
-                                <rect key="frame" x="167.66666666666666" y="134.33333333333334" width="78.666666666666657" height="27.666666666666657"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXw-8q-BCN">
-                                <rect key="frame" x="-37" y="438" width="1341" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">En 1936, durante la guerra civil, la fuente fué cubierta por una estructura de ladrillo con forma piramidal y rellenada con sacos de arena, para protegerla de los bombardeos.
- 
-Lo que desconocen muchas personas, es que existe una réplica de la fuente en el centro de la Ciudad de México. Se inauguró en 1980 por el presidente mexicano López Portillo y el alcalde Tierno Galván. Fué un regalo del Ayuntamiento de Madrid como símbolo de hermanamiento entre ambas ciudades.
-Desde hace varios años la Fuente de Cibeles es un símbolo para los seguidores del equipo de fútbol Real Madrid, ya que es el punto de celebración de los títulos que consigue el equipo madrileño. También se celebran los éxitos de la selección española de fútbol.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXw-8q-BCN">
-                                <rect key="frame" x="32" y="198" width="350" height="500"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cibeles.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CbO-cB-7Ge">
+                                <rect key="frame" x="0.0" y="44" width="414" height="252"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuente de Cibeles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69C-e3-ueK">
+                                <rect key="frame" x="32" y="320.66666666666669" width="350" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="CAF-Sa-JvL"/>
-                                    <constraint firstAttribute="width" constant="350" id="HRi-Ap-luP"/>
+                                    <constraint firstAttribute="width" constant="350" id="7Y6-yU-C8P"/>
+                                    <constraint firstAttribute="height" constant="35" id="yYR-IO-rtc"/>
                                 </constraints>
-                                <string key="text">En 1936, durante la guerra civil, la fuente fue cubierta por una estructura de ladrillo con forma piramidal y rellenada con sacos de arena, para protegerla de los bombardeos.
-
-Lo que desconocen muchas personas, es que existe una réplica de la fuente en el centro de la Ciudad de México. Se inauguró en 1980 por el presidente mexicano López Portillo y el alcalde Tierno Galván. Fue un regalo del Ayuntamiento de Madrid como símbolo de hermanamiento entre ambas ciudades.                      
-     
-Desde hace varios años la Fuente de Cibeles es un símbolo para los seguidores del equipo de fútbol Real Madrid, ya que es el punto de celebración de los títulos que consigue el equipo madrileño. También se celebran los éxitos de la selección española de fútbol.</string>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
->>>>>>> 1a8ba617e0a61884ffd01434760eb63c93b9d0e5
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTL-sI-nUR">
-                                <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zb-Hv-OtY">
+                                <rect key="frame" x="20" y="388" width="374" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="rDi-jT-MYD"/>
+                                    <constraint firstAttribute="height" constant="310" id="w7x-ch-htG"/>
+                                </constraints>
+                                <string key="text">La Fuente de Cibeles, construida en 1782, es uno de los símbolos de la ciudad. Se encuentra situada en el centro de la plaza a la que da nombre y está rodeada por los edificios del Palacio de Buenavista (Cuartel General del Ejército), Palacio de Linares (Casa de América), Palacio de Cibeles (antes sede de Correos y actualmente del Ayuntamiento de Madrid) y Banco de España.
+
+La fuente representa a la diosa romana Cibeles, símbolo de la tierra, la agricultura y la fecundidad, sobre un carro tirado por dos leones, los personajes mitológicos Hipómenes y Atalanta. La diosa y los leones fueron esculpidos en mármol y el resto en piedra. La escultura de la diosa es obra de Francisco Gutiérrez. Los dos leones fueron esculpidos por el francés Roberto Michel.</string>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocy-Aw-tM3">
+                                <rect key="frame" x="32" y="770.66666666666663" width="350" height="65"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Oct-oh-ewS"/>
-                                    <constraint firstAttribute="width" constant="350" id="eTn-9s-Lns"/>
+                                    <constraint firstAttribute="height" constant="65" id="b5D-4q-Nf6"/>
+                                    <constraint firstAttribute="width" constant="350" id="ief-Ku-bMM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                <state key="normal" title=" Atrás " image="arrowshape.turn.up.left.fill" catalog="system">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="mapButton:" destination="P3l-yE-Beg" eventType="touchUpInside" id="Cet-If-YmR"/>
+                                    <action selector="mapButton:" destination="P3l-yE-Beg" eventType="touchUpInside" id="T5e-hH-lkd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NXw-8q-BCN" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" id="CpO-xm-ReK"/>
-                            <constraint firstItem="xlZ-pf-uBP" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="Hot-JK-1gK"/>
-                            <constraint firstItem="NXw-8q-BCN" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="RXb-86-fJU"/>
-                            <constraint firstItem="oTL-sI-nUR" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="hog-S9-gbH"/>
-                            <constraint firstItem="xlZ-pf-uBP" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" constant="-300" id="ti1-nl-CCd"/>
-                            <constraint firstItem="oTL-sI-nUR" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" constant="330" id="zo0-Hp-YAn"/>
+                            <constraint firstItem="ocy-Aw-tM3" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="D4u-h6-fdn"/>
+                            <constraint firstItem="8zb-Hv-OtY" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" constant="95" id="FGZ-T5-iTN"/>
+                            <constraint firstItem="ocy-Aw-tM3" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" constant="355" id="VK1-ZY-3bM"/>
+                            <constraint firstItem="69C-e3-ueK" firstAttribute="centerY" secondItem="yuv-9Y-lxo" secondAttribute="centerY" constant="-110" id="bJQ-wh-zIG"/>
+                            <constraint firstItem="CbO-cB-7Ge" firstAttribute="top" secondItem="1LJ-mi-4re" secondAttribute="top" id="dEY-7l-qyK"/>
+                            <constraint firstAttribute="bottom" secondItem="CbO-cB-7Ge" secondAttribute="bottom" constant="600" id="dhw-JG-SJT"/>
+                            <constraint firstItem="CbO-cB-7Ge" firstAttribute="trailing" secondItem="1LJ-mi-4re" secondAttribute="trailing" id="gM4-N0-Tdl"/>
+                            <constraint firstItem="CbO-cB-7Ge" firstAttribute="leading" secondItem="1LJ-mi-4re" secondAttribute="leading" id="j2l-Eu-tzn"/>
+                            <constraint firstItem="69C-e3-ueK" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="vae-1g-QVj"/>
+                            <constraint firstItem="8zb-Hv-OtY" firstAttribute="centerX" secondItem="yuv-9Y-lxo" secondAttribute="centerX" id="w6g-eY-NpB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1LJ-mi-4re"/>
                     </view>
                     <connections>
-                        <outlet property="mapButton" destination="oTL-sI-nUR" id="lgY-AR-5g0"/>
+                        <outlet property="mapButton" destination="ocy-Aw-tM3" id="QrE-yh-fbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ter-sU-Ylk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3853.6231884057975" y="745.98214285714278"/>
+            <point key="canvasLocation" x="4481" y="746"/>
         </scene>
         <!--Neptuno View Controller-->
-        <scene sceneID="hLe-Mi-7J3">
+        <scene sceneID="cfG-Yv-KVj">
             <objects>
-                <viewController storyboardIdentifier="neptunovc" id="QDB-gE-gak" customClass="neptunoViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GAR-Q7-3eh">
+                <viewController storyboardIdentifier="neptunoVC" id="QE9-32-gDH" customClass="neptunoViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOV-Hm-Nmq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neptuno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ9-9p-u3T">
-                                <rect key="frame" x="163.33333333333334" y="134.33333333333334" width="87.666666666666657" height="27.666666666666657"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-tY-0rM">
-                                <rect key="frame" x="162" y="457" width="1827" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">La fuente se terminó de construir en 1786, y como curiosidad, su primer emplazamiento fue en la bajada de la Carrera de San Jerónimo, pero en 1898 se instaló en en su ubicación actual, en el centro de la citada plaza de Cánovas del Castillo.
-En la actualidad, Neptuno es el punto de encuentro de los seguidores del club Atlético de Madrid para celebrar sus éxitos deportivos, en contraposición a la Fuente de Cibeles, tradicional punto de cita de los madridistas.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-tY-0rM">
-                                <rect key="frame" x="32" y="198" width="350" height="500"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nepetuno.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="elA-11-php">
+                                <rect key="frame" x="0.0" y="44" width="414" height="252"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuente de Neptuno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRv-ux-Bkv">
+                                <rect key="frame" x="32" y="320.66666666666669" width="350" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="2JW-cK-sgD"/>
-                                    <constraint firstAttribute="height" constant="500" id="fMA-kZ-P6y"/>
+                                    <constraint firstAttribute="height" constant="35" id="dhh-T8-bsy"/>
+                                    <constraint firstAttribute="width" constant="350" id="uFJ-gR-GCu"/>
                                 </constraints>
-                                <string key="text">La fuente se terminó de construir en 1786, y como curiosidad, su primer emplazamiento fue en la bajada de la Carrera de San Jerónimo, pero en 1898 se instaló en en su ubicación actual, en el centro de la citada plaza de Cánovas del Castillo.
-
-En la actualidad, Neptuno es el punto de encuentro de los seguidores del club Atlético de Madrid para celebrar sus éxitos deportivos, en contraposición a la Fuente de Cibeles, tradicional punto de cita de los madridistas.</string>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
->>>>>>> 1a8ba617e0a61884ffd01434760eb63c93b9d0e5
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-mf-rqA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNr-OY-BJK">
+                                <rect key="frame" x="20" y="388" width="374" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="ECi-N1-odI"/>
+                                    <constraint firstAttribute="height" constant="310" id="JOx-BS-mBn"/>
+                                </constraints>
+                                <string key="text">Junto a Cibeles, Neptuno es una de las fuentes más bellas y majestuosas de Madrid. Ambos dioses ocupan puestos prominentes dentro de la jerarquía mitológica griega y rivalizan en el terreno deportivo, ya que la afición del Atlético de Madrid celebra sus victorias en la plaza del dios del mar, mientras que la del Real Madrid lo hace en la de Cibeles.
+
+Como parte del proyecto original de Ventura Rodríguez, ambas fuentes fueron, en un principio, enfrentadas, mirándose la una a la otra en un lateral del Paseo del Prado. Tanto Cibeles como Neptuno experimentaron a finales del siglo XIX procesos de reestructuración y traslado, pasando finalmente a ocupar el centro de las plazas de la Cibeles y de Cánovas del Castillo, respectivamente.</string>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2f-GB-rnj">
                                 <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="NaB-qB-wtu"/>
-                                    <constraint firstAttribute="height" constant="65" id="a5M-wz-vfe"/>
+                                    <constraint firstAttribute="height" constant="65" id="18s-tn-mfB"/>
+                                    <constraint firstAttribute="width" constant="350" id="h1s-Av-2JB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                                <state key="normal" title=" Atrás " image="arrowshape.turn.up.left.fill" catalog="system">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="mapButton:" destination="QDB-gE-gak" eventType="touchUpInside" id="CEx-6Y-J6U"/>
+                                    <action selector="mapButton:" destination="QE9-32-gDH" eventType="touchUpInside" id="KAc-bF-CXo"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TJ9-9p-u3T" firstAttribute="centerX" secondItem="GAR-Q7-3eh" secondAttribute="centerX" id="1a8-dC-oHk"/>
-                            <constraint firstItem="a6g-tY-0rM" firstAttribute="centerX" secondItem="GAR-Q7-3eh" secondAttribute="centerX" id="5Oo-am-TTG"/>
-                            <constraint firstItem="a6g-tY-0rM" firstAttribute="centerY" secondItem="GAR-Q7-3eh" secondAttribute="centerY" id="AnB-TQ-hPa"/>
-                            <constraint firstItem="1iN-mf-rqA" firstAttribute="centerY" secondItem="GAR-Q7-3eh" secondAttribute="centerY" constant="330" id="TWb-rU-CzU"/>
-                            <constraint firstItem="TJ9-9p-u3T" firstAttribute="centerY" secondItem="GAR-Q7-3eh" secondAttribute="centerY" constant="-300" id="nGN-NP-Y9R"/>
-                            <constraint firstItem="1iN-mf-rqA" firstAttribute="centerX" secondItem="GAR-Q7-3eh" secondAttribute="centerX" id="tPA-DK-zDc"/>
+                            <constraint firstItem="hRv-ux-Bkv" firstAttribute="centerX" secondItem="fOV-Hm-Nmq" secondAttribute="centerX" id="5hv-DI-jhw"/>
+                            <constraint firstItem="elA-11-php" firstAttribute="leading" secondItem="v94-Ma-r9j" secondAttribute="leading" id="Dct-8n-0D6"/>
+                            <constraint firstItem="h2f-GB-rnj" firstAttribute="centerY" secondItem="fOV-Hm-Nmq" secondAttribute="centerY" constant="330" id="ZLU-8y-Bm7"/>
+                            <constraint firstItem="hRv-ux-Bkv" firstAttribute="centerY" secondItem="fOV-Hm-Nmq" secondAttribute="centerY" constant="-110" id="bH6-hj-QJw"/>
+                            <constraint firstItem="h2f-GB-rnj" firstAttribute="centerX" secondItem="fOV-Hm-Nmq" secondAttribute="centerX" id="gYb-1h-kyH"/>
+                            <constraint firstItem="elA-11-php" firstAttribute="trailing" secondItem="v94-Ma-r9j" secondAttribute="trailing" id="iEk-UD-lLK"/>
+                            <constraint firstItem="YNr-OY-BJK" firstAttribute="centerX" secondItem="fOV-Hm-Nmq" secondAttribute="centerX" id="iqy-Hj-KjZ"/>
+                            <constraint firstItem="elA-11-php" firstAttribute="top" secondItem="v94-Ma-r9j" secondAttribute="top" id="nTj-eT-mfN"/>
+                            <constraint firstItem="YNr-OY-BJK" firstAttribute="centerY" secondItem="fOV-Hm-Nmq" secondAttribute="centerY" constant="95" id="u19-FS-7G9"/>
+                            <constraint firstAttribute="bottom" secondItem="elA-11-php" secondAttribute="bottom" constant="600" id="uHM-P1-1WC"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Nxl-NG-jlA"/>
+                        <viewLayoutGuide key="safeArea" id="v94-Ma-r9j"/>
                     </view>
                     <connections>
-                        <outlet property="mapButton" destination="1iN-mf-rqA" id="Adn-rK-C7U"/>
+                        <outlet property="mapButton" destination="h2f-GB-rnj" id="iqd-ig-2yh"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TRF-8K-lkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNN-vu-gQY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4543" y="746"/>
-        </scene>
-        <!--Leones View Controller-->
-        <scene sceneID="31R-ht-hnR">
-            <objects>
-                <viewController storyboardIdentifier="leonvc" id="nA6-Hi-BPr" customClass="leonesViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I3A-Tw-HbL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leones del Congreso de los Diputados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol6-uS-YjP">
-                                <rect key="frame" x="17.666666666666657" y="134" width="379" height="28"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtO-AQ-AEO">
-                                <rect key="frame" x="186" y="473" width="3632" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Durante el proceso de creación de las esculturas, Ponzano se dio cuenta de que faltaría algo de material y decidió prescindir de éste en los testículos del león izquierdo, al cual representó con el rabo enroscado, lo cual servía para tapar la pudorosa falta de material.  La situación algo más elevada de éste permitía que el detalle pasase desapercibido. Tanto fue así que hasta el año 1985, durante la restauración del conjunto no se descubrió el “secreto” de los leones del Congreso.
-Pero las curiosidades y misterios de los leones van más allá. Ponciano Ponzano fue un hombre con una fuerte personalidad, perfeccionista, supersticioso. Siempre fue reticente a ser el creador de los leones del Congreso. Pocas veces había realizado una escultural animal, por considerar que le traían mala suerte. Pues bien, su peculiar fallecimiento en 1877, atragantado por una uva, creó un halo de misterio en torno al escultor y los leones del Congreso
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtO-AQ-AEO">
-                                <rect key="frame" x="32" y="198" width="350" height="500"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="9rO-l1-Ogn"/>
-                                    <constraint firstAttribute="width" constant="350" id="dcI-DD-D6l"/>
-                                </constraints>
-                                <string key="text">Durante el proceso de creación de las esculturas, Ponzano se dio cuenta de que faltaría algo de material y decidió prescindir de éste en los testículos del león izquierdo, al cual representó con el rabo enroscado, lo cual servía para tapar la pudorosa falta de material.  La situación algo más elevada de éste permitía que el detalle pasase desapercibido. Tanto fue así que hasta el año 1985, durante la restauración del conjunto no se descubrió el “secreto” de los leones del Congreso.
-
-Pero las curiosidades y misterios de los leones van más allá. Ponciano Ponzano fue un hombre con una fuerte personalidad, perfeccionista, supersticioso. Siempre fue reticente a ser el creador de los leones del Congreso. Pocas veces había realizado una escultural animal, por considerar que le traían mala suerte. Pues bien, su peculiar fallecimiento en 1877, atragantado por una uva, creó un halo de misterio en torno al escultor y los leones del Congreso
-</string>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
->>>>>>> 1a8ba617e0a61884ffd01434760eb63c93b9d0e5
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg5-HB-iDQ">
-                                <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
-                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Hkc-1K-d2u"/>
-                                    <constraint firstAttribute="width" constant="350" id="Mbu-FK-kWw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="mapButton:" destination="nA6-Hi-BPr" eventType="touchUpInside" id="db2-8X-6dc"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ol6-uS-YjP" firstAttribute="centerY" secondItem="I3A-Tw-HbL" secondAttribute="centerY" constant="-300" id="1yg-ng-Sp1"/>
-                            <constraint firstItem="JtO-AQ-AEO" firstAttribute="centerY" secondItem="I3A-Tw-HbL" secondAttribute="centerY" id="5jc-en-g6u"/>
-                            <constraint firstItem="JtO-AQ-AEO" firstAttribute="centerX" secondItem="I3A-Tw-HbL" secondAttribute="centerX" id="Bjl-9A-D6T"/>
-                            <constraint firstItem="zg5-HB-iDQ" firstAttribute="centerY" secondItem="I3A-Tw-HbL" secondAttribute="centerY" constant="330" id="ICP-iT-TCP"/>
-                            <constraint firstItem="ol6-uS-YjP" firstAttribute="centerX" secondItem="I3A-Tw-HbL" secondAttribute="centerX" id="LJM-ri-4FQ"/>
-                            <constraint firstItem="zg5-HB-iDQ" firstAttribute="centerX" secondItem="I3A-Tw-HbL" secondAttribute="centerX" id="qik-Pl-YbI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="d1k-vk-gSh"/>
-                    </view>
-                    <connections>
-                        <outlet property="mapButton" destination="zg5-HB-iDQ" id="PYa-dg-TRd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcw-fQ-f4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5329" y="746"/>
-        </scene>
-        <!--oso-->
-        <scene sceneID="8M6-aY-0pL">
-            <objects>
-                <viewController storyboardIdentifier="osovc" title="oso" id="NIC-b2-2Fz" customClass="osoViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7k2-wg-MHa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El Oso y el Madroño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ5-VN-9Ec">
-                                <rect key="frame" x="105.66666666666669" y="134" width="203" height="28"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-Tq-zJG">
-                                <rect key="frame" x="197" y="489" width="1329" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-Tq-zJG">
-                                <rect key="frame" x="32" y="198" width="350" height="500"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="JWF-4s-bUp"/>
-                                    <constraint firstAttribute="height" constant="500" id="VQy-3E-H8B"/>
-                                </constraints>
->>>>>>> 1a8ba617e0a61884ffd01434760eb63c93b9d0e5
-                                <string key="text">El origen de este simbolo para la ciudad de madrid se remonta siglo XIII, cuando el rey Alfonso VIII ya utilizaba en sus estandartes la imagen del oso, muy abundante en la zona.
-existe constancia de que el oso en realidad es una osa, pues viene a representar una constelación asociada al mito de las dos osas.
-Frente a lo que puedas pensar, la escultura que puedes ver en la Puerta del Sol es muy reciente, pues fue esculpida por Antonio Navarro Santafé en 1967
-
-
-Tras la remodelación de la plaza impulsada por Tierno Galván en 1986, la escultura se trasladó frente a la calle del Carmen.
-Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre de 2009, la escultura ha vuelto a la zona oriental, ahora frente a la calle de Alcalá.
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1H-td-TAc">
-                                <rect key="frame" x="32" y="745.66666666666663" width="350" height="65"/>
-                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="qzt-Z3-PWO"/>
-                                    <constraint firstAttribute="width" constant="350" id="sfR-PW-FgD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="mapButton:" destination="NIC-b2-2Fz" eventType="touchUpInside" id="N44-S6-g95"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="x1H-td-TAc" firstAttribute="centerY" secondItem="7k2-wg-MHa" secondAttribute="centerY" constant="330" id="Fuv-83-3aC"/>
-                            <constraint firstItem="LZ5-VN-9Ec" firstAttribute="centerX" secondItem="7k2-wg-MHa" secondAttribute="centerX" id="JfS-FX-6jA"/>
-                            <constraint firstItem="sgq-Tq-zJG" firstAttribute="centerY" secondItem="7k2-wg-MHa" secondAttribute="centerY" id="LQ5-o6-kg1"/>
-                            <constraint firstItem="LZ5-VN-9Ec" firstAttribute="centerY" secondItem="7k2-wg-MHa" secondAttribute="centerY" constant="-300" id="SIe-o4-HEQ"/>
-                            <constraint firstItem="sgq-Tq-zJG" firstAttribute="centerX" secondItem="7k2-wg-MHa" secondAttribute="centerX" id="eTw-dr-4GG"/>
-                            <constraint firstItem="x1H-td-TAc" firstAttribute="centerX" secondItem="7k2-wg-MHa" secondAttribute="centerX" id="ubR-aX-fkP"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="lHb-Vj-3W7"/>
-                    </view>
-                    <connections>
-                        <outlet property="mapButton" destination="x1H-td-TAc" id="HWy-Mn-qf3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uTD-2t-taA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6183" y="746"/>
+            <point key="canvasLocation" x="5528" y="746"/>
         </scene>
         <!--RecoverPW View Controller-->
         <scene sceneID="NoE-hf-yFd">
@@ -713,7 +559,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apO-s0-3df">
-                                <rect key="frame" x="342" y="746" width="50" height="50"/>
+                                <rect key="frame" x="342" y="696" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="F7O-8e-ZZc"/>
@@ -728,7 +574,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-tn-haj">
-                                <rect key="frame" x="32" y="56" width="50" height="50"/>
+                                <rect key="frame" x="32" y="96" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="TVx-23-p7I"/>
@@ -743,7 +589,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-ZN-hY4">
-                                <rect key="frame" x="32" y="746" width="50" height="50"/>
+                                <rect key="frame" x="32" y="696" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Gak-mM-BMi"/>
@@ -777,27 +623,45 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="2md-3j-k6r" secondAttribute="trailing" id="2TT-oR-poE"/>
-                                    <constraint firstItem="2md-3j-k6r" firstAttribute="top" secondItem="3Jw-AB-lMt" secondAttribute="top" id="2eE-Ic-450"/>
                                     <constraint firstAttribute="height" constant="128" id="Rj4-tT-6l2"/>
-                                    <constraint firstAttribute="bottom" secondItem="2md-3j-k6r" secondAttribute="bottom" id="W8J-pu-sCc"/>
+                                    <constraint firstItem="2md-3j-k6r" firstAttribute="top" secondItem="3Jw-AB-lMt" secondAttribute="top" id="et5-nF-nyu"/>
+                                    <constraint firstAttribute="trailing" secondItem="2md-3j-k6r" secondAttribute="trailing" id="n93-yi-vJQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="2md-3j-k6r" secondAttribute="bottom" id="nGG-rh-3eu"/>
                                     <constraint firstAttribute="width" constant="240" id="nq5-h0-YM9"/>
-                                    <constraint firstItem="2md-3j-k6r" firstAttribute="leading" secondItem="3Jw-AB-lMt" secondAttribute="leading" id="yEC-PZ-Xi5"/>
+                                    <constraint firstItem="2md-3j-k6r" firstAttribute="leading" secondItem="3Jw-AB-lMt" secondAttribute="leading" id="vgR-WA-gXS"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FT4-Aw-Cgp">
+                                <rect key="frame" x="32" y="388.66666666666669" width="350" height="65"/>
+                                <color key="backgroundColor" red="0.77747696639999997" green="0.056959338489999997" blue="0.115203388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="COA-zK-E7Q"/>
+                                    <constraint firstAttribute="height" constant="65" id="f5y-24-axE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Fin de la ruta" image="xmark.rectangle.fill" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="finRoute:" destination="H90-WN-rKM" eventType="touchUpInside" id="vKD-jK-e6T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="leading" secondItem="cRG-vc-xQ7" secondAttribute="leading" id="3GT-b4-3Ry"/>
-                            <constraint firstItem="apO-s0-3df" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="8xJ-Uu-WVl"/>
-                            <constraint firstItem="UFL-tn-haj" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="-340" id="At0-aK-5qy"/>
+                            <constraint firstItem="FT4-Aw-Cgp" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" id="4gC-fb-gTw"/>
+                            <constraint firstItem="apO-s0-3df" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="300" id="8xJ-Uu-WVl" customClass="NSLayoutHelper"/>
+                            <constraint firstItem="UFL-tn-haj" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="-300" id="At0-aK-5qy" customClass="NSLayoutHelper"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="trailing" secondItem="wQ6-5c-j0i" secondAttribute="trailing" id="BTL-Pu-eUF"/>
                             <constraint firstItem="3Jw-AB-lMt" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" id="Jum-pe-JRR"/>
                             <constraint firstItem="cRG-vc-xQ7" firstAttribute="bottom" secondItem="wQ6-5c-j0i" secondAttribute="bottom" id="LdV-I7-Mvp"/>
                             <constraint firstItem="UFL-tn-haj" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="Lz9-NV-D9t"/>
                             <constraint firstItem="apO-s0-3df" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="160" id="NSr-dp-fYX"/>
+                            <constraint firstItem="FT4-Aw-Cgp" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" id="RHq-hg-hVV"/>
                             <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerX" secondItem="QzG-Bi-gQg" secondAttribute="centerX" constant="-150" id="Uyz-Rb-xjg"/>
-                            <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="350" id="VFy-xy-yfu"/>
+                            <constraint firstItem="fmM-ZN-hY4" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" constant="300" id="VFy-xy-yfu" customClass="NSLayoutHelper"/>
                             <constraint firstItem="3Jw-AB-lMt" firstAttribute="centerY" secondItem="QzG-Bi-gQg" secondAttribute="centerY" id="Wov-eW-UwW"/>
                             <constraint firstItem="wQ6-5c-j0i" firstAttribute="top" secondItem="cRG-vc-xQ7" secondAttribute="top" id="giZ-b7-2VR"/>
                         </constraints>
@@ -806,6 +670,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                     <navigationItem key="navigationItem" id="QFY-ei-gOn"/>
                     <connections>
                         <outlet property="cameraButton" destination="fmM-ZN-hY4" id="XDD-3o-hCn"/>
+                        <outlet property="finRoute" destination="FT4-Aw-Cgp" id="ciK-wg-s8B"/>
                         <outlet property="infoButton" destination="apO-s0-3df" id="eBT-cj-8rr"/>
                         <outlet property="mapa" destination="wQ6-5c-j0i" id="ODy-ew-3bn"/>
                         <outlet property="settingsButton" destination="UFL-tn-haj" id="Ps8-aQ-bbg"/>
@@ -1022,7 +887,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                     <constraint firstAttribute="width" constant="350" id="gFA-CI-d0i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONFIRMAR CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gk4-7s-1qO">
                                 <rect key="frame" x="32" y="448" width="350" height="50"/>
@@ -1031,7 +896,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                     <constraint firstAttribute="height" constant="50" id="oac-0B-KBM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLd-Mn-jVF">
                                 <rect key="frame" x="32" y="540.66666666666663" width="350" height="65"/>
@@ -1095,9 +960,8 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="madridWP.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-Fs-LRf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madridWP.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-Fs-LRf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHJ-eW-OjB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1105,11 +969,10 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R7Y-9x-ncm">
-                                            <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7Y-9x-ncm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C2n-WC-2Pa">
-                                                <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </view>
                                             <vibrancyEffect>
@@ -1117,6 +980,12 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                             </vibrancyEffect>
                                         </visualEffectView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="R7Y-9x-ncm" secondAttribute="bottom" id="CMp-Ng-xL3"/>
+                                        <constraint firstItem="R7Y-9x-ncm" firstAttribute="leading" secondItem="LLM-fa-WdW" secondAttribute="leading" id="N8L-AU-CuN"/>
+                                        <constraint firstItem="R7Y-9x-ncm" firstAttribute="top" secondItem="LLM-fa-WdW" secondAttribute="top" id="cCg-uX-Rdq"/>
+                                        <constraint firstAttribute="trailing" secondItem="R7Y-9x-ncm" secondAttribute="trailing" id="tkc-Is-0Be"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="systemUltraThinMaterialDark"/>
                             </visualEffectView>
@@ -1205,37 +1074,29 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZNT-Pw-xk2" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="2CQ-0n-szD"/>
-                            <constraint firstItem="ZNT-Pw-xk2" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-150" id="CgY-wh-icr"/>
+                            <constraint firstItem="5n3-Fs-LRf" firstAttribute="leading" secondItem="XPE-vE-IKg" secondAttribute="leading" id="7P9-iY-CHf"/>
+                            <constraint firstItem="ZNT-Pw-xk2" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-150" id="CgY-wh-icr" customClass="NSLayoutHelper"/>
                             <constraint firstItem="jHJ-eW-OjB" firstAttribute="leading" secondItem="XPE-vE-IKg" secondAttribute="leading" id="DPo-Yc-Aa4"/>
-                            <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="Fjy-le-vMj" customClass="NSLayoutHelper">
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
-                                        <real key="value" value="320"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </constraint>
-                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="I88-Pe-Ecv" customClass="NSLayoutHelper">
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
-                                        <real key="value" value="331"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
-                                        <real key="value" value="331"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE2G">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </constraint>
+                            <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="Fjy-le-vMj" customClass="NSLayoutHelper"/>
+                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="350" id="I88-Pe-Ecv" customClass="NSLayoutHelper"/>
                             <constraint firstItem="jHJ-eW-OjB" firstAttribute="trailing" secondItem="XPE-vE-IKg" secondAttribute="trailing" id="KG6-QX-hqe"/>
-                            <constraint firstItem="zPC-CW-OFK" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="150" id="QJa-Xh-GND"/>
+                            <constraint firstItem="5n3-Fs-LRf" firstAttribute="top" secondItem="XPE-vE-IKg" secondAttribute="top" id="MdA-qx-bCW"/>
+                            <constraint firstItem="XPE-vE-IKg" firstAttribute="trailing" secondItem="5n3-Fs-LRf" secondAttribute="trailing" id="NB4-7f-r1z"/>
+                            <constraint firstItem="zPC-CW-OFK" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="150" id="QJa-Xh-GND" customClass="NSLayoutHelper"/>
                             <constraint firstItem="zPC-CW-OFK" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="R3y-h7-KPB"/>
                             <constraint firstItem="UNs-oe-iOR" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="RA1-3v-RTT"/>
-                            <constraint firstItem="UNs-oe-iOR" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-300" id="RpM-gt-g7K"/>
-                            <constraint firstItem="vVH-M5-6xk" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" id="fTF-qe-bN9"/>
+                            <constraint firstItem="UNs-oe-iOR" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" constant="-300" id="RpM-gt-g7K" customClass="NSLayoutHelper"/>
+                            <constraint firstItem="vVH-M5-6xk" firstAttribute="centerY" secondItem="le6-Lx-gd7" secondAttribute="centerY" id="fTF-qe-bN9" customClass="NSLayoutHelper"/>
                             <constraint firstAttribute="bottom" secondItem="jHJ-eW-OjB" secondAttribute="bottom" id="gAD-NO-RKQ"/>
+                            <constraint firstItem="5n3-Fs-LRf" firstAttribute="bottom" secondItem="XPE-vE-IKg" secondAttribute="bottom" id="iDD-gd-AzU"/>
                             <constraint firstItem="jHJ-eW-OjB" firstAttribute="top" secondItem="le6-Lx-gd7" secondAttribute="top" id="j71-DL-zA1"/>
-                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="-150" id="nji-Pn-bUC" customClass="NSLayoutHelper"/>
+                            <constraint firstItem="O0F-mY-Gko" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="-150" id="nji-Pn-bUC" customClass="NSLayoutHelper">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                        <real key="value" value="-150"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
                             <constraint firstItem="ZiE-Lk-l30" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" constant="150" id="u1R-y4-Cok"/>
                             <constraint firstItem="vVH-M5-6xk" firstAttribute="centerX" secondItem="le6-Lx-gd7" secondAttribute="centerX" id="vvs-G6-M74"/>
                         </constraints>
@@ -1251,7 +1112,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFU-it-l8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369.5652173913045" y="10.714285714285714"/>
+            <point key="canvasLocation" x="1369.53125" y="10.546875"/>
         </scene>
         <!--ChangePW View Controller-->
         <scene sceneID="MGS-bC-O6W">
@@ -1311,7 +1172,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                     <constraint firstAttribute="width" constant="350" id="eRC-fm-qme"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NUEVA CONTRASEÑA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-Rw-EAC">
                                 <rect key="frame" x="32" y="373" width="350" height="50"/>
@@ -1320,7 +1181,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                                     <constraint firstAttribute="width" constant="350" id="h7f-5y-kTn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g7-Sh-DSj">
                                 <rect key="frame" x="32" y="540.66666666666663" width="350" height="65"/>
@@ -1515,67 +1376,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHZ-jz-Lcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="761"/>
-        </scene>
-        <!--List Monuments View Controller-->
-        <scene sceneID="Y2V-Bt-oZU">
-            <objects>
-                <viewController storyboardIdentifier="listVC" id="OQO-OI-Mm8" customClass="listMonumentsViewController" customModule="rutas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kfc-g2-iUu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NZa-64-9aI">
-                                <rect key="frame" x="0.0" y="116" width="414" height="746"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellMonument" textLabel="PhL-5O-9Iq" rowHeight="63" style="IBUITableViewCellStyleDefault" id="QIC-Lr-ntw">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="63"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cellMonument" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QIC-Lr-ntw" id="QG4-Af-OXA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PhL-5O-9Iq">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="63"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-5y-KKN">
-                                <rect key="frame" x="143.66666666666666" y="44" width="126.99999999999997" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="Yds-l1-sfv"/>
-                                    <constraint firstAttribute="height" constant="52" id="gzy-r6-iwD"/>
-                                </constraints>
-                                <state key="normal" title="PERFIL"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="NZa-64-9aI" firstAttribute="top" secondItem="zWG-5y-KKN" secondAttribute="bottom" constant="20" id="2Qw-qr-0zY"/>
-                            <constraint firstItem="zWG-5y-KKN" firstAttribute="centerX" secondItem="NZa-64-9aI" secondAttribute="centerX" id="2qz-MJ-Jxb"/>
-                            <constraint firstItem="zWG-5y-KKN" firstAttribute="centerX" secondItem="kfc-g2-iUu" secondAttribute="centerX" id="GiV-jf-x1a"/>
-                            <constraint firstItem="zWG-5y-KKN" firstAttribute="top" secondItem="bZW-HM-qPG" secondAttribute="top" id="dR2-Fs-KNd"/>
-                            <constraint firstItem="NZa-64-9aI" firstAttribute="leading" secondItem="bZW-HM-qPG" secondAttribute="leading" id="kVm-p5-aGK"/>
-                            <constraint firstItem="NZa-64-9aI" firstAttribute="bottom" secondItem="bZW-HM-qPG" secondAttribute="bottom" id="rhc-MZ-F7o"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="bZW-HM-qPG"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="NZa-64-9aI" id="5uO-1p-xeJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4R2-3T-GCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5487" y="28"/>
+            <point key="canvasLocation" x="-572.46376811594212" y="745.98214285714278"/>
         </scene>
     </scenes>
     <resources>
@@ -1584,6 +1385,7 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="casaCorreos.jpg" width="720" height="960"/>
+        <image name="cibeles.jpg" width="915" height="690.75"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="madridWP.jpg" width="1000" height="1333"/>
@@ -1595,5 +1397,6 @@ Y, finalmente, tras la nueva configuración de la Puerta del Sol, en septiembre 
         <image name="puertaAlcala.jpg" width="1600" height="1200"/>
         <image name="wrench.fill" catalog="system" width="128" height="120"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.rectangle.fill" catalog="system" width="128" height="93"/>
     </resources>
 </document>
